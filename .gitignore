@@ -1,0 +1,71 @@
+
+# 忽视 node_modules 文件夹
+node_modules/
+
+# 忽视依赖锁文件（可选）
+package-lock.json
+yarn.lock
+
+# 忽视环境变量文件
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# 忽视日志文件
+*.log
+
+# 忽视构建输出目录
+build/
+dist/
+out/
+
+# 忽视缓存目录
+.cache/
+
+# 忽视 IDE 和编辑器配置文件
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 忽视 macOS 系统文件
+.DS_Store
+
+# 忽视 Windows 系统文件
+Thumbs.db
+
+# 忽视测试覆盖率目录
+coverage/
+
+# 忽视临时文件
+tmp/
+temp/
+
+# 忽视 React 项目的调试日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 忽视 TypeScript 编译输出
+*.js.map
+*.d.ts
+*.tsbuildinfo
+
+# 忽视 Next.js 项目的构建输出
+.next/
+
+# 忽视 Gatsby 项目的构建输出
+.cache/
+public
+
+# 忽视 Nuxt.js 项目的构建输出
+.nuxt/
+.nuxt-prod/
+
+# 忽视 Vue CLI 项目的构建输出
+dist/
