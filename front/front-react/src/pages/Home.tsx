@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.svg'
-import {HomeTwo} from '@icon-park/react';
 import 'daisyui/dist/full.css'
 
 function Home() {
@@ -66,25 +65,22 @@ function Home() {
 
   return (
     <div>
-      <nav className="navbar bg-base-100 shadow-md fixed top-0 left-0 right-0 z-50">
-        <div className="container mx-auto flex justify-between items-center">
+      <nav className="navbar fixed inset-x-0 top-0 z-50 bg-base-100 shadow-md">
+        <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <a className="btn btn-ghost normal-case text-xl">
+            <a className="btn btn-ghost text-xl normal-case">
               <img src={logo} alt="Logo" width={32} className="mr-2" />
               Dressing Community
             </a>
             <ul className="menu menu-horizontal px-1">
               <li>
-                <Link to="/">
-                <Home theme="outline" size="24" fill="#333"/>
-                  首页
-                </Link>
+                <Link to="/">首页</Link>
               </li>
               <li>
                 <Link to="/outfits">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-1"
+                    className="mr-1 size-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -103,7 +99,7 @@ function Home() {
                 <Link to="/shop">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-1"
+                    className="mr-1 size-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -122,7 +118,7 @@ function Home() {
                 <Link to="/community">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-1"
+                    className="mr-1 size-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -140,10 +136,10 @@ function Home() {
             </ul>
           </div>
           <div className="flex items-center space-x-4">
-            <button className="btn btn-ghost btn-circle">
+            <button className="btn btn-circle btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="size-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -157,14 +153,14 @@ function Home() {
               </svg>
             </button>
             <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <label tabIndex={0} className="avatar btn btn-circle btn-ghost">
                 <div className="w-10 rounded-full">
                   <img src="https://via.placeholder.com/40" alt="User" />
                 </div>
               </label>
               <ul
                 tabIndex={0}
-                className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+                className="menu-compact menu dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
               >
                 <li>
                   <a>退出登录</a>
@@ -175,14 +171,14 @@ function Home() {
         </div>
       </nav>
       <div className="container mx-auto">
-        <div className="carousel w-full mb-8">
+        <div className="carousel mb-8 w-full">
           <div id="slide1" className="carousel-item relative w-full">
             <img
               src="https://picsum.photos/seed/carousel1/800/300"
               className="w-full"
               alt="Carousel 1"
             />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
               <a href="#slide3" className="btn btn-circle">
                 ❮
               </a>
@@ -197,7 +193,7 @@ function Home() {
               className="w-full"
               alt="Carousel 2"
             />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
               <a href="#slide1" className="btn btn-circle">
                 ❮
               </a>
@@ -212,7 +208,7 @@ function Home() {
               className="w-full"
               alt="Carousel 3"
             />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
               <a href="#slide2" className="btn btn-circle">
                 ❮
               </a>
@@ -223,8 +219,8 @@ function Home() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mb-4">精选穿搭</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className="mb-4 text-2xl font-bold">精选穿搭</h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {featuredOutfits.map((outfit) => (
             <div key={outfit.id} className="card bg-base-100 shadow-md">
               <figure>
@@ -233,11 +229,11 @@ function Home() {
               <div className="card-body">
                 <h2 className="card-title">{outfit.title}</h2>
                 <p>{outfit.description}</p>
-                <div className="flex items-center mt-4">
+                <div className="mt-4 flex items-center">
                   <img
                     src={outfit.author.avatar}
                     alt={outfit.author.name}
-                    className="w-10 h-10 rounded-full mr-2"
+                    className="mr-2 size-10 rounded-full"
                   />
                   <div>
                     <p className="text-sm font-semibold">
@@ -253,8 +249,8 @@ function Home() {
           ))}
         </div>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">热销商品</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className="mb-4 mt-8 text-2xl font-bold">热销商品</h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {hotProducts.map((product) => (
             <div key={product.id} className="card bg-base-100 shadow-md">
               <figure>
