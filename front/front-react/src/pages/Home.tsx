@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../assets/logo.svg'
+import { NavLink } from 'react-router-dom'
 import 'daisyui/dist/full.css'
 
 function Home() {
@@ -60,117 +59,18 @@ function Home() {
       image: 'https://picsum.photos/seed/product3/400/300',
       title: '百搭牛仔外套',
       price: 399
+    },
+    {
+      id: 3,
+      image: 'https://picsum.photos/seed/product3/400/300',
+      title: '百搭牛仔外套',
+      price: 399
     }
   ]
 
   return (
     <div>
-      <nav className="navbar fixed inset-x-0 top-0 z-50 bg-base-100 shadow-md">
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <a className="btn btn-ghost text-xl normal-case">
-              <img src={logo} alt="Logo" width={32} className="mr-2" />
-              Dressing Community
-            </a>
-            <ul className="menu menu-horizontal px-1">
-              <li>
-                <Link to="/">首页</Link>
-              </li>
-              <li>
-                <Link to="/outfits">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="mr-1 size-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 3h18M3 3v18M3 3l18 18"
-                    />
-                  </svg>
-                  穿搭分享
-                </Link>
-              </li>
-              <li>
-                <Link to="/shop">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="mr-1 size-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 3h18M3 3v18M3 3l18 18"
-                    />
-                  </svg>
-                  商城
-                </Link>
-              </li>
-              <li>
-                <Link to="/community">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="mr-1 size-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 3h18M3 3v18M3 3l18 18"
-                    />
-                  </svg>
-                  社区
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex items-center space-x-4">
-            <button className="btn btn-circle btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 3h18M3 3v18M3 3l18 18"
-                />
-              </svg>
-            </button>
-            <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="avatar btn btn-circle btn-ghost">
-                <div className="w-10 rounded-full">
-                  <img src="https://via.placeholder.com/40" alt="User" />
-                </div>
-              </label>
-              <ul
-                tabIndex={0}
-                className="menu-compact menu dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
-              >
-                <li>
-                  <a>退出登录</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div className="container mx-auto">
+      <div className="container mx-auto p-4">
         <div className="carousel mb-8 w-full">
           <div id="slide1" className="carousel-item relative w-full">
             <img
@@ -222,13 +122,16 @@ function Home() {
         <h2 className="mb-4 text-2xl font-bold">精选穿搭</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {featuredOutfits.map((outfit) => (
-            <div key={outfit.id} className="card bg-base-100 shadow-md">
+            <div
+              key={outfit.id}
+              className="card bg-base-100 shadow-md cursor-pointer"
+            >
               <figure>
                 <img src={outfit.image} alt={outfit.title} />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">{outfit.title}</h2>
-                <p>{outfit.description}</p>
+                <h2 className="card-title truncate">{outfit.title}</h2>
+                <p className="line-clamp-2">{outfit.description}</p>
                 <div className="mt-4 flex items-center">
                   <img
                     src={outfit.author.avatar}
@@ -250,22 +153,40 @@ function Home() {
         </div>
 
         <h2 className="mb-4 mt-8 text-2xl font-bold">热销商品</h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {hotProducts.map((product) => (
             <div key={product.id} className="card bg-base-100 shadow-md">
               <figure>
                 <img src={product.image} alt={product.title} />
               </figure>
-              <div className="card-body">
-                <h2 className="card-title">{product.title}</h2>
-                <p className="text-lg font-bold text-primary">
+              <div className="card-body p-4">
+                <h2 className="card-title cursor-pointer">{product.title}</h2>
+                <p className="text-sm font-bold text-pink-500">
                   ¥{product.price}
                 </p>
+                <button className="btn btn-sm btn-primary mt-2 text-white">
+                  加入购物车
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
+      <footer className="footer footer-center bg-base-200 text-base-content rounded p-10 mt-10">
+        <nav className="grid grid-flow-col gap-4">
+          <a className="link link-hover">关于我们</a>
+          <a className="link link-hover">联系我们</a>
+          <a className="link link-hover">社区</a>
+        </nav>
+        <nav>
+          <div className="grid grid-flow-col gap-4">123</div>
+        </nav>
+        <aside>
+          <p>
+            Copyright © {new Date().getFullYear()} - 版权所有lyratu有限责任公司
+          </p>
+        </aside>
+      </footer>
     </div>
   )
 }
