@@ -1,25 +1,6 @@
 import { Link } from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import Carousel from '../components/Carousel'
-import OutfitCard from '../components/OutfitCard'
-import ProductCard from '../components/ProductCard'
-
 function Home() {
   // 轮播图数据
-  const carouselImages = [
-    {
-      src: 'https://picsum.photos/seed/banner1/1600/500',
-      alt: 'banner 1'
-    },
-    {
-      src: 'https://picsum.photos/seed/banner2/1600/500',
-      alt: 'banner 2'
-    },
-    {
-      src: 'https://picsum.photos/seed/banner3/1600/500',
-      alt: 'banner 3'
-    }
-  ]
 
   // 精选穿搭数据
   const featuredOutfits = [
@@ -87,51 +68,7 @@ function Home() {
     }
   ]
 
-  return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f7f8fc' }}>
-      <Navbar />
-      <div className="h-16"></div>
-
-      <div className="pb-8">
-        {/* 轮播图 */}
-        <div className="container mx-auto px-4 pt-4">
-          <Carousel images={carouselImages} />
-        </div>
-
-        <div className="container mx-auto px-4">
-          {/* 精选穿搭 */}
-          <div className="my-8">
-            <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-2xl font-bold">精选穿搭</h2>
-              <Link to="/outfits" className="btn btn-link">
-                查看更多 →
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {featuredOutfits.map((outfit) => (
-                <OutfitCard key={outfit.id} {...outfit} />
-              ))}
-            </div>
-          </div>
-
-          {/* 热销商品 */}
-          <div className="my-8">
-            <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-2xl font-bold">热销商品</h2>
-              <Link to="/shop" className="btn btn-link">
-                查看更多 →
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              {hotProducts.map((product) => (
-                <ProductCard key={product.id} {...product} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+  return <div>123</div>
 }
 
 export default Home
