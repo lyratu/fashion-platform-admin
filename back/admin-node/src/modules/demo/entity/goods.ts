@@ -21,6 +21,9 @@ export class DemoGoodsEntity extends BaseEntity {
   @Column({ comment: '描述', nullable: true })
   description: string;
 
+  @Column({ comment: '详情', nullable: true })
+  detail: string;
+
   @Column({ comment: '主图', nullable: true })
   mainImage: string;
 
@@ -30,9 +33,9 @@ export class DemoGoodsEntity extends BaseEntity {
   @Column({ comment: '状态', dict: ['禁用', '启用'], default: 1 })
   status: number;
 
-  @Column({ comment: '示例图', nullable: true, type: 'json' })
-  exampleImages: string[];
-
   @Column({ comment: '库存', default: 0 })
   stock: number;
+
+  @Column({ comment: '销量', default: 0 })
+  sales: number;
 }

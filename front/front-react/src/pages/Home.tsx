@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import 'daisyui/dist/full.css'
 
 function Home() {
@@ -124,7 +123,7 @@ function Home() {
           {featuredOutfits.map((outfit) => (
             <div
               key={outfit.id}
-              className="card bg-base-100 shadow-md cursor-pointer"
+              className="card bg-base-100 cursor-pointer shadow-md"
             >
               <figure>
                 <img src={outfit.image} alt={outfit.title} />
@@ -172,7 +171,7 @@ function Home() {
           ))}
         </div>
       </div>
-      <footer className="footer footer-center bg-base-200 text-base-content rounded p-10 mt-10">
+      <footer className="footer footer-center bg-base-200 text-base-content mt-10 rounded p-10">
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">关于我们</a>
           <a className="link link-hover">联系我们</a>

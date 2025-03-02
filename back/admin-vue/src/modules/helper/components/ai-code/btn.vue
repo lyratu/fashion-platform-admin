@@ -1,9 +1,9 @@
 <template>
-	<div class="cl-comm__icon" @click="toCode">
+	<!-- <div class="cl-comm__icon" @click="toCode">
 		<cl-svg name="quick" class="icon" />
 		<div class="t1">{{ $t('AI极速编码') }}</div>
 		<div class="t2">Start</div>
-	</div>
+	</div> -->
 </template>
 
 <script setup lang="ts">
@@ -75,6 +75,7 @@ function toCode() {
 	0% {
 		background-position: 0;
 	}
+
 	100% {
 		background-position: 100px;
 	}

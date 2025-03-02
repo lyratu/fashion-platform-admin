@@ -1,14 +1,14 @@
 import React from 'react'
-import { NavLink,Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { FaHome, FaAtom } from 'react-icons/fa'
 import { LuSofa } from 'react-icons/lu'
 import { MdBreakfastDining } from 'react-icons/md'
 import { GiFairyWings } from 'react-icons/gi'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { GiClothes } from "react-icons/gi";
+import { GiClothes } from 'react-icons/gi'
 const Navbar = () => {
   return (
-    <nav className="navbar shadow-md bg-white">
+    <nav className="navbar bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <a className="btn btn-ghost text-xl normal-case">
@@ -57,7 +57,7 @@ const Navbar = () => {
                 to="/Wardrobe"
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
-                <GiClothes  className=" size-5" />
+                <GiClothes className=" size-5" />
                 衣橱
               </NavLink>
             </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu-compact menu dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow z-50"
+              className="menu-compact menu dropdown-content rounded-box bg-base-100 z-50 mt-3 w-52 p-2 shadow"
             >
               <li>
                 <a>退出登录</a>
