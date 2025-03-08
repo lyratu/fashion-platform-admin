@@ -175,7 +175,7 @@ function Home() {
           ))}
         </div>
       </div>
-      <footer className="footer footer-center bg-base-200 text-base-content mt-10 rounded p-10">
+      {/* <footer className="footer footer-center bg-base-200 text-base-content mt-10 rounded p-10">
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">关于我们</a>
           <a className="link link-hover">联系我们</a>
@@ -189,7 +189,7 @@ function Home() {
             Copyright © {new Date().getFullYear()} - 版权所有lyratu有限责任公司
           </p>
         </aside>
-      </footer>
+      </footer> */}
     </div>
   )
 }
