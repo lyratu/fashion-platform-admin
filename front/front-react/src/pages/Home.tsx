@@ -1,7 +1,8 @@
 import React from 'react'
 import 'daisyui/dist/full.css'
-
+import {useNavigate} from 'react-router-dom'
 function Home() {
+  const navigate = useNavigate()
   // 精选穿搭数据
   const featuredOutfits = [
     {
@@ -124,6 +125,9 @@ function Home() {
             <div
               key={outfit.id}
               className="card bg-base-100 cursor-pointer shadow-md"
+              onClick={() =>
+                navigate(`/outfits/${outfit.id}`)
+              }
             >
               <figure>
                 <img src={outfit.image} alt={outfit.title} />
