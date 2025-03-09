@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Outfits from '../pages/Outfits/Outfits'
@@ -11,11 +11,26 @@ import Wardrobe from '../pages/Wardrobe/Wardrobe'
 import OutfitDetail from '../pages/Outfits/OutfitDetail'
 import Navbar from './Navbar'
 import '../global.css' // 引入全局样式
+import { setupGuard } from '../router/guard'
+import { useEffect } from 'react'
 
-function App() {
+// 创建一个包装组件来使用useNavigate hook
+function AppContent() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // 在组件挂载时设置路由守卫
+    setupGuard(navigate);
+  }, [navigate]);
+
+  // 定义不需要显示导航栏的路由
+  const noNavbarRoutes = ['/login', '/register'];
+  const shouldShowNavbar = !noNavbarRoutes.includes(location.pathname);
+
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      {shouldShowNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -28,8 +43,16 @@ function App() {
         <Route path="/shop/:id" element={<Product />} />
         <Route path="/outfits/:id" element={<OutfitDetail />} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
-  )
+  );
 }
 
 export default App

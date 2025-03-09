@@ -2,7 +2,6 @@ import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios'
 
 // 创建axios实例
 const instance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:8080/api',
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json'
@@ -27,11 +26,13 @@ instance.interceptors.request.use(
 // 响应拦截器
 instance.interceptors.response.use(
   (response) => {
-    // 如果返回的状态码为200，说明接口请求成功，可以正常拿到数据
-    if (response.status === 200) {
-      return response.data
+    const { data } = response
+    // 根据后端接口规范判断请求是否成功
+    if (data.code === 1000) {
+      return data.data
     }
-    return Promise.reject(response)
+    // 如果不成功，统一抛出错误
+    return Promise.reject(new Error(data.message || '请求失败'))
   },
   (error: AxiosError) => {
     if (error.response) {
