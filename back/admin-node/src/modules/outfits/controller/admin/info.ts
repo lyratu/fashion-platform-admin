@@ -1,11 +1,43 @@
+import { Inject } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
-import { OutFitsEntity } from '../../entity/info';
+import { OutfitsInfoEntity } from '../../entity/info';
+import { OutfitsInfoService } from '../../service/info';
 
 /**
- * 商品模块-商品信息
+ * 穿搭信息
  */
 @CoolController({
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
-  entity: OutFitsEntity,
+  entity: OutfitsInfoEntity,
+  service: OutfitsInfoService,
+  pageQueryOp: {
+    keyWordLikeFields: ['a.title'],
+    fieldEq: ['a.status'],
+    where: async ctx => {
+      const { popularityStart, popularityEnd } = ctx.request.body;
+      const where = [];
+      if (popularityStart !== undefined) {
+        where.push(['a.popularity >= :popularityStart', { popularityStart }]);
+      }
+      if (popularityEnd !== undefined) {
+        where.push(['a.popularity <= :popularityEnd', { popularityEnd }]);
+      }
+      return where;
+    },
+    join: [
+      {
+        entity: OutfitsInfoEntity,
+        alias: 'b',
+        condition: 'FIND_IN_SET(b.id, a.relatedRecommendations)',
+        type: 'leftJoin',
+      },
+    ],
+    select: [
+      'a.*',
+    ],
+  },
 })
-export class AdminDemoGoodsController extends BaseController {}
+export class AdminOutfitsInfoController extends BaseController {
+  @Inject()
+  outfitsInfoService: OutfitsInfoService;
+}

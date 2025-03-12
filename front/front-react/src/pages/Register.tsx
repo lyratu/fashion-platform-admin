@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { userApi } from '../api/user'
-import toast from 'react-hot-toast'
 
-const Login: React.FC = () => {
+const Register: React.FC = () => {
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
-    phone: '13303163535',
-    password: '123456'
+    phone: '',
+    password: ''
   })
   const [loading, setLoading] = useState(false)
-
+  /* 处理登录 */
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
@@ -22,14 +21,12 @@ const Login: React.FC = () => {
       navigate('/')
     } catch (error) {
       console.error('登录错误:', error)
-      toast.error(
-        error instanceof Error ? error.message : '登录出错，请稍后重试'
-      )
+      alert(error instanceof Error ? error.message : '登录出错，请稍后重试')
     } finally {
       setLoading(false)
     }
   }
-
+  /* 输入框绑定 */
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({
@@ -41,7 +38,7 @@ const Login: React.FC = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-100">
       <div className="w-full max-w-md space-y-6 rounded bg-white p-8 shadow-md">
-        <h2 className="text-center text-2xl font-bold">登录</h2>
+        <h2 className="text-center text-2xl font-bold">注册</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="form-control">
             <label className="label">
@@ -75,22 +72,32 @@ const Login: React.FC = () => {
             />
           </div>
           <div className="form-control">
-            <label className="label cursor-pointer flex justify-start gap-4">
-              <input type="checkbox" className="checkbox" />
-              <span className="label-text">记住我</span>
+            <label className="label">
+              <span className="label-text">确认密码</span>
             </label>
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              placeholder="请再次输入密码"
+              className="input input-bordered w-full"
+              required
+              minLength={6}
+            />
           </div>
           <button
             type="submit"
             className={`btn btn-primary w-full ${loading ? 'loading' : ''}`}
             disabled={loading}
           >
-            {loading ? '登录中...' : '登录'}
+            {loading ? '注册中...' : '注册'}
           </button>
         </form>
         <p className="text-center flex justify-end">
-          <a href="/register" className="text-blue-500">
-            立即注册
+          <span>已有账号？</span>
+          <a href="/login" className="text-blue-500">
+            立即登录
           </a>
         </p>
       </div>
@@ -98,4 +105,4 @@ const Login: React.FC = () => {
   )
 }
 
-export default Login
+export default Register
