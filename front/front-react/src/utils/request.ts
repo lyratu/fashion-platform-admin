@@ -14,7 +14,7 @@ instance.interceptors.request.use(
     // 从localStorage获取token
     const token = localStorage.getItem('token')
     if (token) {
-      config.headers['Authorization'] = `Bearer ${token}`
+      config.headers['Authorization'] = `${token}`
     }
     return config
   },

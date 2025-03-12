@@ -1,12 +1,22 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { FaHome, FaAtom } from 'react-icons/fa'
 import { LuSofa } from 'react-icons/lu'
 import { MdBreakfastDining } from 'react-icons/md'
 import { GiFairyWings } from 'react-icons/gi'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { GiClothes } from 'react-icons/gi'
+import { userApi } from '@/api/user'
 const Navbar = () => {
+  const navigate = useNavigate()
+  const exitLogin = () => {
+    localStorage.removeItem('token')
+    navigate('/login')
+  }
+  const getInfo = async () => {
+    const data = await userApi.getMyInfo()
+    console.log(data)
+  }
   return (
     <nav className="navbar bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between">
@@ -85,7 +95,10 @@ const Navbar = () => {
               className="menu-compact menu dropdown-content rounded-box bg-base-100 z-50 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>退出登录</a>
+                <a onClick={getInfo}>个人信息</a>
+              </li>
+              <li>
+                <a onClick={exitLogin}>退出登录</a>
               </li>
             </ul>
           </div>
