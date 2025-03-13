@@ -7,6 +7,7 @@ import { GiFairyWings } from 'react-icons/gi'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { GiClothes } from 'react-icons/gi'
 import { userApi } from '@/api/user'
+import { outfitsApi } from '@/api/outfits'
 const Navbar = () => {
   const navigate = useNavigate()
   const exitLogin = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
     navigate('/login')
   }
   const getInfo = async () => {
-    const data = await userApi.getMyInfo()
+    const data = await outfitsApi.getOutfitsList()
     console.log(data)
   }
   return (

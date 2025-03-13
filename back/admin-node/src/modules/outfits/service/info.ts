@@ -11,4 +11,13 @@ import { OutfitsInfoEntity } from '../entity/info';
 export class OutfitsInfoService extends BaseService {
   @InjectEntityModel(OutfitsInfoEntity)
   outfitsInfoEntity: Repository<OutfitsInfoEntity>;
+
+  /**
+   * 获取文章列表
+   * @param id
+   * @returns
+   */
+  async list() {
+    return this.outfitsInfoEntity.createQueryBuilder("a").select(["a.*"]).getMany();
+  }
 }

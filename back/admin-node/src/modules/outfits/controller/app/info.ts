@@ -18,6 +18,6 @@ export class AppOutfitsInfoController extends BaseController {
 
   @Get('/getOutfitsList', { summary: '获取穿搭分享文章列表' })
   async getOutfitsList() {
-    return this.ok();
+    return this.OutfitsInfoService.list;
   }
 }
