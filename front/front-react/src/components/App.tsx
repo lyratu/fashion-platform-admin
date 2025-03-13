@@ -31,7 +31,7 @@ function AppContent() {
   useEffect(() => {
     // 在组件挂载时设置路由守卫
     setupGuard(navigate)
-  })
+  }, [navigate])
 
   // 定义不需要显示导航栏的路由
   const noNavbarRoutes = ['/login', '/register', '/401', '/403', '/404', '/500']
