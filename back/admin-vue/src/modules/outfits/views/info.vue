@@ -30,49 +30,69 @@
 
 <script lang="ts" setup>
 defineOptions({
-	name: "outfits-goods"
+	name: "outfits-article"
 });
 
 import { useCrud, useTable, useUpsert, useSearch } from "@cool-vue/crud";
 import { useCool } from "/@/cool";
 import { useI18n } from "vue-i18n";
-import { reactive } from "vue";
+import { useDict } from "/$/dict";
+
+const { dict } = useDict();
 
 const { service } = useCool();
 const { t } = useI18n();
 
-// 选项
-const options = reactive({
-	status: [
-		{ label: t('下架'), value: 0 },
-		{ label: t('上架'), value: 1 },
-		{ label: t('待审核'), value: 2 }
-	]
-});
-
 // cl-upsert
 const Upsert = useUpsert({
 	items: [
-		{ label: t('封面'), prop: "coverImage", component: { name: "cl-upload" } },
 		{
-			label: t('标题'),
-			prop: "title",
+			label: t('穿搭标题'),
+			prop: "articleTitle",
 			component: { name: "el-input", props: { clearable: true } },
 			span: 12,
 			required: true
 		},
+		{ label: t('封面图'), prop: "coverImage", component: { name: "cl-upload" } },
+		{ label: t('内容'), prop: "content", component: { name: "cl-editor-wang" } },
 		{
-			label: t('描述'),
-			prop: "description",
-			component: { name: "el-input", props: { type: "textarea", rows: 4 } }
+			label: t('分类'),
+			prop: "category",
+			component: { name: "cl-select", props: { options: dict.get('category') } },
+			value: 0,
+			span: 12,
+			required: true
 		},
-		{ label: t('正文'), prop: "content", component: { name: "cl-editor-wang" } },
-
 		{
-			label: t('状态'),
-			prop: "status",
-			component: { name: "el-radio-group", options: options.status },
-			value: 2,
+			label: t('季节'),
+			prop: "season",
+			component: { name: "cl-select", props: { options: dict.get('season') } },
+			value: 0,
+			span: 12,
+			required: true
+		},
+		{
+			label: t('点赞数'),
+			prop: "likeCount",
+			hook: "number",
+			component: { name: "el-input-number", props: { min: 0 } },
+			span: 12,
+			required: true
+		},
+		{
+			label: t('收藏数'),
+			prop: "collectCount",
+			hook: "number",
+			component: { name: "el-input-number", props: { min: 0 } },
+			span: 12,
+			required: true
+		},
+		{
+			label: t('选择作者'),
+			prop: "authorId",
+			hook: "number",
+			component: { name: "el-input-number", props: { min: 0 } },
+			span: 12,
 			required: true
 		}
 	]
@@ -82,28 +102,35 @@ const Upsert = useUpsert({
 const Table = useTable({
 	columns: [
 		{ type: "selection" },
+		{ label: t('昵称'), prop: "authorName", minWidth: 140 },
+		{ label: t('穿搭标题'), prop: "articleTitle", minWidth: 140 },
 		{
-			label: t('封面'),
+			label: t('封面图'),
 			prop: "coverImage",
 			minWidth: 100,
 			component: { name: "cl-image", props: { size: 60 } }
 		},
-		{ label: t('标题'), prop: "title", minWidth: 140 },
 		{
-			label: t('描述'),
-			prop: "description",
-			showOverflowTooltip: true,
-			minWidth: 200
-		},
-		{
-			label: t('正文'),
+			label: t('内容'),
 			prop: "content",
 			minWidth: 120,
 			component: { name: "cl-editor-preview", props: { name: "wang" } }
 		},
-
-		{ label: t('浏览数'), prop: "views", minWidth: 140, sortable: "custom" },
-		{ label: t('状态'), prop: "status", minWidth: 120, dict: options.status },
+		{
+			label: t('分类'),
+			prop: "category",
+			minWidth: 120,
+			dict: dict.get('category')
+		},
+		{
+			label: t('季节'),
+			prop: "season",
+			minWidth: 120,
+			dict: dict.get('season')
+		},
+		{ label: t('点赞数'), prop: "likeCount", minWidth: 140, sortable: "custom" },
+		{ label: t('收藏数'), prop: "collectCount", minWidth: 140, sortable: "custom" },
+		{ label: t('作者ID'), prop: "authorId", minWidth: 140, sortable: "custom" },
 		{
 			label: t('创建时间'),
 			prop: "createTime",

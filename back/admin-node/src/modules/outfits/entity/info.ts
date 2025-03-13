@@ -4,7 +4,7 @@ import { Column, Entity, Index } from 'typeorm';
 /**
  * 商品模块-商品信息
  */
-@Entity('demo_goods')
+@Entity('outfits')
 export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '封面图', nullable: true })
   coverImage: string;
@@ -18,13 +18,16 @@ export class OutfitsInfoEntity extends BaseEntity {
 
   @Column({ comment: '正文', nullable: true })
   content: string;
+  @Column({ comment: '分类', dict: 'category', default: 0 })
+  category: number;
 
-  @Column({ comment: '相关推荐', type: 'simple-array', nullable: true })
-  relatedRecommendations: number[];
+  @Column({ comment: '季节', dict: 'season', default: 0 })
+  season: number;
 
   @Column({ comment: '浏览量', default: 0 })
   viewNmber: number;
 
-  @Column({ comment: '状态', dict: ['待审核', '已发布', '已下架'], default: 0 })
-  status: number;
+  @Index()
+  @Column({ comment: '作者ID' })
+  authorId: number;
 }

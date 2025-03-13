@@ -1,10 +1,12 @@
 import { Inject } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { OutfitsInfoEntity } from '../../entity/info';
+import { BaseSysUserEntity } from '../../../base/entity/sys/user';
 import { OutfitsInfoService } from '../../service/info';
+import { DictTypeEntity } from '../../../dict/entity/type';
 
 /**
- * 穿搭信息
+ * 穿搭文章
  */
 @CoolController({
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
@@ -12,32 +14,36 @@ import { OutfitsInfoService } from '../../service/info';
   service: OutfitsInfoService,
   pageQueryOp: {
     keyWordLikeFields: ['a.title'],
-    fieldEq: ['a.status'],
-    where: async ctx => {
-      const { popularityStart, popularityEnd } = ctx.request.body;
-      const where = [];
-      if (popularityStart !== undefined) {
-        where.push(['a.popularity >= :popularityStart', { popularityStart }]);
-      }
-      if (popularityEnd !== undefined) {
-        where.push(['a.popularity <= :popularityEnd', { popularityEnd }]);
-      }
-      return where;
-    },
+    fieldEq: ['a.category', 'a.season'],
     join: [
       {
-        entity: OutfitsInfoEntity,
+        entity: BaseSysUserEntity,
         alias: 'b',
-        condition: 'FIND_IN_SET(b.id, a.relatedRecommendations)',
+        condition: 'a.authorId = b.id',
+        type: 'leftJoin',
+      },
+      {
+        entity: DictTypeEntity,
+        alias: 'c',
+        condition: 'a.category = c.id',
+        type: 'leftJoin',
+      },
+      {
+        entity: DictTypeEntity,
+        alias: 'd',
+        condition: 'a.season = d.id',
         type: 'leftJoin',
       },
     ],
     select: [
       'a.*',
+      'b.nickName as authorName',
+      'c.label as categoryName',
+      'd.label as seasonName',
     ],
   },
 })
-export class AdminOutfitsInfoController extends BaseController {
+export class AdminOutfitsArticleController extends BaseController {
   @Inject()
-  outfitsInfoService: OutfitsInfoService;
+  outfitsArticleService: OutfitsInfoService;
 }
