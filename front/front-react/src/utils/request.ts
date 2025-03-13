@@ -14,7 +14,7 @@ instance.interceptors.request.use(
     // 从localStorage获取token
     const token = localStorage.getItem('token')
     if (token) {
-      config.headers['Authorization'] = `${token}`
+      config.headers['Authorization'] = `Bearer ${token}`
     }
     return config
   },
@@ -28,7 +28,7 @@ instance.interceptors.response.use(
   (response) => {
     const { data } = response
     // 根据后端接口规范判断请求是否成功
-    if (data.code === 1000) {
+    if (data.code === 200) {
       return data.data
     }
     // 如果不成功，统一抛出错误
@@ -36,26 +36,27 @@ instance.interceptors.response.use(
   },
   (error: AxiosError) => {
     if (error.response) {
-      switch (error.response.status) {
-        case 401:
-          // 未登录或token过期
-          localStorage.removeItem('token')
-          window.location.href = '/login'
-          break
-        case 403:
-          // 没有权限
-          window.location.href = '/403'
-          break
-        case 404:
-          // 请求不存在
-          window.location.href = '/404'
-          break
-        case 500:
-          // 服务器错误
-          window.location.href = '/500'
-          break
-        default:
-          console.error(`请求错误 ${error.response.status}: ${error.message}`)
+      const status = error.response.status
+      // 如果当前不在错误页面，则跳转
+      if (!window.location.pathname.match(/^\/[45]\d{2}$/)) {
+        switch (status) {
+          case 401:
+            // 未登录或token过期
+            localStorage.removeItem('token')
+            window.location.href = '/401'
+            break
+          case 403:
+            window.location.href = '/403'
+            break
+          case 404:
+            window.location.href = '/404'
+            break
+          case 500:
+            window.location.href = '/500'
+            break
+          default:
+            console.error(`请求错误 ${status}: ${error.message}`)
+        }
       }
     } else {
       // 请求超时或者网络错误

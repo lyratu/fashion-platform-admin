@@ -17,6 +17,7 @@ import Product from '@/pages/Shop/Product'
 import Wardrobe from '@/pages/Wardrobe/Wardrobe'
 import OutfitDetail from '@/pages/Outfits/OutfitDetail'
 import Register from '@/pages/Register'
+import ErrorPage from '@/pages/Error'
 import Navbar from './Navbar'
 import '../global.css' // 引入全局样式
 import { setupGuard } from '../router/guard'
@@ -33,8 +34,8 @@ function AppContent() {
   }, [navigate])
 
   // 定义不需要显示导航栏的路由
-  const noNavbarRoutes = ['/login', '/register']
-  const shouldShowNavbar = !noNavbarRoutes.includes(location.pathname)
+  const noNavbarRoutes = ['/login', '/register', '/401', '/403', '/404', '/500']
+  const shouldShowNavbar = !noNavbarRoutes.some(route => location.pathname.startsWith(route))
 
   return (
     <>
@@ -52,6 +53,7 @@ function AppContent() {
         <Route path="/community/:id" element={<Detail />} />
         <Route path="/shop/:id" element={<Product />} />
         <Route path="/outfits/:id" element={<OutfitDetail />} />
+        <Route path="/:code" element={<ErrorPage />} />
       </Routes>
     </>
   )
