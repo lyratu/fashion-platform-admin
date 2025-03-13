@@ -1,11 +1,4 @@
 import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios'
-import { NavigateFunction } from 'react-router-dom'
-
-let navigate: NavigateFunction | null = null
-
-export const setNavigate = (nav: NavigateFunction) => {
-  navigate = nav
-}
 
 // 创建axios实例
 const instance = axios.create({
@@ -50,24 +43,16 @@ instance.interceptors.response.use(
           case 401:
             // 未登录或token过期
             localStorage.removeItem('token')
-            if (navigate) {
-              navigate('/401')
-            }
+            window.location.href = '/401'
             break
           case 403:
-            if (navigate) {
-              navigate('/403')
-            }
+            window.location.href = '/403'
             break
           case 404:
-            if (navigate) {
-              navigate('/404')
-            }
+            window.location.href = '/404'
             break
           case 500:
-            if (navigate) {
-              navigate('/500')
-            }
+            window.location.href = '/500'
             break
           default:
             console.error(`请求错误 ${status}: ${error.message}`)
