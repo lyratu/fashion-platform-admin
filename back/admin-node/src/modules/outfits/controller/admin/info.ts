@@ -38,8 +38,8 @@ import { DictTypeEntity } from '../../../dict/entity/type';
     select: [
       'a.*',
       'b.nickName as authorName',
-      'c.label as categoryName',
-      'd.label as seasonName',
+      'c.name as categoryName',
+      'd.name as seasonName',
     ],
   },
 })

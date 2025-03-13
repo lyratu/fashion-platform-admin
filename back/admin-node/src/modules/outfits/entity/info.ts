@@ -27,6 +27,12 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '浏览量', default: 0 })
   viewNmber: number;
 
+  @Column({ comment: '点赞数', default: 0 })
+  likeCount: number;
+
+  @Column({ comment: '收藏数', default: 0 })
+  collectCount: number;
+
   @Index()
   @Column({ comment: '作者ID' })
   authorId: number;

@@ -48,7 +48,7 @@ const Upsert = useUpsert({
 	items: [
 		{
 			label: t('穿搭标题'),
-			prop: "articleTitle",
+			prop: "title",
 			component: { name: "el-input", props: { clearable: true } },
 			span: 12,
 			required: true
@@ -72,22 +72,6 @@ const Upsert = useUpsert({
 			required: true
 		},
 		{
-			label: t('点赞数'),
-			prop: "likeCount",
-			hook: "number",
-			component: { name: "el-input-number", props: { min: 0 } },
-			span: 12,
-			required: true
-		},
-		{
-			label: t('收藏数'),
-			prop: "collectCount",
-			hook: "number",
-			component: { name: "el-input-number", props: { min: 0 } },
-			span: 12,
-			required: true
-		},
-		{
 			label: t('选择作者'),
 			prop: "authorId",
 			hook: "number",
@@ -102,8 +86,7 @@ const Upsert = useUpsert({
 const Table = useTable({
 	columns: [
 		{ type: "selection" },
-		{ label: t('昵称'), prop: "authorName", minWidth: 140 },
-		{ label: t('穿搭标题'), prop: "articleTitle", minWidth: 140 },
+		{ label: t('标题'), prop: "title", minWidth: 140 },
 		{
 			label: t('封面图'),
 			prop: "coverImage",
