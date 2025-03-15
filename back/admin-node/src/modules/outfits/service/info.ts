@@ -18,6 +18,6 @@ export class OutfitsInfoService extends BaseService {
    * @returns
    */
   async list() {
-    return this.outfitsInfoEntity.createQueryBuilder("a").select(["a.*"]).getMany();
+    return this.outfitsInfoEntity.createQueryBuilder().getMany();
   }
 }
