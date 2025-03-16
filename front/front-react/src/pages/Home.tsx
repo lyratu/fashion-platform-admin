@@ -124,7 +124,7 @@ function Home() {
           {featuredOutfits.map((outfit) => (
             <div
               key={outfit.id}
-              className="card bg-base-100 cursor-pointer shadow-md"
+              className="card cursor-pointer card-xs shadow-sm"
               onClick={() =>
                 navigate(`/outfits/${outfit.id}`)
               }
@@ -158,7 +158,7 @@ function Home() {
         <h2 className="mb-4 mt-8 text-2xl font-bold">热销商品</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {hotProducts.map((product) => (
-            <div key={product.id} className="card bg-base-100 shadow-md">
+            <div key={product.id} className="card card-xs shadow-sm">
               <figure>
                 <img src={product.image} alt={product.title} />
               </figure>

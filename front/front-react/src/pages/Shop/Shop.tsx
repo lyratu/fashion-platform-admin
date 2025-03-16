@@ -103,7 +103,7 @@ const Shop: React.FC = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="card shadow-lg bg-white cursor-pointer"
+            className="card card-xs shadow-sm cursor-pointer"
             onClick={() => handleProductClick(product.id)}
           >
             <figure>

@@ -1,0 +1,55 @@
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.card {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f2f6fc;
+  background-color: #ffffff;
+  color: #303133;
+  user-select: none;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    min-height: 50px;
+
+    .label {
+      font-size: 15px;
+    }
+
+    .icon {
+      font-size: 30px;
+      background-color: #262727;
+      padding: 5px;
+      border-radius: 6px;
+    }
+  }
+
+  &__container {
+    padding: 0 20px;
+    min-height: 50px;
+
+    .num {
+      font-size: 32px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 12px;
+
+    .label {
+      margin-right: 10px;
+    }
+  }
+}

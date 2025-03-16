@@ -1,45 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { outfitsApi } from '@/api/outfits'
+import { Outfit, OutfitDisplay } from '@/types/outfit'
 
 const Outfits: React.FC = () => {
-  const outfits = [
-    {
-      id: 1,
-      image: 'https://picsum.photos/seed/outfit1/400/300',
-      title: '春季休闲搭配指南',
-      description: '轻松驾驭春季休闲风，打造清新自然的个人风格',
-      author: {
-        name: '时尚达人',
-        avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=John'
-      },
-      publishDate: '2024-03-20',
-      views: 1234
-    },
-    {
-      id: 2,
-      image: 'https://picsum.photos/seed/outfit2/400/300',
-      title: '职场穿搭技巧',
-      description: '专业大方的职场着装，提升个人魅力',
-      author: {
-        name: '造型师Lucy',
-        avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Lucy'
-      },
-      publishDate: '2024-03-20',
-      views: 5678
-    },
-    {
-      id: 3,
-      image: 'https://picsum.photos/seed/outfit3/400/300',
-      title: '约会穿搭推荐',
-      description: '甜美可爱的约会装扮，展现最佳状态',
-      author: {
-        name: '搭配专家',
-        avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Emma'
-      },
-      publishDate: '2024-03-20',
-      views: 91011
+  const [list, setList] = useState<OutfitDisplay[]>([])
+
+  const getList = async () => {
+    try {
+      const data = await outfitsApi.getOutfitsList()
+      // 这里我们需要转换API返回的数据格式以匹配显示需求
+      const displayData: OutfitDisplay[] = (data.list as Outfit[]).map(item => ({
+        ...item,
+        image: item.coverImage,
+        views: item.viewNmber,
+        publishDate: item.createTime.split(' ')[0],
+        author: {
+          name: `用户${item.authorId}`,  // 这里可能需要根据实际情况获取用户信息
+          avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${item.authorId}`
+        }
+      }))
+      setList(displayData)
+    } catch (error) {
+      console.error('获取搭配列表失败:', error)
     }
-  ]
+  }
+  useEffect(() => {
+    getList()
+  }, [])
 
   return (
     <div className="container mx-auto p-4">
@@ -66,20 +54,24 @@ const Outfits: React.FC = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {outfits.map((outfit) => (
+        {list.map((outfit) => (
           <Link
             to={`/outfits/${outfit.id}`}
             key={outfit.id}
-            className="card bg-base-100 cursor-pointer shadow-md"
+            className="card card-xs shadow-sm cursor-pointer "
           >
-            <figure className="relative">
-              <img src={outfit.image} alt={outfit.title} />
+            <figure className="relative aspect-[1/1] w-full overflow-hidden">
+              <img
+                src={outfit.image}
+                alt={outfit.title}
+                className="h-full w-full object-cover object-top"
+              />
               <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 p-2 text-sm text-white">
                 浏览次数: {outfit.views}
               </div>
             </figure>
             <div className="card-body">
-              <h2 className="card-title truncate">{outfit.title}</h2>
+              <h1 className="card-title truncate text-lg">{outfit.title}</h1>
               <p className="line-clamp-2">{outfit.description}</p>
               <div className="card-actions mt-4 items-center justify-between">
                 <div className=" flex items-center">

@@ -1,33 +1,33 @@
 <template>
 	<el-scrollbar>
 		<div class="demo-home">
-			<el-row :gutter="10">
-				<el-col :lg="6" :md="12" :xs="24">
-					<count-user />
-				</el-col>
-				<el-col :lg="6" :md="12" :xs="24">
-					<count-views />
-				</el-col>
-				<el-col :lg="6" :md="12" :xs="24">
-					<count-paid />
-				</el-col>
-				<el-col :lg="6" :md="12" :xs="24">
-					<count-effect />
-				</el-col>
-			</el-row>
 
 			<el-row :gutter="10">
-				<el-col :lg="24" :xs="24">
-					<tab-chart />
-				</el-col>
-			</el-row>
-
-			<el-row :gutter="10">
-				<el-col :lg="14" :sm="24">
-					<hot-goods />
-				</el-col>
 				<el-col :lg="10" :sm="24">
-					<category-ratio />
+					<div class="card h-[400px]">
+						<div class="card__header border-b border-gray-100">
+							<h2 class="text-lg font-bold">系统公告</h2>
+						</div>
+						<pre class=" p-4">本系统架构为：
+- 客户端：React
+- 管理员端：Vue + Node(Midway.js)
+- 数据库：Mysql
+
+接口层：
+- 管理员端：/admin
+- 客户端：/app
+						</pre>
+					</div>
+				</el-col>
+				<el-col :lg="14" :sm="24">
+					<div class="card h-[400px]">
+						<div class="card__header border-b border-gray-100">
+							<h2 class="text-lg font-bold">首页轮播图设置</h2>
+						</div>
+						<div class="p-4">
+							<cl-upload v-model="bannerList" multiple :limit="3" list-type="picture-card"></cl-upload>
+						</div>
+					</div>
 				</el-col>
 			</el-row>
 		</div>
@@ -35,17 +35,11 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue';
+const bannerList = ref(['https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp', 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp', 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp'])
 defineOptions({
 	name: 'home'
 });
-
-import CategoryRatio from './components/category-ratio.vue';
-import CountUser from './components/count-user.vue';
-import CountViews from './components/count-views.vue';
-import CountPaid from './components/count-paid.vue';
-import CountEffect from './components/count-effect.vue';
-import TabChart from './components/tab-chart.vue';
-import HotGoods from './components/hot-goods.vue';
 </script>
 
 <style lang="scss">

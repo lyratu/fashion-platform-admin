@@ -18,7 +18,7 @@ import Wardrobe from '@/pages/Wardrobe/Wardrobe'
 import OutfitDetail from '@/pages/Outfits/OutfitDetail'
 import Register from '@/pages/Register'
 import Navbar from './Navbar'
-import '../global.css' // 引入全局样式
+import '../global.scss' // 引入全局样式
 import { setupGuard } from '../router/guard'
 import { useEffect } from 'react'
 
