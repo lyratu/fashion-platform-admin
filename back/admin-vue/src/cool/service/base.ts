@@ -83,6 +83,4 @@ export class BaseService {
 			data
 		});
 	}
-
-	// 获取
 }

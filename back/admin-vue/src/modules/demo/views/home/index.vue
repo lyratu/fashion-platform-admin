@@ -2,7 +2,7 @@
 	<el-scrollbar>
 		<div class="demo-home">
 			<!-- 欢迎区域 -->
-			<div class="welcome-section mb-6">
+			<div class="welcome-section mb-4">
 				<div class="welcome-content">
 					<div class="welcome-text">
 						<h1 class="text-2xl font-bold mb-2">欢迎回来，管理员</h1>
@@ -37,22 +37,13 @@
 					<div class="card h-auto">
 						<div class="card__header border-b border-gray-100">
 							<h2 class="text-lg font-bold">首页轮播图设置</h2>
-							<el-button type="primary" @click="handleSave">保存设置</el-button>
+							<el-button type="primary" @click="handleSave">添加</el-button>
 						</div>
 						<div class="p-4">
 							<div class="mb-4">
-								<el-alert title="提示：最多可上传3张轮播图，建议尺寸比例为2:1" type="info" :closable="false" show-icon />
+								<el-alert title="建议图片尺寸比例为2:1，最多支持三张轮播图" type="info" :closable="false" show-icon />
 							</div>
-							<el-upload v-model:file-list="fileList" action="/upload" list-type="picture-card" :limit="3"
-								:on-preview="handlePictureCardPreview" :on-remove="handleRemove"
-								:before-upload="beforeUpload" multiple class="banner-uploader">
-								<el-icon>
-									<plus />
-								</el-icon>
-							</el-upload>
-							<el-dialog v-model="dialogVisible" title="预览" width="800px">
-								<img w-full :src="dialogImageUrl" alt="Preview Image" />
-							</el-dialog>
+							<cl-upload v-model="bannerForm.url" />
 						</div>
 						<div class="p-4 border-t border-gray-100">
 							<h2 class="text-md font-bold mb-4">轮播标题&描述</h2>
@@ -64,7 +55,8 @@
 								</div>
 								<div>
 									<el-form-item label="轮播描述">
-										<el-input v-model="bannerForm.description" type="textarea" :rows="3" placeholder="请输入轮播图描述" />
+										<el-input v-model="bannerForm.description" type="textarea" :rows="3"
+											placeholder="请输入轮播图描述" />
 									</el-form-item>
 								</div>
 							</div>
@@ -77,9 +69,9 @@
 							<h2 class="text-lg font-bold">轮播图预览</h2>
 						</div>
 						<div class="p-4">
-							<el-carousel height="300px" :interval="4000" type="card" v-if="fileList.length > 0">
+							<el-carousel  height="260px" :interval="4000" v-if="fileList.length > 0">
 								<el-carousel-item v-for="(item, index) in fileList" :key="index">
-									<img :src="item.url" class="w-full h-full object-cover" />
+									<img :src="item.url" class="w-full aspect-[2/1] object-cover" />
 									<div class="carousel-content">
 										<h3 class="text-xl font-bold">{{ bannerForm.title }}</h3>
 										<p class="text-sm">{{ bannerForm.description }}</p>
@@ -97,9 +89,11 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { Plus as plus, Monitor as monitor } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
+import { useCool } from "/@/cool";
+const { service } = useCool();
 
 interface UploadFile {
 	name: string
@@ -110,6 +104,7 @@ interface UploadFile {
 interface BannerForm {
 	title: string
 	description: string
+	url: string
 }
 
 const currentDate = ref('')
@@ -120,7 +115,8 @@ const deviceInfo = ref('')
 
 const bannerForm = ref<BannerForm>({
 	title: '',
-	description: ''
+	description: '',
+	url: ''
 })
 
 const getDeviceInfo = () => {
@@ -178,46 +174,7 @@ onMounted(() => {
 	getDeviceInfo()
 })
 
-const fileList = ref<UploadFile[]>([
-	{
-		name: 'banner2',
-		url: 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp'
-	},
-	{
-		name: 'banner3',
-		url: 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp'
-	}
-])
-
-const dialogImageUrl = ref('')
-const dialogVisible = ref(false)
-
-const handlePictureCardPreview = (file: UploadFile) => {
-	dialogImageUrl.value = file.url
-	dialogVisible.value = true
-}
-
-const handleRemove = (file: UploadFile) => {
-	const index = fileList.value.indexOf(file)
-	if (index !== -1) {
-		fileList.value.splice(index, 1)
-	}
-}
-
-const beforeUpload = (file: File) => {
-	const isImage = file.type.startsWith('image/')
-	const isLt2M = file.size / 1024 / 1024 < 2
-
-	if (!isImage) {
-		ElMessage.error('只能上传图片文件!')
-		return false
-	}
-	if (!isLt2M) {
-		ElMessage.error('图片大小不能超过 2MB!')
-		return false
-	}
-	return true
-}
+const fileList = ref<BannerForm[]>([])
 
 const handleSave = async () => {
 	try {
@@ -225,9 +182,18 @@ const handleSave = async () => {
 		// 1. 上传图片
 		// 2. 保存轮播图信息
 		// 3. 更新轮播图配置
-		ElMessage.success('保存成功')
+		console.log(bannerForm.value)
+		const { url, title, description } = bannerForm.value
+		if (!url) return ElMessage({ message: '图片不能为空', type: 'warning' })
+		service.home.info.add({ title, CarouselImg: url, description })
+		ElMessage.success('添加成功')
+		fileList.value.push({
+			title, url, description
+		})
+		console.log(fileList.value)
+		bannerForm.value.url = ''
 	} catch (error) {
-		ElMessage.error('保存失败')
+		ElMessage.error('添加失败')
 	}
 }
 
@@ -334,7 +300,6 @@ defineOptions({
 	.el-carousel__item {
 		border-radius: 6px;
 		overflow: hidden;
-		position: relative;
 
 		.carousel-content {
 			position: absolute;
