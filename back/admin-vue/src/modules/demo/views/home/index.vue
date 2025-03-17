@@ -1,32 +1,94 @@
 <template>
 	<el-scrollbar>
 		<div class="demo-home">
+			<!-- 欢迎区域 -->
+			<div class="welcome-section mb-6">
+				<div class="welcome-content">
+					<div class="welcome-text">
+						<h1 class="text-2xl font-bold mb-2">欢迎回来，管理员</h1>
+						<p class="text-gray-500">今天是 {{ currentDate }}，{{ currentTime }}</p>
+					</div>
+					<div class="welcome-stats">
+						<div class="stat-item">
+							<el-icon class="text-orange-500">
+								<monitor />
+							</el-icon>
+							<span>登录设备：{{ deviceInfo }}</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<el-row :gutter="10">
-				<el-col :lg="10" :sm="24">
-					<div class="card h-[400px]">
+			<el-row :gutter="20">
+				<!-- <div class="card h-[400px]">
 						<div class="card__header border-b border-gray-100">
 							<h2 class="text-lg font-bold">系统公告</h2>
 						</div>
-						<pre class=" p-4">本系统架构为：
+						<pre class="p-4">本系统架构为：
 - 客户端：React
 - 管理员端：Vue + Node(Midway.js)
 - 数据库：Mysql
 
 接口层：
 - 管理员端：/admin
-- 客户端：/app
-						</pre>
-					</div>
-				</el-col>
-				<el-col :lg="14" :sm="24">
-					<div class="card h-[400px]">
+- 客户端：/app</pre>
+					</div> -->
+				<el-col :lg="12" :sm="24">
+					<div class="card h-auto">
 						<div class="card__header border-b border-gray-100">
 							<h2 class="text-lg font-bold">首页轮播图设置</h2>
+							<el-button type="primary" @click="handleSave">保存设置</el-button>
 						</div>
 						<div class="p-4">
-							<cl-upload v-model="bannerList" multiple :limit="3" list-type="picture-card"></cl-upload>
+							<div class="mb-4">
+								<el-alert title="提示：最多可上传3张轮播图，建议尺寸比例为2:1" type="info" :closable="false" show-icon />
+							</div>
+							<el-upload v-model:file-list="fileList" action="/upload" list-type="picture-card" :limit="3"
+								:on-preview="handlePictureCardPreview" :on-remove="handleRemove"
+								:before-upload="beforeUpload" multiple class="banner-uploader">
+								<el-icon>
+									<plus />
+								</el-icon>
+							</el-upload>
+							<el-dialog v-model="dialogVisible" title="预览" width="800px">
+								<img w-full :src="dialogImageUrl" alt="Preview Image" />
+							</el-dialog>
 						</div>
+						<div class="p-4 border-t border-gray-100">
+							<h2 class="text-md font-bold mb-4">轮播标题&描述</h2>
+							<div class="space-y-4">
+								<div>
+									<el-form-item label="轮播标题">
+										<el-input v-model="bannerForm.title" placeholder="请输入轮播图标题" />
+									</el-form-item>
+								</div>
+								<div>
+									<el-form-item label="轮播描述">
+										<el-input v-model="bannerForm.description" type="textarea" :rows="3" placeholder="请输入轮播图描述" />
+									</el-form-item>
+								</div>
+							</div>
+						</div>
+					</div>
+				</el-col>
+				<el-col :lg="12" :sm="24">
+					<div class="card">
+						<div class="card__header border-b border-gray-100">
+							<h2 class="text-lg font-bold">轮播图预览</h2>
+						</div>
+						<div class="p-4">
+							<el-carousel height="300px" :interval="4000" type="card" v-if="fileList.length > 0">
+								<el-carousel-item v-for="(item, index) in fileList" :key="index">
+									<img :src="item.url" class="w-full h-full object-cover" />
+									<div class="carousel-content">
+										<h3 class="text-xl font-bold">{{ bannerForm.title }}</h3>
+										<p class="text-sm">{{ bannerForm.description }}</p>
+									</div>
+								</el-carousel-item>
+							</el-carousel>
+							<el-empty v-else description="暂无轮播图" />
+						</div>
+
 					</div>
 				</el-col>
 			</el-row>
@@ -35,64 +97,261 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-const bannerList = ref(['https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp', 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp', 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp'])
+import { ref, onMounted, onUnmounted } from 'vue'
+import { Plus as plus, Monitor as monitor } from '@element-plus/icons-vue'
+import { ElMessage } from 'element-plus'
+
+interface UploadFile {
+	name: string
+	url: string
+	status?: string
+}
+
+interface BannerForm {
+	title: string
+	description: string
+}
+
+const currentDate = ref('')
+const currentTime = ref('')
+
+// 获取设备信息
+const deviceInfo = ref('')
+
+const bannerForm = ref<BannerForm>({
+	title: '',
+	description: ''
+})
+
+const getDeviceInfo = () => {
+	const userAgent = navigator.userAgent
+	const browser = {
+		chrome: /chrome/i.test(userAgent),
+		firefox: /firefox/i.test(userAgent),
+		safari: /safari/i.test(userAgent),
+		edge: /edge/i.test(userAgent)
+	}
+
+	let browserName = ''
+	if (browser.chrome) browserName = 'Chrome'
+	else if (browser.firefox) browserName = 'Firefox'
+	else if (browser.safari) browserName = 'Safari'
+	else if (browser.edge) browserName = 'Edge'
+	else browserName = '未知浏览器'
+
+	const os = {
+		windows: /windows/i.test(userAgent),
+		mac: /macintosh/i.test(userAgent),
+		linux: /linux/i.test(userAgent),
+		android: /android/i.test(userAgent),
+		ios: /iphone|ipad|ipod/i.test(userAgent)
+	}
+
+	let osName = ''
+	if (os.windows) osName = 'Windows'
+	else if (os.mac) osName = 'MacOS'
+	else if (os.linux) osName = 'Linux'
+	else if (os.android) osName = 'Android'
+	else if (os.ios) osName = 'iOS'
+	else osName = '未知系统'
+
+	deviceInfo.value = `${browserName} ${osName}`
+}
+
+const updateDateTime = () => {
+	const now = new Date()
+	currentDate.value = now.toLocaleDateString('zh-CN', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+		weekday: 'long'
+	})
+	currentTime.value = now.toLocaleTimeString('zh-CN', {
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit'
+	})
+}
+
+onMounted(() => {
+	updateDateTime()
+	getDeviceInfo()
+})
+
+const fileList = ref<UploadFile[]>([
+	{
+		name: 'banner2',
+		url: 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp'
+	},
+	{
+		name: 'banner3',
+		url: 'https://img.alicdn.com/imgextra/i4/1019175552/O1CN01Avxvsb1qsrq6XvJVC_!!1019175552.jpg_.webp'
+	}
+])
+
+const dialogImageUrl = ref('')
+const dialogVisible = ref(false)
+
+const handlePictureCardPreview = (file: UploadFile) => {
+	dialogImageUrl.value = file.url
+	dialogVisible.value = true
+}
+
+const handleRemove = (file: UploadFile) => {
+	const index = fileList.value.indexOf(file)
+	if (index !== -1) {
+		fileList.value.splice(index, 1)
+	}
+}
+
+const beforeUpload = (file: File) => {
+	const isImage = file.type.startsWith('image/')
+	const isLt2M = file.size / 1024 / 1024 < 2
+
+	if (!isImage) {
+		ElMessage.error('只能上传图片文件!')
+		return false
+	}
+	if (!isLt2M) {
+		ElMessage.error('图片大小不能超过 2MB!')
+		return false
+	}
+	return true
+}
+
+const handleSave = async () => {
+	try {
+		// TODO: 实现保存逻辑
+		// 1. 上传图片
+		// 2. 保存轮播图信息
+		// 3. 更新轮播图配置
+		ElMessage.success('保存成功')
+	} catch (error) {
+		ElMessage.error('保存失败')
+	}
+}
+
 defineOptions({
 	name: 'home'
-});
+})
 </script>
 
 <style lang="scss">
 .demo-home {
 	overflow-x: hidden;
 
+	.welcome-section {
+		background: linear-gradient(135deg, #1890ff 0%, #36cfc9 100%);
+		border-radius: 12px;
+		padding: 24px;
+		color: white;
+		box-shadow: 0 4px 12px rgba(24, 144, 255, 0.2);
+
+		.welcome-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+
+			.welcome-text {
+				h1 {
+					color: white;
+					margin-bottom: 8px;
+				}
+
+				p {
+					color: rgba(255, 255, 255, 0.8);
+					font-size: 14px;
+				}
+			}
+
+			.welcome-stats {
+				display: flex;
+				gap: 24px;
+				flex-wrap: wrap;
+
+				.stat-item {
+					display: flex;
+					align-items: center;
+					gap: 8px;
+					background: rgba(255, 255, 255, 0.1);
+					padding: 8px 16px;
+					border-radius: 6px;
+					backdrop-filter: blur(4px);
+
+					.el-icon {
+						font-size: 18px;
+					}
+
+					span {
+						font-size: 14px;
+						color: rgba(255, 255, 255, 0.9);
+					}
+				}
+			}
+		}
+	}
+
 	.card {
 		border-radius: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		border: 1px solid var(--el-border-color-extra-light);
 		background-color: var(--el-bg-color);
 		color: var(--el-text-color-primary);
-		user-select: none;
+		transition: all 0.3s ease;
+
+		&:hover {
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		}
 
 		&__header {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding: 10px 20px;
+			padding: 16px 20px;
 			min-height: 50px;
 
-			.label {
-				font-size: 15px;
-			}
-
-			.icon {
-				font-size: 30px;
-				background-color: var(--el-fill-color-light);
-				padding: 5px;
-				border-radius: 6px;
+			h2 {
+				margin: 0;
 			}
 		}
+	}
 
-		&__container {
-			padding: 0 20px;
-			min-height: 50px;
-
-			.num {
-				font-size: 32px;
-			}
+	.banner-uploader {
+		:deep(.el-upload--picture-card) {
+			width: 200px;
+			height: 100px;
+			line-height: 100px;
 		}
 
-		&__footer {
-			display: flex;
-			align-items: center;
-			height: 50px;
-			margin: 0 5px;
-			padding: 0 15px;
-			box-sizing: border-box;
-			font-size: 12px;
+		:deep(.el-upload-list--picture-card .el-upload-list__item) {
+			width: 200px;
+			height: 100px;
+		}
+	}
 
-			.label {
-				margin-right: 10px;
+	.el-carousel__item {
+		border-radius: 6px;
+		overflow: hidden;
+		position: relative;
+
+		.carousel-content {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 20px;
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+			color: white;
+
+			h3 {
+				margin: 0 0 8px 0;
+			}
+
+			p {
+				margin: 0;
+				opacity: 0.9;
 			}
 		}
 	}
