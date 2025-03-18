@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { useNavigate } from 'react-router-dom'
-import { homeApi } from "@/api/home"
+import { homeApi } from '@/api/home'
 
 function Home() {
   const navigate = useNavigate()
@@ -80,23 +80,27 @@ function Home() {
   }, [])
   return (
     <div>
-      <div className='container mx-auto p-4'>
-        <div className="carousel rounded-box mb-8 w-full" >
-          <Swiper pagination={{
-            dynamicBullets: true,
-          }}
+      <div className="container mx-auto p-4">
+        <div className="carousel rounded-box mb-8 w-full">
+          <Swiper
+            pagination={{
+              dynamicBullets: true
+            }}
             navigation={true}
+            autoplay={true}
             modules={[Pagination, Navigation, Autoplay]}
           >
             {carousels.map((item: any, index) => (
-              <SwiperSlide key={item.id} >
+              <SwiperSlide key={item.id}>
                 <img
                   src={item.CarouselImg}
-                  className="h-[420px] w-full aspect-[2/1] object-cover cursor-pointer"
-                  alt="Carousel 1"
+                  className="w-full aspect-[2/1] object-cover cursor-pointer"
+                  alt="网络错误，未获取到图片"
                 />
                 <div className="carousel-content">
-                  <h1 className="text-2xl font-bold cursor-pointer mb-2">{item.title}</h1>
+                  <h1 className="text-2xl font-bold cursor-pointer mb-2">
+                    {item.title}
+                  </h1>
                   <p className="text-sm cursor-pointer">{item.description}</p>
                 </div>
               </SwiperSlide>

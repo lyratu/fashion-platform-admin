@@ -33,7 +33,7 @@ instance.interceptors.response.use(
     } else if (data.code === 1001) {
       toast.error(data.message)
       localStorage.removeItem('token')
-      window.location.href = '/'
+      window.location.href = '/login'
     }
     // 如果不成功，统一抛出错误
     return Promise.reject(new Error(data.message || '请求失败'))
