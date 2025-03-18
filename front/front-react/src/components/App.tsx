@@ -21,6 +21,10 @@ import Navbar from './Navbar'
 import '../global.scss' // 引入全局样式
 import { setupGuard } from '../router/guard'
 import { useEffect } from 'react'
+import 'daisyui/dist/full.css'
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 
 // 创建一个包装组件来使用useNavigate hook
 function AppContent() {

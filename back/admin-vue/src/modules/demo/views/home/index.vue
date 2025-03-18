@@ -6,7 +6,7 @@
 				<div class="welcome-content">
 					<div class="welcome-text">
 						<h1 class="text-2xl font-bold mb-2">欢迎回来，管理员</h1>
-						<p class="text-gray-500">今天是 {{ currentDate }}，{{ currentTime }}</p>
+						<p class="text-gray-500">今天是 {{ currentDate }}</p>
 					</div>
 					<div class="welcome-stats">
 						<div class="stat-item">
@@ -37,7 +37,13 @@
 					<div class="card h-auto">
 						<div class="card__header border-b border-gray-100">
 							<h2 class="text-lg font-bold">首页轮播图设置</h2>
-							<el-button type="primary" @click="handleSave">添加</el-button>
+							<div>
+								<el-button type="primary" @click="handleSave" v-show="!isEdit.status">添加</el-button>
+								<el-button type="danger" @click="handleCancel" v-show="isEdit.status">取消</el-button>
+
+								<el-button type="success" @click="handleChange" v-show="isEdit.status">修改</el-button>
+							</div>
+
 						</div>
 						<div class="p-4">
 							<div class="mb-4">
@@ -69,12 +75,13 @@
 							<h2 class="text-lg font-bold">轮播图预览</h2>
 						</div>
 						<div class="p-4">
-							<el-carousel  height="260px" :interval="4000" v-if="fileList.length > 0">
-								<el-carousel-item v-for="(item, index) in fileList" :key="index">
-									<img :src="item.url" class="w-full aspect-[2/1] object-cover" />
+							<el-carousel height="260px" :autoplay="false" v-if="fileList.length > 0">
+								<el-carousel-item @click="editItem(item)" v-for="(item, index) in fileList"
+									:key="index">
+									<img :src="item.url" class="w-auto aspect-[2/1] object-top cursor-pointer" />
 									<div class="carousel-content">
-										<h3 class="text-xl font-bold">{{ bannerForm.title }}</h3>
-										<p class="text-sm">{{ bannerForm.description }}</p>
+										<h3 class="text-xl font-bold cursor-pointer">{{ item.title }}</h3>
+										<p class="text-sm cursor-pointer">{{ item.description }}</p>
 									</div>
 								</el-carousel-item>
 							</el-carousel>
@@ -89,26 +96,22 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, toRefs } from 'vue'
 import { Plus as plus, Monitor as monitor } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { useCool } from "/@/cool";
 const { service } = useCool();
 
-interface UploadFile {
-	name: string
-	url: string
-	status?: string
-}
 
 interface BannerForm {
+	id: number,
 	title: string
 	description: string
 	url: string
 }
 
 const currentDate = ref('')
-const currentTime = ref('')
+const isEdit = ref({ status: false, item: null })
 
 // 获取设备信息
 const deviceInfo = ref('')
@@ -116,7 +119,8 @@ const deviceInfo = ref('')
 const bannerForm = ref<BannerForm>({
 	title: '',
 	description: '',
-	url: ''
+	url: '',
+	id: -1
 })
 
 const getDeviceInfo = () => {
@@ -162,39 +166,72 @@ const updateDateTime = () => {
 		day: 'numeric',
 		weekday: 'long'
 	})
-	currentTime.value = now.toLocaleTimeString('zh-CN', {
-		hour: '2-digit',
-		minute: '2-digit',
-		second: '2-digit'
+}
+
+const getInfo = async () => {
+	const data = await service.home.info.list()
+	const list: any = data.map((item) => {
+		return { url: item.CarouselImg, description: item.description, title: item.title, id: item.id }
 	})
+	console.log("list", list)
+	fileList.value = list
+}
+const editItem = (item) => {
+	bannerForm.value = { ...item }
+	console.log('[ item ] >', item)
+	isEdit.value = { status: true, item }
 }
 
 onMounted(() => {
+	getInfo()
 	updateDateTime()
 	getDeviceInfo()
+
 })
 
 const fileList = ref<BannerForm[]>([])
-
-const handleSave = async () => {
+const handleCancel = () => {
+	isEdit.value = { status: false, item: null }
+	bannerForm.value = { id: -1, title: '', description: '', url: '' }
+}
+const handleChange = async () => {
 	try {
-		// TODO: 实现保存逻辑
-		// 1. 上传图片
-		// 2. 保存轮播图信息
-		// 3. 更新轮播图配置
-		console.log(bannerForm.value)
+		const { url, id, title, description } = bannerForm.value
+		if (!url) return ElMessage({ message: '图片不能为空', type: 'warning' })
+		const data = await service.home.info.update({ title, CarouselImg: url, description, id });
+		console.log('[ data update] >', data)
+		ElMessage.success('修改成功～')
+		fileList.value = fileList.value.map(e => {
+			if (e.id === bannerForm.value.id)
+				e = { ...bannerForm.value }
+			return e
+		})
+		handleCancel()
+
+	} catch (err: any) {
+		ElMessage.error(err)
+	}
+
+}
+const handleSave = async () => {
+	// TODO: 实现保存逻辑
+	// 1. 上传图片
+	// 2. 保存轮播图信息
+	// 3. 更新轮播图配置
+	try {
 		const { url, title, description } = bannerForm.value
 		if (!url) return ElMessage({ message: '图片不能为空', type: 'warning' })
-		service.home.info.add({ title, CarouselImg: url, description })
+		const { id } = await service.home.info.add({ title, CarouselImg: url, description })
 		ElMessage.success('添加成功')
 		fileList.value.push({
-			title, url, description
+			title, url, description, id
 		})
-		console.log(fileList.value)
-		bannerForm.value.url = ''
-	} catch (error) {
-		ElMessage.error('添加失败')
+
+	} catch (err: any) {
+		ElMessage.error(err)
 	}
+	bannerForm.value = { url: '', title: '', description: '', id: -1 }
+
 }
 
 defineOptions({

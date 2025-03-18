@@ -53,3 +53,28 @@ body {
     }
   }
 }
+
+.carousel-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding:  60px ;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+
+  h3 {
+    margin: 0 0 8px 0;
+  }
+
+  p {
+    margin: 0;
+    opacity: 0.9;
+  }
+}
+.swiper-pagination-bullet{
+  background-color: #ffffff !important;
+}
+.swiper-button-prev,.swiper-button-next{
+  color: white !important;
+}

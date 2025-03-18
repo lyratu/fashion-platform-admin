@@ -1,6 +1,9 @@
-import React from 'react'
-import 'daisyui/dist/full.css'
-import {useNavigate} from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useNavigate } from 'react-router-dom'
+import { homeApi } from "@/api/home"
+
 function Home() {
   const navigate = useNavigate()
   // 精选穿搭数据
@@ -67,67 +70,59 @@ function Home() {
       price: 399
     }
   ]
-
+  const [carousels, setCarousels] = useState([])
+  const getInfo = async () => {
+    const data = await homeApi.getHomeInfo()
+    setCarousels(data)
+  }
+  useEffect(() => {
+    getInfo()
+  }, [])
   return (
     <div>
-      <div className="container mx-auto p-4">
-        <div className="carousel mb-8 w-full">
-          <div id="slide1" className="carousel-item relative w-full">
-            <img
-              src="https://picsum.photos/seed/carousel1/800/300"
-              className="w-full"
-              alt="Carousel 1"
-            />
-            <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
-              <a href="#slide3" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide2" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          <div id="slide2" className="carousel-item relative w-full">
-            <img
-              src="https://picsum.photos/seed/carousel2/800/300"
-              className="w-full"
-              alt="Carousel 2"
-            />
-            <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
-              <a href="#slide1" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide3" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          <div id="slide3" className="carousel-item relative w-full">
-            <img
-              src="https://picsum.photos/seed/carousel3/800/300"
-              className="w-full"
-              alt="Carousel 3"
-            />
-            <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
-              <a href="#slide2" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide1" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-        </div>
+      <div className='container mx-auto p-4'>
+        <div className="carousel rounded-box mb-8 w-full" >
+          <Swiper pagination={{
+            dynamicBullets: true,
+          }}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+          >
+            {carousels.map((item: any, index) => (
+              <SwiperSlide key={item.id} >
+                <img
+                  src={item.CarouselImg}
+                  className="h-[420px] w-full aspect-[2/1] object-cover cursor-pointer"
+                  alt="Carousel 1"
+                />
+                <div className="carousel-content">
+                  <h1 className="text-2xl font-bold cursor-pointer mb-2">{item.title}</h1>
+                  <p className="text-sm cursor-pointer">{item.description}</p>
+                </div>
+              </SwiperSlide>
+              // <div id={`slide${index}`} className="carousel-item relative w-full h-[460px]" key={item.id}>
 
+              //   <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
+              //     <a href={`#slide${index - 1}`} className="btn btn-circle">
+              //       ❮
+              //     </a>
+              //     <a href={`#slide${index + 1}`} className="btn btn-circle">
+              //       ❯
+              //     </a>
+              //   </div>
+              // </div>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+      <div className="container mx-auto p-4">
         <h2 className="mb-4 text-2xl font-bold">精选穿搭</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {featuredOutfits.map((outfit) => (
             <div
               key={outfit.id}
               className="card cursor-pointer card-xs shadow-sm"
-              onClick={() =>
-                navigate(`/outfits/${outfit.id}`)
-              }
+              onClick={() => navigate(`/outfits/${outfit.id}`)}
             >
               <figure>
                 <img src={outfit.image} alt={outfit.title} />
