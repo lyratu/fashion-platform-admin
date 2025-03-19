@@ -7,7 +7,7 @@ import { v1 as uuid } from 'uuid';
 import { CoolCommException } from '@cool-midway/core';
 import * as _ from 'lodash';
 import { pUploadPath } from '../../../../comm/path';
-
+import CosUtil from './upload_cos';
 /**
  * 文件上传
  */
@@ -80,6 +80,7 @@ export class CoolPlugin extends BasePluginHook implements BaseUpload {
    */
   async upload(ctx: any) {
     const { domain } = this.pluginInfo.config;
+    const uploadUtil = new CosUtil();
     try {
       const { key } = ctx.fields;
       if (
@@ -107,7 +108,13 @@ export class CoolPlugin extends BasePluginHook implements BaseUpload {
       }
       const data = fs.readFileSync(file.data);
       fs.writeFileSync(target, data);
-      return domain + '/upload/' + name;
+
+      const cosResult = await uploadUtil.putObject({
+        key: name,
+        buffer: data,
+      });
+
+      return `https://${cosResult.Location}`;
     } catch (err) {
       console.error(err);
       throw new CoolCommException('上传失败' + err.message);

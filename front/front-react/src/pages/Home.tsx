@@ -79,47 +79,35 @@ function Home() {
     getInfo()
   }, [])
   return (
-    <div>
-      <div className="container mx-auto p-4">
-        <div className="carousel rounded-box mb-8 w-full">
-          <Swiper
-            pagination={{
-              dynamicBullets: true
-            }}
-            navigation={true}
-            autoplay={true}
-            modules={[Pagination, Navigation, Autoplay]}
-          >
-            {carousels.map((item: any, index) => (
-              <SwiperSlide key={item.id}>
-                <img
-                  src={item.CarouselImg}
-                  className="w-full aspect-[2/1] object-cover cursor-pointer"
-                  alt="网络错误，未获取到图片"
-                />
-                <div className="carousel-content">
-                  <h1 className="text-2xl font-bold cursor-pointer mb-2">
-                    {item.title}
-                  </h1>
-                  <p className="text-sm cursor-pointer">{item.description}</p>
-                </div>
-              </SwiperSlide>
-              // <div id={`slide${index}`} className="carousel-item relative w-full h-[460px]" key={item.id}>
-
-              //   <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 justify-between">
-              //     <a href={`#slide${index - 1}`} className="btn btn-circle">
-              //       ❮
-              //     </a>
-              //     <a href={`#slide${index + 1}`} className="btn btn-circle">
-              //       ❯
-              //     </a>
-              //   </div>
-              // </div>
-            ))}
-          </Swiper>
-        </div>
+    <div className="container mx-auto py-4 px-16">
+      <div className="carousel rounded-box mb-8 w-full">
+        <Swiper
+          pagination={{
+            dynamicBullets: true
+          }}
+          loop={true}
+          navigation={true}
+          autoplay={true}
+          modules={[Pagination, Navigation, Autoplay]}
+        >
+          {carousels.map((item: any, index) => (
+            <SwiperSlide key={item.id}>
+              <img
+                src={item.CarouselImg}
+                className="w-auto aspect-[5/2] object-cover cursor-pointer"
+                alt="网络错误，未获取到图片"
+              />
+              <div className="carousel-content">
+                <h1 className="text-2xl font-bold cursor-pointer mb-2">
+                  {item.title}
+                </h1>
+                <p className="text-sm cursor-pointer">{item.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      <div className="container mx-auto p-4">
+      <div>
         <h2 className="mb-4 text-2xl font-bold">精选穿搭</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {featuredOutfits.map((outfit) => (

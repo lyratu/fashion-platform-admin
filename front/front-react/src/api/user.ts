@@ -1,17 +1,20 @@
-import request, { post,get } from '../utils/request';
+import request, { post, get } from '../utils/request'
 
 interface LoginParams {
-  phone: string;
-  password: string;
+  phone: string
+  password: string
 }
 
 export const userApi = {
   // 密码登录
   loginByPassword(params: LoginParams) {
-    return post('/app/user/login/password', params);
+    return post('/app/user/login/password', params)
+  },
+  registerByPassword(params: LoginParams) {
+    return post('/app/user/register/password', params)
   },
   // 获取个人信息
-  getMyInfo(){
+  getMyInfo() {
     return get('/app/user/info/person')
   }
-};
+}

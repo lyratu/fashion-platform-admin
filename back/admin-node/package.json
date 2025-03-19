@@ -21,6 +21,7 @@
     "@midwayjs/validate": "^3.20.0",
     "adm-zip": "^0.5.16",
     "axios": "^1.7.9",
+    "cos-nodejs-sdk-v5": "^2.14.6",
     "cron": "^3.5.0",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",

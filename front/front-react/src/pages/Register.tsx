@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { userApi } from '../api/user'
-
+import toast from 'react-hot-toast'
 const Register: React.FC = () => {
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
     phone: '',
-    password: ''
+    password: '',
+    rePassword: ''
   })
   const [loading, setLoading] = useState(false)
   /* 处理登录 */
@@ -14,14 +15,15 @@ const Register: React.FC = () => {
     e.preventDefault()
     setLoading(true)
     try {
-      const data = await userApi.loginByPassword(formData)
-      // 保存token到localStorage
-      localStorage.setItem('token', data.token)
-      // 登录成功后跳转到首页
-      navigate('/')
-    } catch (error) {
-      console.error('登录错误:', error)
-      alert(error instanceof Error ? error.message : '登录出错，请稍后重试')
+      if (formData.password !== formData.rePassword)
+        throw { message: '两次密码不一致' }
+
+      await userApi.registerByPassword(formData)
+      // 注册成功后跳转到登录
+      navigate('/login')
+    } catch (error: any) {
+      console.error('注册错误:', error)
+      toast.error(error.message || '注册出错，请稍后重试')
     } finally {
       setLoading(false)
     }
@@ -77,8 +79,8 @@ const Register: React.FC = () => {
             </label>
             <input
               type="password"
-              name="password"
-              value={formData.password}
+              name="rePassword"
+              value={formData.rePassword}
               onChange={handleChange}
               placeholder="请再次输入密码"
               className="input input-bordered w-full"

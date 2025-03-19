@@ -39,7 +39,8 @@
 							<h2 class="text-lg font-bold">首页轮播图设置</h2>
 							<div>
 								<el-button type="primary" @click="handleSave" v-show="!isEdit.status">添加</el-button>
-								<el-button type="danger" @click="handleCancel" v-show="isEdit.status">取消</el-button>
+								<el-button type="warning" @click="handleCancel" v-show="isEdit.status">取消</el-button>
+								<el-button type="danger" @click="handleDel" v-show="isEdit.status">删除</el-button>
 
 								<el-button type="success" @click="handleChange" v-show="isEdit.status">修改</el-button>
 							</div>
@@ -47,7 +48,7 @@
 						</div>
 						<div class="p-4">
 							<div class="mb-4">
-								<el-alert title="建议图片尺寸比例为2:1，最多支持三张轮播图" type="info" :closable="false" show-icon />
+								<el-alert title="建议图片尺寸比例为5:2，最多支持三张轮播图" type="info" :closable="false" show-icon />
 							</div>
 							<cl-upload v-model="bannerForm.url" />
 						</div>
@@ -61,7 +62,8 @@
 								</div>
 								<div>
 									<el-form-item label="轮播描述">
-										<el-input v-model="bannerForm.description" type="textarea" :rows="3"
+										<el-input
+v-model="bannerForm.description" type="textarea" :rows="3"
 											placeholder="请输入轮播图描述" />
 									</el-form-item>
 								</div>
@@ -76,7 +78,8 @@
 						</div>
 						<div class="p-4">
 							<el-carousel height="260px" :autoplay="false" v-if="fileList.length > 0">
-								<el-carousel-item @click="editItem(item)" v-for="(item, index) in fileList"
+								<el-carousel-item
+@click="editItem(item)" v-for="(item, index) in fileList"
 									:key="index">
 									<img :src="item.url" class="w-auto aspect-[2/1] object-top cursor-pointer" />
 									<div class="carousel-content">
@@ -194,6 +197,17 @@ const handleCancel = () => {
 	isEdit.value = { status: false, item: null }
 	bannerForm.value = { id: -1, title: '', description: '', url: '' }
 }
+const handleDel = async () => {
+	const { id } = bannerForm.value
+	try {
+		await service.home.info.delete({ ids: [id] });
+		ElMessage.success('删除成功～')
+		fileList.value = fileList.value.filter(e => e.id !== bannerForm.value.id)
+		handleCancel()
+	} catch (err: any) {
+		ElMessage.error(err)
+	}
+}
 const handleChange = async () => {
 	try {
 		const { url, id, title, description } = bannerForm.value
@@ -223,7 +237,7 @@ const handleSave = async () => {
 		if (!url) return ElMessage({ message: '图片不能为空', type: 'warning' })
 		const { id } = await service.home.info.add({ title, CarouselImg: url, description })
 		ElMessage.success('添加成功')
-		fileList.value.push({
+		fileList.value.unshift({
 			title, url, description, id
 		})
 

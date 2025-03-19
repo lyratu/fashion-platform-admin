@@ -20,7 +20,7 @@ const Navbar = () => {
   }
   return (
     <nav className="navbar bg-white shadow-md">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="px-12 container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <a className="btn btn-ghost text-xl normal-case">
             <GiFairyWings className=" size-8" />
