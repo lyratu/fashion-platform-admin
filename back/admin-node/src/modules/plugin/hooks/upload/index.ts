@@ -108,13 +108,14 @@ export class CoolPlugin extends BasePluginHook implements BaseUpload {
       }
       const data = fs.readFileSync(file.data);
       fs.writeFileSync(target, data);
+      // 云端上传方式
+      // const cosResult = await uploadUtil.putObject({
+      //   key: name,
+      //   buffer: data,
+      // });
+      // return `https://${cosResult.Location}`;
 
-      const cosResult = await uploadUtil.putObject({
-        key: name,
-        buffer: data,
-      });
-
-      return `https://${cosResult.Location}`;
+      return domain + '/upload/' + name;
     } catch (err) {
       console.error(err);
       throw new CoolCommException('上传失败' + err.message);

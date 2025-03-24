@@ -1,5 +1,5 @@
 import { CoolController, BaseController } from '@cool-midway/core';
-import { homeEntity } from '../../entity/info';
+import { carouselEntity } from '../../entity/carousel';
 import { HomeInfoService } from '../../service/info';
 
 /**
@@ -7,7 +7,7 @@ import { HomeInfoService } from '../../service/info';
  */
 @CoolController({
   api: ['add', 'delete', 'update', 'info', 'list'],
-  entity: homeEntity,
+  entity: carouselEntity,
   service: HomeInfoService,
 })
 export class homeController extends BaseController {}

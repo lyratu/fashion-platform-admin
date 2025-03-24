@@ -5,7 +5,7 @@ import { Column, Entity, Index } from 'typeorm';
  * 商品模块-商品信息
  */
 @Entity('home_config')
-export class homeEntity extends BaseEntity {
+export class carouselEntity extends BaseEntity {
   @Index()
   @Column({ comment: '标题', length: 50 })
   title: string;

@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 const Login: React.FC = () => {
   const navigate = useNavigate()
   const [formData, setFormData] = useState({
-    phone: '13303163535',
+    phone: '15629122270',
     password: '123456'
   })
   const [loading, setLoading] = useState(false)

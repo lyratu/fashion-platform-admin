@@ -1,7 +1,7 @@
 import { Inject, Provide } from '@midwayjs/core';
 import { BaseService } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
-import { Repository } from 'typeorm';
+import { Repository, QueryRunner } from 'typeorm';
 import { OutfitsInfoEntity } from '../entity/info';
 
 /**
@@ -12,12 +12,13 @@ export class OutfitsInfoService extends BaseService {
   @InjectEntityModel(OutfitsInfoEntity)
   outfitsInfoEntity: Repository<OutfitsInfoEntity>;
 
-  /**
-   * 获取文章列表
-   * @param id
-   * @returns
-   */
-  async list() {
-    return this.outfitsInfoEntity.createQueryBuilder().getMany();
+  async getOutfitsRec() {
+    const list = await this.outfitsInfoEntity.find({
+      order: {
+        likeCount: 'DESC',
+      },
+      take: 3,
+    });
+    return list;
   }
 }

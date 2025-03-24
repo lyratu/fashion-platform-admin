@@ -47,13 +47,19 @@ const { t } = useI18n();
 const Upsert = useUpsert({
 	items: [
 		{
-			label: t('穿搭标题'),
+			label: t('标题'),
 			prop: "title",
 			component: { name: "el-input", props: { clearable: true } },
-			span: 12,
+			span: 24,
 			required: true
 		},
-		{ label: t('封面图'), prop: "coverImage", component: { name: "cl-upload" } },
+		{
+			label: t('描述'),
+			prop: "description",
+			component: { name: "el-input", props: { clearable: true, type: "textarea" } },
+			span: 24,
+			required: true
+		}, { label: t('封面图'), prop: "coverImage", component: { name: "cl-upload" } },
 		{ label: t('内容'), prop: "content", component: { name: "cl-editor-wang" } },
 		{
 			label: t('分类'),
@@ -63,6 +69,7 @@ const Upsert = useUpsert({
 			span: 12,
 			required: true
 		},
+
 		{
 			label: t('季节'),
 			prop: "season",

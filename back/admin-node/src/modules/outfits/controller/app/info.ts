@@ -1,4 +1,10 @@
-import { CoolController, BaseController, CoolUrlTag } from '@cool-midway/core';
+import {
+  CoolController,
+  BaseController,
+  CoolUrlTag,
+  CoolTag,
+  TagTypes,
+} from '@cool-midway/core';
 import { OutfitsInfoEntity } from '../../entity/info';
 import { OutfitsInfoService } from '../../service/info';
 import { Context } from '@midwayjs/koa';
@@ -9,6 +15,10 @@ import { DictTypeEntity } from '../../../dict/entity/type';
 /**
  * 穿搭分享-前台接口
  */
+@CoolUrlTag({
+  key: TagTypes.IGNORE_TOKEN,
+  value: ['page'],
+})
 @CoolController({
   api: ['page'],
   entity: OutfitsInfoEntity,
@@ -50,4 +60,9 @@ export class AppOutfitsInfoController extends BaseController {
 
   @Inject()
   ctx: Context;
+
+  @Get('/getOutfitsRec', { summary: '图片验证码' })
+  async getOutfitsRec() {
+    return this.ok(await this.OutfitsInfoService.getOutfitsRec());
+  }
 }
