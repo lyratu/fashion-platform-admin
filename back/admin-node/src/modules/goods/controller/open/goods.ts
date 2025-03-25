@@ -16,7 +16,7 @@ import { Repository } from 'typeorm';
     fieldLike: ['title'],
   },
 })
-export class OpenDemoGoodsController extends BaseController {
+export class OpenGoodsController extends BaseController {
   @InjectEntityModel(GoodsEntity)
   goodsEntity: Repository<GoodsEntity>;
 

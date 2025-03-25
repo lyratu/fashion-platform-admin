@@ -37,11 +37,20 @@ import { useCrud, useTable, useUpsert, useSearch } from "@cool-vue/crud";
 import { useCool } from "/@/cool";
 import { useI18n } from "vue-i18n";
 import { useDict } from "/$/dict";
+import { reactive } from "vue";
 
 const { dict } = useDict();
 
 const { service } = useCool();
 const { t } = useI18n();
+
+// 选项
+const options = reactive({
+	type: [
+		{ label: t("否"), value: 0, type: "info" },
+		{ label: t("是"), value: 1, type: "success" },
+	],
+});
 
 // cl-upsert
 const Upsert = useUpsert({
@@ -77,6 +86,13 @@ const Upsert = useUpsert({
 			value: 0,
 			span: 12,
 			required: true
+		},
+		{
+			label: t("是否精选"),
+			prop: "isFeature",
+			component: { name: "el-radio-group", options: options.type },
+			value: 0,
+			required: true,
 		},
 		{
 			label: t('选择作者'),
@@ -118,6 +134,8 @@ const Table = useTable({
 			minWidth: 120,
 			dict: dict.get('season')
 		},
+		{ label: t("精选"), prop: "isFeature", minWidth: 120, dict: options.type },
+
 		{ label: t('点赞数'), prop: "likeCount", minWidth: 140, sortable: "custom" },
 		{ label: t('收藏数'), prop: "collectCount", minWidth: 140, sortable: "custom" },
 		{ label: t('作者ID'), prop: "authorId", minWidth: 140, sortable: "custom" },

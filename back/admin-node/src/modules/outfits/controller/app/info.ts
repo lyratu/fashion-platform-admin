@@ -8,7 +8,7 @@ import {
 import { OutfitsInfoEntity } from '../../entity/info';
 import { OutfitsInfoService } from '../../service/info';
 import { Context } from '@midwayjs/koa';
-import { Get, Inject } from '@midwayjs/core';
+import { Get, Inject, Query } from '@midwayjs/core';
 import { BaseSysUserEntity } from '../../../base/entity/sys/user';
 import { DictTypeEntity } from '../../../dict/entity/type';
 
@@ -60,9 +60,9 @@ export class AppOutfitsInfoController extends BaseController {
 
   @Inject()
   ctx: Context;
-
-  @Get('/getOutfitsRec', { summary: '图片验证码' })
-  async getOutfitsRec() {
-    return this.ok(await this.OutfitsInfoService.getOutfitsRec());
+  @CoolTag(TagTypes.IGNORE_TOKEN)
+  @Get('/getOutfitsRec', { summary: '获取穿搭分享高赞' })
+  async getOutfitsRec(@Query('type') type: number) {
+    return this.ok(await this.OutfitsInfoService.getOutfitsRec(type));
   }
 }

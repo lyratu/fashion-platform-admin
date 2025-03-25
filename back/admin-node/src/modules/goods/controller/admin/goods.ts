@@ -24,4 +24,4 @@ import { GoodsService } from '../../service/goods';
     ],
   },
 })
-export class AdminDemoGoodsController extends BaseController {}
+export class AdminGoodsController extends BaseController {}

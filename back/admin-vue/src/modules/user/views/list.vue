@@ -132,10 +132,15 @@ const Table = useTable({
 			minWidth: 120
 		},
 		{
-			label:t('身份'),
+			label: t('身份'),
 			prop: 'type',
 			dict: options.type,
 			minWidth: 120
+		},
+		{
+			label: t('职业'),
+			prop: 'position',
+			minWidth: 150
 		},
 		{
 			label: t('性别'),
@@ -199,6 +204,12 @@ const Upsert = useUpsert({
 				name: 'el-radio-group',
 				options: options.type
 			}
+		},
+		{
+			prop: 'position',
+			label: t('职业'),
+			component: { name: 'el-input' },
+			required: true
 		},
 		{
 			prop: 'gender',

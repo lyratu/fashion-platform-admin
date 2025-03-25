@@ -36,6 +36,9 @@ export class GoodsEntity extends BaseEntity {
   @Column({ comment: '库存', default: 0 })
   stock: number;
 
+  @Column({ comment: '收藏数', default: 0 })
+  collectCount: number;
+
   @Column({ comment: '销量', default: 0 })
   sales: number;
 }

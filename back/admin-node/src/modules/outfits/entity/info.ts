@@ -1,5 +1,6 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index } from 'typeorm';
+import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
+import { UserInfoEntity } from '../../user/entity/info';
 
 /**
  * 商品模块-商品信息
@@ -24,6 +25,9 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '季节', dict: 'season', default: 0 })
   season: number;
 
+  @Column({ comment: '是否精选', dict: ['否', '是'], default: 0 })
+  isFeature: number;
+
   @Column({ comment: '浏览量', default: 0 })
   viewNmber: number;
 
@@ -36,4 +40,8 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Index()
   @Column({ comment: '作者ID' })
   authorId: number;
+
+  @ManyToOne(() => UserInfoEntity)
+  @JoinColumn({ name: 'authorId' })
+  user: UserInfoEntity;
 }

@@ -40,4 +40,14 @@ export class GoodsService extends BaseService {
     const find = this.goodsEntity.createQueryBuilder();
     return this.entityRenderPage(find, query);
   }
+
+  async getGoodsRec() {
+    const list = await this.goodsEntity.find({
+      order: {
+        collectCount: 'DESC',
+      },
+      take: 4,
+    });
+    return list;
+  }
 }
