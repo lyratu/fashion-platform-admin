@@ -4,7 +4,7 @@ import { HomeInfoService } from '../../service/info';
 import { Get, Inject } from '@midwayjs/core';
 
 /**
- * 用户-地址
+ * 轮播图
  */
 @CoolController({
   entity: carouselEntity,

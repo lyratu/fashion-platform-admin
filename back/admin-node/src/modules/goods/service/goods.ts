@@ -1,4 +1,4 @@
-import { DemoGoodsEntity } from '../entity/goods';
+import { GoodsEntity } from '../entity/goods';
 import { Inject, Provide } from '@midwayjs/core';
 import { BaseService } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
@@ -8,9 +8,9 @@ import { Repository } from 'typeorm';
  * 商品示例
  */
 @Provide()
-export class DemoGoodsService extends BaseService {
-  @InjectEntityModel(DemoGoodsEntity)
-  demoGoodsEntity: Repository<DemoGoodsEntity>;
+export class GoodsService extends BaseService {
+  @InjectEntityModel(GoodsEntity)
+  goodsEntity: Repository<GoodsEntity>;
 
   @Inject()
   ctx;
@@ -19,7 +19,7 @@ export class DemoGoodsService extends BaseService {
    * 执行sql分页
    */
   async sqlPage(query) {
-    await this.demoGoodsEntity.save({
+    await this.goodsEntity.save({
       id: 1,
       title: '标题',
       price: 99.0,
@@ -37,7 +37,7 @@ export class DemoGoodsService extends BaseService {
    * 执行entity分页
    */
   async entityPage(query) {
-    const find = this.demoGoodsEntity.createQueryBuilder();
+    const find = this.goodsEntity.createQueryBuilder();
     return this.entityRenderPage(find, query);
   }
 }

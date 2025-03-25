@@ -2,7 +2,7 @@ import { BaseEntity } from '../../base/entity/base';
 import { Column, Entity, Index } from 'typeorm';
 
 /**
- * 商品模块-商品信息
+ * 轮播图模块
  */
 @Entity('home_config')
 export class carouselEntity extends BaseEntity {

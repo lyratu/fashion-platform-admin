@@ -1,5 +1,5 @@
 import { CoolController, BaseController } from '@cool-midway/core';
-import { DemoGoodsEntity } from '../../../goods/entity/goods';
+import { GoodsEntity } from '../../../goods/entity/goods';
 import { DemoTenantService } from '../../service/tenant';
 
 /**
@@ -17,7 +17,7 @@ import { DemoTenantService } from '../../service/tenant';
       summary: '局部不使用多租户',
     },
   ],
-  entity: DemoGoodsEntity,
+  entity: GoodsEntity,
   service: DemoTenantService,
 })
 export class AdminDemoTenantController extends BaseController {}

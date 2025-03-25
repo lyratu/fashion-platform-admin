@@ -1,4 +1,4 @@
-import { DemoGoodsEntity } from '../../goods/entity/goods';
+import { GoodsEntity } from '../../goods/entity/goods';
 import { Provide } from '@midwayjs/core';
 import { BaseService, CoolTransaction } from '@cool-midway/core';
 import { QueryRunner } from 'typeorm';
@@ -15,7 +15,7 @@ export class DemoTransactionService extends BaseService {
     connectionName: 'default',
   })
   async add(param, queryRunner?: QueryRunner) {
-    await queryRunner.manager.insert<DemoGoodsEntity>(DemoGoodsEntity, param);
+    await queryRunner.manager.insert<GoodsEntity>(GoodsEntity, param);
     return {
       id: param.id,
     };

@@ -1,5 +1,5 @@
 import { App, Provide } from '@midwayjs/core';
-import { DemoGoodsEntity } from '../../goods/entity/goods';
+import { GoodsEntity } from '../../goods/entity/goods';
 import { IMidwayApplication, Inject } from '@midwayjs/core';
 import {
   BaseRpcService,
@@ -11,7 +11,7 @@ import { QueryRunner } from 'typeorm';
 
 @Provide()
 @CoolRpcService({
-  entity: DemoGoodsEntity,
+  entity: GoodsEntity,
   method: ['info', 'add', 'page'],
 })
 export class DemoRpcService extends BaseRpcService {
@@ -59,7 +59,7 @@ export class DemoRpcService extends BaseRpcService {
       price: 99.0,
       type: 1,
     };
-    await queryRunner.manager.save(DemoGoodsEntity, data);
+    await queryRunner.manager.save(GoodsEntity, data);
 
     // 将事务id传给调用的远程服务方法
     await this.rpc.call('goods', 'demoGoodsService', 'transaction', {

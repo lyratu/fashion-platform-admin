@@ -1,15 +1,15 @@
 import { CoolController, BaseController } from '@cool-midway/core';
-import { DemoGoodsEntity } from '../../entity/goods';
+import { GoodsEntity } from '../../entity/goods';
 import { UserInfoEntity } from '../../../user/entity/info';
-import { DemoGoodsService } from '../../service/goods';
+import { GoodsService } from '../../service/goods';
 
 /**
  * 商品模块-商品信息
  */
 @CoolController({
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
-  entity: DemoGoodsEntity,
-  service: DemoGoodsService,
+  entity: GoodsEntity,
+  service: GoodsService,
   pageQueryOp: {
     keyWordLikeFields: ['a.description'],
     fieldEq: ['a.status'],

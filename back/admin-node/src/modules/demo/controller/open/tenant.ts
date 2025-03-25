@@ -1,5 +1,5 @@
 import { CoolController, BaseController } from '@cool-midway/core';
-import { DemoGoodsEntity } from '../../../goods/entity/goods';
+import { GoodsEntity } from '../../../goods/entity/goods';
 import { DemoTenantService } from '../../service/tenant';
 
 /**
@@ -7,7 +7,7 @@ import { DemoTenantService } from '../../service/tenant';
  */
 @CoolController({
   api: [],
-  entity: DemoGoodsEntity,
+  entity: GoodsEntity,
   service: DemoTenantService,
 })
 export class OpenDemoTenantController extends BaseController {}

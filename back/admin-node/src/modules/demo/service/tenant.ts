@@ -2,7 +2,7 @@ import { Inject, Provide } from '@midwayjs/core';
 import { BaseService } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository } from 'typeorm';
-import { DemoGoodsEntity } from '../../goods/entity/goods';
+import { GoodsEntity } from '../../goods/entity/goods';
 import { noTenant } from '../../base/db/tenant';
 
 /**
@@ -10,8 +10,8 @@ import { noTenant } from '../../base/db/tenant';
  */
 @Provide()
 export class DemoTenantService extends BaseService {
-  @InjectEntityModel(DemoGoodsEntity)
-  demoGoodsEntity: Repository<DemoGoodsEntity>;
+  @InjectEntityModel(GoodsEntity)
+  goodsEntity: Repository<GoodsEntity>;
 
   @Inject()
   ctx;
@@ -20,8 +20,8 @@ export class DemoTenantService extends BaseService {
    * 使用多租户
    */
   async use() {
-    await this.demoGoodsEntity.createQueryBuilder().getMany();
-    await this.demoGoodsEntity.find();
+    await this.goodsEntity.createQueryBuilder().getMany();
+    await this.goodsEntity.find();
   }
 
   /**
@@ -29,13 +29,13 @@ export class DemoTenantService extends BaseService {
    */
   async noUse() {
     // 过滤多租户
-    await this.demoGoodsEntity.createQueryBuilder().getMany();
+    await this.goodsEntity.createQueryBuilder().getMany();
     // 被noTenant包裹，不会过滤多租户
     await noTenant(this.ctx, async () => {
-      return await this.demoGoodsEntity.createQueryBuilder().getMany();
+      return await this.goodsEntity.createQueryBuilder().getMany();
     });
     // 过滤多租户
-    await this.demoGoodsEntity.find();
+    await this.goodsEntity.find();
   }
 
   /**
