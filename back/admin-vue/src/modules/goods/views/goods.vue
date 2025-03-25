@@ -182,7 +182,7 @@ const Search = useSearch();
 // cl-crud
 const Crud = useCrud(
 	{
-		service: service.demo.goods,
+		service: service.goods.goods,
 	},
 	(app) => {
 		app.refresh();

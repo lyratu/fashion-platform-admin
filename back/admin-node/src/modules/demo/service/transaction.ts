@@ -1,4 +1,4 @@
-import { DemoGoodsEntity } from './../entity/goods';
+import { DemoGoodsEntity } from '../../goods/entity/goods';
 import { Provide } from '@midwayjs/core';
 import { BaseService, CoolTransaction } from '@cool-midway/core';
 import { QueryRunner } from 'typeorm';

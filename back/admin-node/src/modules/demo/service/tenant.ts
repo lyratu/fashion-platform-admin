@@ -2,7 +2,7 @@ import { Inject, Provide } from '@midwayjs/core';
 import { BaseService } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository } from 'typeorm';
-import { DemoGoodsEntity } from '../entity/goods';
+import { DemoGoodsEntity } from '../../goods/entity/goods';
 import { noTenant } from '../../base/db/tenant';
 
 /**

@@ -1,5 +1,5 @@
 import { CoolController, BaseController } from '@cool-midway/core';
-import { DemoGoodsEntity } from '../../entity/goods';
+import { DemoGoodsEntity } from '../../../goods/entity/goods';
 import { DemoTenantService } from '../../service/tenant';
 
 /**
