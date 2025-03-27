@@ -1,4 +1,0 @@
-2025-02-28 00:00:00.018 INFO 24636 [BaseLogJob] start job BaseLogJob
-2025-02-28 00:00:00.021 INFO 24636 [BaseLogJob] 清除日志定时任务开始执行
-2025-02-28 00:00:00.073 INFO 24636 [BaseLogJob] 清除日志定时任务结束，耗时:51ms
-2025-02-28 00:00:00.074 INFO 24636 [BaseLogJob] complete job BaseLogJob
