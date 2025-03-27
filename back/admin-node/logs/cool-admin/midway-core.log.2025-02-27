@@ -1,0 +1,8 @@
+2025-02-27 23:31:24.086 INFO 16840 [36m [cool:core] midwayjs cool core func handler [0m
+2025-02-27 23:31:24.118 INFO 16840 [36m [cool:module:swagger] midwayjs cool module swagger build success[0m
+2025-02-27 23:31:27.003 INFO 16840 [midway:static] starting static serve / -> C:\Users\14211\Documents\Dressing_community\back\admin-node\public
+2025-02-27 23:31:27.004 INFO 16840 [midway:static] starting static serve /upload -> C:\Users\14211\.cool-admin\c8790065979f27837334f9de06d128ca\upload
+2025-02-27 23:39:04.628 INFO 26488 [36m [cool:core] midwayjs cool core func handler [0m
+2025-02-27 23:39:04.667 INFO 26488 [36m [cool:module:swagger] midwayjs cool module swagger build success[0m
+2025-02-27 23:39:17.825 INFO 26488 [midway:static] starting static serve / -> C:\Users\14211\Documents\Dressing_community\back\admin-node\public
+2025-02-27 23:39:17.826 INFO 26488 [midway:static] starting static serve /upload -> C:\Users\14211\.cool-admin\c8790065979f27837334f9de06d128ca\upload

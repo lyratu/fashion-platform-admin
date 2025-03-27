@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\abc-admin\\.audit\\.36f541362d9faa9033fa4938cfe64416fbad5d59-audit.json",
+  "files": [
+    {
+      "date": 1740671524361,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\abc-admin\\midway-core.log.2025-02-27",
+      "hash": "9cfa99a6007057853fafe1104b72f03f"
+    }
+  ],
+  "hashType": "md5"
+}

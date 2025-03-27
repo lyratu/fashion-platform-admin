@@ -1,0 +1,1824 @@
+2025-03-24 17:05:48.863 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:14:27.243 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:26:10.638 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:33:57.028 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:34:02.094 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:34:14.288 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:34:19.404 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:11.036 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:12.027 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:13.292 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:13.960 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:21.612 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:53.717 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:54.285 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:54.457 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:35:54.634 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:36:00.668 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:36:41.085 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:36:42.887 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:36:51.822 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:36:54.706 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:36:55.213 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:36:59.307 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:04.738 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:05.348 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:05.709 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:05.889 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:06.066 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:06.235 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:18.442 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:18.988 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:37:22.987 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:01.856 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:03.952 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:05.437 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:06.241 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:06.561 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:08.235 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:08.720 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:09.056 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:09.312 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:09.519 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:09.704 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:15.108 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:15.518 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:15.825 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:17.770 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:19.189 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:19.595 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:19.917 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 17:38:20.083 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:19:46.830 ERROR 4876 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:32:41.521 ERROR 4876 CoolCommException: 手机号已存在
+    at UserInfoService.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\register.ts:24:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppInfoController.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\register.ts:40:5)
+    at AppInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:32:55.898 ERROR 4876 CoolCommException: 手机号已存在
+    at UserInfoService.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\register.ts:24:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppInfoController.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\register.ts:40:5)
+    at AppInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:33:16.573 ERROR 4876 CoolCommException: 手机号已存在
+    at UserInfoService.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\register.ts:24:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppInfoController.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\register.ts:40:5)
+    at AppInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:35:46.995 ERROR 4876 CoolCommException: 手机号已存在
+    at UserInfoService.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\register.ts:24:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppInfoController.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\register.ts:40:5)
+    at AppInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:35:47.003 ERROR 4876 CoolCommException: 手机号已存在
+    at UserInfoService.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\register.ts:24:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppInfoController.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\register.ts:40:5)
+    at AppInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:35:47.004 ERROR 4876 CoolCommException: 手机号已存在
+    at UserInfoService.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\register.ts:24:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppInfoController.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\register.ts:40:5)
+    at AppInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:43:24.995 ERROR 4876 CoolCommException: 手机号已存在
+    at UserInfoService.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\register.ts:24:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppInfoController.register (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\register.ts:40:5)
+    at AppInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 18:47:22.657 ERROR 4876 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:39:63 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 20:50:25.415 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:50:50.312 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:50:52.260 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:50:58.644 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:52:05.312 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:52:23.038 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:52:28.828 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:52:53.705 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:52:56.514 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:53:09.473 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:53:10.946 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:53:27.721 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:53:30.663 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:53:32.254 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:53:34.461 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:53:51.582 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:01.618 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:07.220 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:14.145 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:16.330 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:24.920 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:26.427 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:32.345 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:40.926 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:48.761 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:50.598 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:53.628 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:54:57.995 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:00.337 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:07.634 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:12.914 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:38.434 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:40.253 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:43.267 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:50.431 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:52.037 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:55:55.134 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:06.842 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:08.569 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:11.640 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:17.512 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:19.713 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:23.132 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:26.668 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:37.857 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:39.866 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:43.038 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:45.865 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:50.187 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:56:59.886 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:57:01.307 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:57:02.153 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:57:05.509 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:57:10.640 ERROR 24052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:57:52.316 ERROR 25108 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 20:57:58.287 ERROR 25108 NotFoundError: /app/home/info/getInfo Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 21:18:04.146 ERROR 1168 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 21:18:08.125 ERROR 1168 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 21:18:10.847 ERROR 1168 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 22:12:28.443 ERROR 9476 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:39:63 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 22:12:29.567 ERROR 9476 NotFoundError: /app/home/info/list Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 22:27:35.492 ERROR 9476 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:39:63 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 23:13:28.041 ERROR 11800 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:39:63 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-24 23:21:00.700 ERROR 14052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 23:21:09.295 ERROR 14052 NotFoundError: /app/home/info/get Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-24 23:25:16.540 ERROR 14052 NotFoundError: /app/outfits/info/page Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}

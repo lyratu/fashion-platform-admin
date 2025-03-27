@@ -1,0 +1,45 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\.audit\\.27eb570f757c6f328a6f0789f4fc632f1176034c-audit.json",
+  "files": [
+    {
+      "date": 1742486400009,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-cron.log.2025-03-21",
+      "hash": "ea59b6e538b3a52a4cae45604a3874d1"
+    },
+    {
+      "date": 1742631871503,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-cron.log.2025-03-22",
+      "hash": "48600c341b616df2bf4cd625d5ea8af0"
+    },
+    {
+      "date": 1742726471029,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-cron.log.2025-03-23",
+      "hash": "1233cd3b538ce7c5d410970aa272cf31"
+    },
+    {
+      "date": 1742804707445,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-cron.log.2025-03-24",
+      "hash": "b96c81ae38f8654862cb1b0b2f90064c"
+    },
+    {
+      "date": 1742832000021,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-cron.log.2025-03-25",
+      "hash": "2d6c339c440888c1f9bc7802dba808f5"
+    },
+    {
+      "date": 1742918400009,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-cron.log.2025-03-26",
+      "hash": "4364d8d2bcc4c1339684f17ee319844b"
+    },
+    {
+      "date": 1743047417413,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-cron.log.2025-03-27",
+      "hash": "3cdb4ad3824c5bc3cf20291a0f1881b8"
+    }
+  ],
+  "hashType": "md5"
+}

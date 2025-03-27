@@ -1,0 +1,4 @@
+2025-03-25 00:00:00.020 INFO 24492 [BaseLogJob] start job BaseLogJob
+2025-03-25 00:00:00.032 INFO 24492 [BaseLogJob] 清除日志定时任务开始执行
+2025-03-25 00:00:00.046 INFO 24492 [BaseLogJob] 清除日志定时任务结束，耗时:13ms
+2025-03-25 00:00:00.046 INFO 24492 [BaseLogJob] complete job BaseLogJob

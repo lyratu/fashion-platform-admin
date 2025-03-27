@@ -1,0 +1,14 @@
+2025-03-22 16:45:27.551 ERROR 23464 CoolCommException: 账号或密码错误
+    at UserLoginService.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\service\login.ts:274:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AppUserLoginController.password (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\controller\app\login.ts:104:20)
+    at AppUserLoginController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:54:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}

@@ -1,0 +1,45 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\.audit\\.532980867a106fdf95db6778639312c0ea3bea40-audit.json",
+  "files": [
+    {
+      "date": 1742467242485,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-core.log.2025-03-20",
+      "hash": "d011771c42fbdb6d777ed71a110e5ebb"
+    },
+    {
+      "date": 1742631871468,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-core.log.2025-03-22",
+      "hash": "d66fdd0585259c92599d996b781d8e2b"
+    },
+    {
+      "date": 1742726471000,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-core.log.2025-03-23",
+      "hash": "3b0b1816bce3f1a5cbf3d3783fa126e0"
+    },
+    {
+      "date": 1742804707422,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-core.log.2025-03-24",
+      "hash": "4ef27f553520a1f72119eb98945a4b2b"
+    },
+    {
+      "date": 1742832122966,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-core.log.2025-03-25",
+      "hash": "95fd2c7984bc9e31e38c3f77a36f9a62"
+    },
+    {
+      "date": 1742971897987,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-core.log.2025-03-26",
+      "hash": "bc7fbb6ff6d8268c77aa5a823b9a9f5d"
+    },
+    {
+      "date": 1743047417388,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\dressing-admin\\midway-core.log.2025-03-27",
+      "hash": "6e2c80cdbb89a9b0e36c968b8604e2c0"
+    }
+  ],
+  "hashType": "md5"
+}

@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\cool-admin\\.audit\\.0e2f08881251b3c7bba34aaab8c54704641460e8-audit.json",
+  "files": [
+    {
+      "date": 1740670281562,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\cool-admin\\midway-app.log.2025-02-27",
+      "hash": "9f724b38c95356ac17b9746437f19c34"
+    }
+  ],
+  "hashType": "md5"
+}

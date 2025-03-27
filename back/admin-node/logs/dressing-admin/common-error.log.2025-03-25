@@ -1,0 +1,1471 @@
+2025-03-25 00:05:26.206 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:28.945 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:30.626 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:31.353 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:35.598 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:36.284 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:36.597 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:37.287 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:05:45.314 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:06:06.595 ERROR 19968 NotFoundError: /app/home/info/getOutfitsRecommend Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 00:57:55.768 ERROR 21240 NotFoundError: /app/home/info/list Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 14:59:19.348 ERROR 8644 NotFoundError: /admin/demo/goods/page Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:87:15
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:39:63 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 14:59:44.655 ERROR 8644 NotFoundError: /admin/demo/goods/page Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:87:15
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:39:63 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:33:11.949 ERROR 24228 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:33:28.177 ERROR 24228 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:33:52.195 ERROR 24228 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:34:56.286 ERROR 24228 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:35:12.487 ERROR 2024 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:35:53.528 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:36:09.416 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:36:14.109 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:36:14.828 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:36:15.212 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:36:15.393 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:36:15.568 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:36:21.084 ERROR 2024 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:36:29.664 ERROR 2024 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:37:05.892 ERROR 2024 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:31.373 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:32.296 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:33.178 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:33.515 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:49.182 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:56.551 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:57.253 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:57.671 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:38:58.007 ERROR 15040 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:39:42.446 ERROR 5840 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:40:31.200 ERROR 5840 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:40:36.358 ERROR 5840 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:40:39.243 ERROR 5840 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:40:45.363 ERROR 5840 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:40:47.120 ERROR 5840 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 15:41:57.037 ERROR 20256 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:41:58.058 ERROR 20256 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 15:42:06.724 ERROR 20256 NotFoundError: /app/home/info/getCarousel Not Found
+    at notFound (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+koa@3.20.3\node_modules\@midwayjs\koa\dist\framework.js:135:23)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56 {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-03-25 17:41:18.562 ERROR 14584 EntityPropertyNotFoundError: Property "undefined" was not found in "OutfitsInfoEntity". Make sure your query is correct.
+    at SelectQueryBuilder.buildOrder (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:4137:17)
+    at SelectQueryBuilder.applyFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:3166:21)
+    at SelectQueryBuilder.setFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:111:8)
+    at EntityManager.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\entity-manager\EntityManager.ts:1104:14)
+    at Repository.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\repository\Repository.ts:544:29)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:16:47)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+2025-03-25 17:41:27.850 ERROR 14584 EntityPropertyNotFoundError: Property "undefined" was not found in "OutfitsInfoEntity". Make sure your query is correct.
+    at SelectQueryBuilder.buildOrder (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:4137:17)
+    at SelectQueryBuilder.applyFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:3166:21)
+    at SelectQueryBuilder.setFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:111:8)
+    at EntityManager.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\entity-manager\EntityManager.ts:1104:14)
+    at Repository.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\repository\Repository.ts:544:29)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:16:47)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+2025-03-25 17:41:44.519 ERROR 14584 EntityPropertyNotFoundError: Property "undefined" was not found in "OutfitsInfoEntity". Make sure your query is correct.
+    at SelectQueryBuilder.buildOrder (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:4137:17)
+    at SelectQueryBuilder.applyFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:3166:21)
+    at SelectQueryBuilder.setFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:111:8)
+    at EntityManager.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\entity-manager\EntityManager.ts:1104:14)
+    at Repository.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\repository\Repository.ts:544:29)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:16:47)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+2025-03-25 17:53:59.383 ERROR 14584 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 17:54:29.826 ERROR 13516 EntityPropertyNotFoundError: Property "likeCoun" was not found in "OutfitsInfoEntity". Make sure your query is correct.
+    at SelectQueryBuilder.buildOrder (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:4137:17)
+    at SelectQueryBuilder.applyFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:3166:21)
+    at SelectQueryBuilder.setFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:111:8)
+    at EntityManager.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\entity-manager\EntityManager.ts:1104:14)
+    at Repository.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\repository\Repository.ts:544:29)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:16:47)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+2025-03-25 17:54:41.424 ERROR 13516 EntityPropertyNotFoundError: Property "'likeCoun'" was not found in "OutfitsInfoEntity". Make sure your query is correct.
+    at SelectQueryBuilder.buildOrder (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:4137:17)
+    at SelectQueryBuilder.applyFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:3166:21)
+    at SelectQueryBuilder.setFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:111:8)
+    at EntityManager.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\entity-manager\EntityManager.ts:1104:14)
+    at Repository.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\repository\Repository.ts:544:29)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:16:47)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+2025-03-25 17:56:09.447 ERROR 22784 EntityPropertyNotFoundError: Property "0?'likeCount':'isFeature'" was not found in "OutfitsInfoEntity". Make sure your query is correct.
+    at SelectQueryBuilder.buildOrder (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:4137:17)
+    at SelectQueryBuilder.applyFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:3166:21)
+    at SelectQueryBuilder.setFindOptions (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:111:8)
+    at EntityManager.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\entity-manager\EntityManager.ts:1104:14)
+    at Repository.find (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\repository\Repository.ts:544:29)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:16:47)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.3\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+2025-03-25 18:33:08.645 ERROR 24800 QueryFailedError: Incorrect integer value: '程序员' for column 'position' at row 1
+    at Query.onResult (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5) {
+  query: 'UPDATE `user_info` SET `updateTime` = ?, `position` = ? WHERE `id` IN (?)',
+  parameters: [ '2025-03-25 18:33:08', '程序员', 12 ],
+  driverError: Error: Incorrect integer value: '程序员' for column 'position' at row 1
+      at Packet.asError (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Socket.Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+    errno: 1366,
+    sqlState: 'HY000',
+    sqlMessage: "Incorrect integer value: '程序员' for column 'position' at row 1",
+    sql: "UPDATE `user_info` SET `updateTime` = '2025-03-25 18:33:08', `position` = '程序员' WHERE `id` IN (12)"
+  },
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlState: 'HY000',
+  sqlMessage: "Incorrect integer value: '程序员' for column 'position' at row 1",
+  sql: "UPDATE `user_info` SET `updateTime` = '2025-03-25 18:33:08', `position` = '程序员' WHERE `id` IN (12)"
+}
+2025-03-25 18:42:08.543 ERROR 23212 QueryFailedError: Unknown column 'b.authorId' in 'on clause'
+    at Query.onResult (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5) {
+  query: 'SELECT a.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`id` = b.authorId ORDER BY `a`.`likeCount` DESC',
+  parameters: [],
+  driverError: Error: Unknown column 'b.authorId' in 'on clause'
+      at Packet.asError (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Socket.Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'b.authorId' in 'on clause'",
+    sql: 'SELECT a.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`id` = b.authorId ORDER BY `a`.`likeCount` DESC'
+  },
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'b.authorId' in 'on clause'",
+  sql: 'SELECT a.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`id` = b.authorId ORDER BY `a`.`likeCount` DESC'
+}
+2025-03-25 18:46:21.357 ERROR 11416 QueryFailedError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN ' at line 1
+    at Query.onResult (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5) {
+  query: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3',
+  parameters: [],
+  driverError: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN ' at line 1
+      at Packet.asError (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Socket.Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN \' at line 1',
+    sql: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+  },
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN \' at line 1',
+  sql: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+}
+2025-03-25 18:46:30.169 ERROR 11416 QueryFailedError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN ' at line 1
+    at Query.onResult (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5) {
+  query: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3',
+  parameters: [],
+  driverError: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN ' at line 1
+      at Packet.asError (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Socket.Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN \' at line 1',
+    sql: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+  },
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN \' at line 1',
+  sql: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+}
+2025-03-25 18:46:41.435 ERROR 11416 QueryFailedError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN ' at line 1
+    at Query.onResult (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5) {
+  query: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3',
+  parameters: [],
+  driverError: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN ' at line 1
+      at Packet.asError (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Socket.Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN \' at line 1',
+    sql: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+  },
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN \' at line 1',
+  sql: 'SELECT a.*,"b.avatarUrl as avatar, `b`.`nickName` as nickname FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+}
+2025-03-25 18:47:21.196 ERROR 5688 QueryFailedError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` O' at line 1
+    at Query.onResult (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5) {
+  query: 'SELECT a.*,"b.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3',
+  parameters: [],
+  driverError: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"b.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` O' at line 1
+      at Packet.asError (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Socket.Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` O\' at line 1',
+    sql: 'SELECT a.*,"b.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+  },
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'"b.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` O\' at line 1',
+  sql: 'SELECT a.*,"b.* FROM `outfits` `a` LEFT JOIN `user_info` `b` ON `a`.`authorId` = `b`.`id` ORDER BY `a`.`likeCount` DESC LIMIT 3'
+}
+2025-03-25 18:53:30.724 ERROR 24208 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 18:53:30.744 ERROR 24208 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 18:53:30.766 ERROR 24208 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 18:53:36.645 ERROR 24208 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 18:53:36.652 ERROR 24208 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 18:53:36.657 ERROR 24208 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 18:58:35.228 ERROR 21720 TypeORMError: Relation with property path user in entity was not found.
+    at JoinAttribute.getValue (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\JoinAttribute.ts:187:23)
+    at JoinAttribute.get relation [as relation] (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\JoinAttribute.ts:191:53)
+    at JoinAttribute.get metadata [as metadata] (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\JoinAttribute.ts:203:18)
+    at SelectQueryBuilder.join (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:2045:43)
+    at SelectQueryBuilder.leftJoin (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\@cool-midway\typeorm\query-builder\SelectQueryBuilder.js:200:14)
+    at SelectQueryBuilder.leftJoinAndSelect (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\@cool-midway\typeorm\query-builder\SelectQueryBuilder.js:220:14)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:29:10)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+2025-03-25 18:58:37.414 ERROR 21720 TypeORMError: Relation with property path user in entity was not found.
+    at JoinAttribute.getValue (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\JoinAttribute.ts:187:23)
+    at JoinAttribute.get relation [as relation] (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\JoinAttribute.ts:191:53)
+    at JoinAttribute.get metadata [as metadata] (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\JoinAttribute.ts:203:18)
+    at SelectQueryBuilder.join (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\query-builder\SelectQueryBuilder.ts:2045:43)
+    at SelectQueryBuilder.leftJoin (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\@cool-midway\typeorm\query-builder\SelectQueryBuilder.js:200:14)
+    at SelectQueryBuilder.leftJoinAndSelect (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\@cool-midway\typeorm\query-builder\SelectQueryBuilder.js:220:14)
+    at OutfitsInfoService.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\service\info.ts:29:10)
+    at AppOutfitsInfoController.getOutfitsRec (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\outfits\controller\app\info.ts:66:50)
+    at AppOutfitsInfoController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\aspectService.js:92:53)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+2025-03-25 19:07:21.213 ERROR 27132 QueryFailedError: Unknown column 'use.nickName' in 'field list'
+    at Query.onResult (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@cool-midway+typeorm@0.3.20_ioredis@5.6.0_mysql2@3.13.0\node_modules\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:36:14)
+    at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Socket.Readable.push (node:internal/streams/readable:390:5) {
+  query: 'SELECT `user`.`avatarUrl` AS `user_avatarUrl`, `user`.`id` AS `user_id`, outfits.*, use.nickName FROM `outfits` `outfits` LEFT JOIN `user_info` `user` ON `user`.`id`=`outfits`.`authorId` ORDER BY `outfits`.`likeCount` DESC LIMIT 3',
+  parameters: [],
+  driverError: Error: Unknown column 'use.nickName' in 'field list'
+      at Packet.asError (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\commands\command.js:29:26)
+      at PoolConnection.handlePacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\mysql2@3.13.0\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Socket.Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'use.nickName' in 'field list'",
+    sql: 'SELECT `user`.`avatarUrl` AS `user_avatarUrl`, `user`.`id` AS `user_id`, outfits.*, use.nickName FROM `outfits` `outfits` LEFT JOIN `user_info` `user` ON `user`.`id`=`outfits`.`authorId` ORDER BY `outfits`.`likeCount` DESC LIMIT 3'
+  },
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'use.nickName' in 'field list'",
+  sql: 'SELECT `user`.`avatarUrl` AS `user_avatarUrl`, `user`.`id` AS `user_id`, outfits.*, use.nickName FROM `outfits` `outfits` LEFT JOIN `user_info` `user` ON `user`.`id`=`outfits`.`authorId` ORDER BY `outfits`.`likeCount` DESC LIMIT 3'
+}
+2025-03-25 20:50:32.362 ERROR 26424 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:50:32.367 ERROR 26424 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:50:32.370 ERROR 26424 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:50:36.503 ERROR 26424 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:50:36.507 ERROR 26424 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:50:36.509 ERROR 26424 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:53:09.618 ERROR 18108 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:53:09.644 ERROR 18108 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:54:00.955 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:54:07.659 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 20:59:59.331 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 21:00:05.921 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 21:00:11.545 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 21:06:48.743 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 21:09:16.711 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 21:09:22.419 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 21:11:44.555 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 21:11:46.640 ERROR 18704 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:34:55.707 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:35:39.829 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:36:23.370 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:37:46.055 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:53:25.813 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:53:28.906 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:53:43.758 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-03-25 23:53:56.060 ERROR 18236 CoolCommException: 登录失效~
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:59:19
+    at dispatch (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.3\node_modules\@midwayjs\core\dist\service\middlewareService.js:103:48)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:13
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:131:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.3\node_modules\@midwayjs\i18n\dist\middleware.js:150:17
+    at bodyParser (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-bodyparser@4.4.1\node_modules\koa-bodyparser\index.js:78:5)
+    at session (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+session@3.20.3\node_modules\@midwayjs\session\dist\middleware\session.js:137:17)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:41:56
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\koa-static-cache@5.1.4\node_modules\koa-static-cache\index.js:73:16 {
+  status: 1001,
+  statusCode: undefined
+}

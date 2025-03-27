@@ -1,0 +1,20 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 7
+  },
+  "auditLog": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\abc-admin\\.audit\\.9e016647b985bb784cb7bd7e4a7fbc5df57b3977-audit.json",
+  "files": [
+    {
+      "date": 1740671524368,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\abc-admin\\midway-app.log.2025-02-27",
+      "hash": "a875a89aeb5f62bb95aabdbf9d946f42"
+    },
+    {
+      "date": 1740675268872,
+      "name": "C:\\Users\\14211\\Documents\\Dressing_community\\back\\admin-node\\logs\\abc-admin\\midway-app.log.2025-02-28",
+      "hash": "a3bfa6dd3862d8e1063e14bd1f033f4c"
+    }
+  ],
+  "hashType": "md5"
+}

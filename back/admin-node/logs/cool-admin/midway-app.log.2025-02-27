@@ -1,0 +1,58 @@
+2025-02-27 23:31:24.118 INFO 16840 init local task....
+2025-02-27 23:36:28.065 ERROR 16840 CoolCommException: 账户或密码不正确~
+    at BaseSysLoginService.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\service\sys\login.ts:62:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at BaseOpenController.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\controller\admin\open.ts:63:20)
+    at BaseOpenController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.2\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:68:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-02-27 23:36:49.567 ERROR 16840 CoolCommException: 账户或密码不正确~
+    at BaseSysLoginService.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\service\sys\login.ts:62:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at BaseOpenController.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\controller\admin\open.ts:63:20)
+    at BaseOpenController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.2\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:68:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-02-27 23:39:04.667 INFO 26488 init local task....
+2025-02-27 23:39:32.067 ERROR 26488 CoolCommException: 账户或密码不正确~
+    at BaseSysLoginService.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\service\sys\login.ts:62:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at BaseOpenController.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\controller\admin\open.ts:63:20)
+    at BaseOpenController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.2\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:68:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16 {
+  status: 1001,
+  statusCode: undefined
+}
+2025-02-27 23:39:42.382 ERROR 26488 CoolCommException: 验证码不正确
+    at BaseSysLoginService.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\service\sys\login.ts:103:13)
+    at BaseOpenController.login (C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\controller\admin\open.ts:63:20)
+    at BaseOpenController.Clz.<computed> (C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\service\aspectService.js:92:34)
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+core@3.20.0\node_modules\@midwayjs\core\dist\common\webGenerator.js:43:26
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+info@3.20.2\node_modules\@midwayjs\info\dist\middleware\info.middleware.js:35:24
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\user\middleware\app.ts:63:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\log.ts:23:7
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\authority.ts:68:11
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\src\modules\base\middleware\translate.ts:36:16
+    at C:\Users\14211\Documents\Dressing_community\back\admin-node\node_modules\.pnpm\@midwayjs+i18n@3.20.2\node_modules\@midwayjs\i18n\dist\middleware.js:150:17 {
+  status: 1001,
+  statusCode: undefined
+}
