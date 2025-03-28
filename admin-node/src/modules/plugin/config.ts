@@ -19,8 +19,8 @@ export default options => {
     hooks: {
       // 文件上传
       upload: {
-        // 地址前缀
-        domain: `http://192.168.5.220:${options?.app?.getConfig('koa.port')}`,
+        // 地址前缀 http://192.168.5.220:${options?.app?.getConfig('koa.port')}
+        domain: '',
       },
     },
   } as ModuleConfig;
