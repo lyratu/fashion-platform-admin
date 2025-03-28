@@ -69,3 +69,6 @@ public
 
 # 忽视 Vue CLI 项目的构建输出
 dist/
+
+# 忽视 .upload 后端上传文件
+.upload
