@@ -16,9 +16,9 @@ export class CommentInfoEntity extends BaseEntity {
   @Column({ comment: '用户ID' })
   userId: number;
 
-    @ManyToOne(() => UserInfoEntity)
-    @JoinColumn({ name: 'userId' })
-    user: UserInfoEntity;
+  @ManyToOne(() => UserInfoEntity)
+  @JoinColumn({ name: 'userId' })
+  user: UserInfoEntity;
 
   @Index()
   @Column({ comment: '对象ID' })
