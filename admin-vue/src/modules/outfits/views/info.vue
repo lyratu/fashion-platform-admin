@@ -78,15 +78,6 @@ const Upsert = useUpsert({
 			span: 12,
 			required: true
 		},
-
-		{
-			label: t('季节'),
-			prop: "season",
-			component: { name: "cl-select", props: { options: dict.get('season') } },
-			value: 0,
-			span: 12,
-			required: true
-		},
 		{
 			label: t("是否精选"),
 			prop: "isFeature",
@@ -127,12 +118,6 @@ const Table = useTable({
 			prop: "category",
 			minWidth: 120,
 			dict: dict.get('category')
-		},
-		{
-			label: t('季节'),
-			prop: "season",
-			minWidth: 120,
-			dict: dict.get('season')
 		},
 		{ label: t("精选"), prop: "isFeature", minWidth: 120, dict: options.type },
 

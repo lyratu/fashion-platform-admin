@@ -14,7 +14,7 @@ import { DictTypeEntity } from '../../../dict/entity/type';
   service: OutfitsInfoService,
   pageQueryOp: {
     keyWordLikeFields: ['a.title'],
-    fieldEq: ['a.category', 'a.season'],
+    fieldEq: ['a.category'],
     join: [
       {
         entity: BaseSysUserEntity,
@@ -28,19 +28,8 @@ import { DictTypeEntity } from '../../../dict/entity/type';
         condition: 'a.category = c.id',
         type: 'leftJoin',
       },
-      {
-        entity: DictTypeEntity,
-        alias: 'd',
-        condition: 'a.season = d.id',
-        type: 'leftJoin',
-      },
     ],
-    select: [
-      'a.*',
-      'b.nickName as authorName',
-      'c.name as categoryName',
-      'd.name as seasonName',
-    ],
+    select: ['a.*', 'b.nickName as authorName', 'c.name as categoryName'],
   },
 })
 export class AdminOutfitsArticleController extends BaseController {
