@@ -24,7 +24,7 @@ export class UserInfoService extends BaseService {
       throw new CoolCommException('手机号已存在');
     }
 
-    const nickName = `用户${phone}`;
+    const nickName = `${phone}`;
     const encryptedPassword = md5(password);
 
     await this.userInfoEntity.insert({

@@ -17,13 +17,10 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '描述', nullable: true })
   description: string;
 
-  @Column({ comment: '正文', nullable: true })
+  @Column({ comment: '正文', type: 'text', nullable: true })
   content: string;
   @Column({ comment: '分类', dict: 'category', default: 0 })
   category: number;
-
-  @Column({ comment: '季节', dict: 'season', default: 0 })
-  season: number;
 
   @Column({ comment: '是否精选', dict: ['否', '是'], default: 0 })
   isFeature: number;

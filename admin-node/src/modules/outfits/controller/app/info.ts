@@ -11,16 +11,16 @@ import { Context } from '@midwayjs/koa';
 import { Get, Inject, Query } from '@midwayjs/core';
 import { BaseSysUserEntity } from '../../../base/entity/sys/user';
 import { DictTypeEntity } from '../../../dict/entity/type';
-
+import { UserInfoEntity } from '../../../user/entity/info';
 /**
  * 穿搭分享-前台接口
  */
 @CoolUrlTag({
   key: TagTypes.IGNORE_TOKEN,
-  value: ['page'],
+  value: ['page', 'info'],
 })
 @CoolController({
-  api: ['page'],
+  api: ['page', 'info'],
   entity: OutfitsInfoEntity,
   service: OutfitsInfoService,
   pageQueryOp: {

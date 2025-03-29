@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 为编辑器容器创建隔离作用域 */
+/* 重置 wangEditor 内部的标题、段落等样式 */
+.w-e-text-container h1,
+.w-e-text-container h2,
+.w-e-text-container h3,
+.w-e-text-container h4,
+.w-e-text-container h5,
+.w-e-text-container h6,
+.w-e-text-container p,
+.w-e-text-container ul,
+.w-e-text-container ol,
+.w-e-text-container blockquote,
+.w-e-text-container pre {
+	all: revert;
+	margin: revert;
+	padding: revert;
+	font-size: revert;
+	font-weight: revert;
+	line-height: revert;
+}
