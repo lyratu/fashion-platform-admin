@@ -3,7 +3,7 @@
 		<div class="box">
 			<div class="logo">
 				<div class="icon">
-					<img src="/logo.png" alt="Logo" />
+					<img src="./static/logo.png" alt="Logo" />
 				</div>
 
 				<span>{{ app.info.name }}</span>
@@ -208,7 +208,6 @@ $color: #2c3142;
 				border-radius: 8px;
 				padding: 5px;
 				margin-right: 10px;
-				background-color: $color;
 
 				img {
 					height: 36px;
