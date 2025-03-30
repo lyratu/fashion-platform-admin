@@ -1,9 +1,10 @@
 import { BaseEntity } from '../../base/entity/base';
 import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
 import { UserInfoEntity } from '../../user/entity/info';
+import { DictInfoEntity } from '../../dict/entity/info';
 
 /**
- * 商品模块-商品信息
+ * 文章模块-文章信息
  */
 @Entity('outfits')
 export class OutfitsInfoEntity extends BaseEntity {
@@ -22,6 +23,9 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '分类', dict: 'category', default: 0 })
   category: number;
 
+  @Column({ comment: '分类文本' })
+  categoryText: string;
+
   @Column({ comment: '是否精选', dict: ['否', '是'], default: 0 })
   isFeature: number;
 
@@ -34,7 +38,6 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '收藏数', default: 0 })
   collectCount: number;
 
-  @Index()
   @Column({ comment: '作者ID' })
   authorId: number;
 

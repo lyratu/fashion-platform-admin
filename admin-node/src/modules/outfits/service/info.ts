@@ -5,6 +5,7 @@ import { Repository, QueryRunner } from 'typeorm';
 import { OutfitsInfoEntity } from '../entity/info';
 import { UserInfoEntity } from '../../user/entity/info';
 import { join } from 'path';
+import { DictInfoService } from '../../dict/service/info';
 
 /**
  * 穿搭信息
@@ -14,13 +15,24 @@ export class OutfitsInfoService extends BaseService {
   @InjectEntityModel(OutfitsInfoEntity)
   outfitsInfoEntity: Repository<OutfitsInfoEntity>;
 
+  @Inject()
+  dictInfoService: DictInfoService;
+
+  async modifyBefore(data: any, type: 'update' | 'add'): Promise<void> {
+    const types = await this.dictInfoService.data([]);
+    const obj = types['category'].find(e => e.value == data.category);
+    data.categoryText = obj.name;
+  }
+
   async info(params: any) {
-    return await this.outfitsInfoEntity.findOne({
+    const data = await this.outfitsInfoEntity.findOne({
       where: { id: params },
       relations: {
         user: true,
       },
     });
+
+    return data;
   }
 
   async getOutfitsRec(type: number) {
