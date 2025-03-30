@@ -63,7 +63,7 @@ const remoteMethod = async (query: string) => {
 			return { label: e.nickName, value: e.id };
 		});
 		loading.value = false;
-		console.log('[ auths.value ] >', auths.value)
+		console.log('[ auths.value ] >', auths.value);
 	} else {
 		auths.value = [];
 	}
@@ -71,6 +71,17 @@ const remoteMethod = async (query: string) => {
 
 // cl-upsert
 const Upsert = useUpsert({
+	async onInfo(data, { done, next }) {
+		const newData = await next({
+			...data,
+			status: false
+		});
+		if (data.authorId) {
+			const info = await service.user.info.info({ id: data.authorId });
+			auths.value = [{ label: info.nickName, value: info.id }];
+		}
+		done(newData);
+	},
 	items: [
 		{
 			label: t('标题'),

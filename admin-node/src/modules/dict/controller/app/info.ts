@@ -29,4 +29,13 @@ export class AppDictInfoController extends BaseController {
   async types() {
     return this.ok(await this.dictInfoService.types());
   }
+
+  @CoolTag(TagTypes.IGNORE_TOKEN)
+  @Post('/values', { summary: '获得单个或多个字典值' })
+  async values(
+    @Body('value') value: string | string[],
+    @Body('key') key: string
+  ) {
+    return this.ok(await this.dictInfoService.getValues(value, key));
+  }
 }

@@ -6,14 +6,20 @@ import {
   BaseController,
   CoolTag,
   TagTypes,
+  CoolUrlTag,
 } from '@cool-midway/core';
 /**
  * 轮播图
  */
+
+@CoolUrlTag({
+  key: TagTypes.IGNORE_TOKEN,
+  value: ['page'],
+})
 @CoolController({
   entity: GoodsEntity,
   service: GoodsService,
-  api: [],
+  api: ['page'],
 })
 export class goodsController extends BaseController {
   @Inject()
