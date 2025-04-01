@@ -1,9 +1,10 @@
 import { Inject } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { OutfitsInfoEntity } from '../../entity/info';
-import { BaseSysUserEntity } from '../../../base/entity/sys/user';
 import { OutfitsInfoService } from '../../service/info';
 import { DictTypeEntity } from '../../../dict/entity/type';
+import { OutfitsTagEntity } from '../../entity/tag';
+import { UserInfoEntity } from '../../../user/entity/info';
 
 /**
  * 穿搭文章
@@ -17,7 +18,7 @@ import { DictTypeEntity } from '../../../dict/entity/type';
     fieldEq: ['a.category'],
     join: [
       {
-        entity: BaseSysUserEntity,
+        entity: UserInfoEntity,
         alias: 'b',
         condition: 'a.authorId = b.id',
         type: 'leftJoin',
@@ -28,8 +29,19 @@ import { DictTypeEntity } from '../../../dict/entity/type';
         condition: 'a.category = c.id',
         type: 'leftJoin',
       },
+      {
+        entity: OutfitsTagEntity,
+        alias: 'd',
+        condition: 'a.tags.id=d.id',
+        type: 'leftJoin',
+      },
     ],
-    select: ['a.*', 'b.nickName as authorName', 'c.name as categoryName'],
+    select: [
+      'a.*',
+      'd.* as tags',
+      'b.nickName as authorName',
+      'c.name as categoryName',
+    ],
   },
 })
 export class AdminOutfitsArticleController extends BaseController {

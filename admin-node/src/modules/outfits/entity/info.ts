@@ -1,7 +1,17 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
+import {
+  Column,
+  Entity,
+  Index,
+  JoinColumn,
+  JoinTable,
+  ManyToMany,
+  ManyToOne,
+  OneToMany,
+} from 'typeorm';
 import { UserInfoEntity } from '../../user/entity/info';
 import { DictInfoEntity } from '../../dict/entity/info';
+import { OutfitsTagEntity } from './tag';
 
 /**
  * 文章模块-文章信息
@@ -44,4 +54,7 @@ export class OutfitsInfoEntity extends BaseEntity {
   @ManyToOne(() => UserInfoEntity)
   @JoinColumn({ name: 'authorId' })
   user: UserInfoEntity;
+
+  @OneToMany(() => OutfitsTagEntity, tag => tag.outfits)
+  tags: OutfitsTagEntity[];
 }

@@ -6,6 +6,7 @@ import { OutfitsInfoEntity } from '../entity/info';
 import { UserInfoEntity } from '../../user/entity/info';
 import { join } from 'path';
 import { DictInfoService } from '../../dict/service/info';
+import { OutfitsTagService } from './tag';
 
 /**
  * 穿搭信息
@@ -21,16 +22,37 @@ export class OutfitsInfoService extends BaseService {
   async modifyBefore(data: any, type: 'update' | 'add'): Promise<void> {
     const types = await this.dictInfoService.data([]);
     const obj = types['category'].find(e => e.value == data.category);
-    data.categoryText = obj.name;
+    data.categoryText = obj?.name;
+  }
+
+  async page(
+    query: any,
+    option: any,
+    connectionName?: any
+  ): Promise<{
+    list: any;
+    pagination: { page: number; size: number; total: number };
+  }> {
+    const result = await super.page(query, option, connectionName);
+    // 你自己的业务逻辑
+
+    return result;
   }
 
   async info(params: any) {
-    const data = await this.outfitsInfoEntity.findOne({
-      where: { id: params },
-      relations: {
-        user: true,
-      },
-    });
+    const data = await this.outfitsInfoEntity
+      .createQueryBuilder('a') // 主表别名为 a
+      .leftJoinAndSelect('a.user', 'b') // 关联 user 表，别名为 b
+      .leftJoinAndSelect('a.tags', 'c') // 关联 tags 表，别名为 c
+      .select([
+        'a', // 主表所有字段（相当于 a.*）
+        'b.id', // user 表的 authId
+        'b.nickName', // user 表的 nickname
+        'c.name', // tags 表的 name
+        'c.id', // tags 表的 id
+      ])
+      .where('a.id = :id', { id: params }) // 条件过滤
+      .getOne(); // 获取单个结果
 
     return data;
   }
@@ -42,6 +64,7 @@ export class OutfitsInfoService extends BaseService {
         .createQueryBuilder('outfits')
         .leftJoinAndSelect('outfits.user', 'user')
         .orderBy('outfits.isFeature', 'DESC')
+        .select(['outfits', 'user.id', 'user.nickName'])
         .limit(2)
         .getMany();
     } else {
@@ -49,6 +72,7 @@ export class OutfitsInfoService extends BaseService {
         .createQueryBuilder('outfits')
         .leftJoinAndSelect('outfits.user', 'user')
         .orderBy('outfits.likeCount', 'DESC')
+        .select(['outfits', 'user.id', 'user.nickName'])
         .limit(3)
         .getMany();
     }
