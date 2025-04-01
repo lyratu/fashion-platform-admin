@@ -12,7 +12,7 @@ export class OutfitsTagEntity extends BaseEntity {
   name: string;
 
   @Index()
-  @Column({ comment: '关联outfitId' })
+  @Column({ comment: '关联outfitId', nullable: true })
   outfitId: number;
 
   @ManyToOne(() => OutfitsInfoEntity)

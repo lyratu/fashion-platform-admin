@@ -94,21 +94,15 @@ const Upsert = useUpsert({
 			});
 
 			if (delIds.length > 0) service.outfits.tag.delete({ ids: delIds });
+
 			if (addIds.length > 0) service.outfits.tag.add(addIds);
+			data.tags = data.tags.flatMap(e => ({ ...e, outfitId: data.id }));
+			delete data.tags;
 		}
 		next({
 			...data,
 			status: false
-		}).then(id => {
-			console.log('%c [ id ]-103', 'font-size:13px; background:pink; color:#bf2c9f;', id);
-
-			// const addIds = data.tags.flatMap(e => {
-			// 	if (e.type === 1 && e.id == -1) return { outfitId: id, name: e.name };
-			// 	else return [];
-			// });
-			// if (addIds.length > 0) service.outfits.tag.add(addIds);
 		});
-
 		// done 关闭加载状态
 		// close 关闭弹窗
 	},
