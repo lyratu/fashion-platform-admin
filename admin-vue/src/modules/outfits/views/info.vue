@@ -193,15 +193,6 @@ const Table = useTable({
 			minWidth: 120,
 			dict: dict.get('category')
 		},
-		{
-			label: t('标签'),
-			prop: 'tags',
-			minWidth: 140,
-			sortable: 'custom',
-			formatter(row) {
-				return row.tags + '元';
-			}
-		},
 		{ label: t('精选'), prop: 'isFeature', minWidth: 120, dict: options.type },
 
 		{ label: t('点赞数'), prop: 'likeCount', minWidth: 140, sortable: 'custom' },
@@ -237,26 +228,15 @@ const Search = useSearch();
 const Crud = useCrud(
 	{
 		service: service.outfits.info,
-		onDelete(selection, { next }) {
+		async onDelete(selection, { next }) {
 			// [ ] 这里删除逻辑 有多选删除
-			const delIds = selection.map(data => {
-				console.log(
-					'%c [ data ]-230',
-					'font-size:13px; background:pink; color:#bf2c9f;',
-					data
-				);
-				// const list = data.tags.flatMap(e => {
-				// 	if (e.type === 2 && e.id != -1) return e.id;
-				// 	else return [];
-				// });
-				// return list;
-			});
-			console.log(
-				'%c [ delIds ]-230',
-				'font-size:13px; background:pink; color:#bf2c9f;',
-				delIds
-			);
-
+			let arr: any = [];
+			for (const i of selection) {
+				const id = i.id;
+				const { list } = await service.outfits.tag.page({ outfitId: id });
+				arr = [...arr, ...list.flatMap(e => e.id)];
+			}
+			await service.outfits.tag.delete({ ids: arr });
 			next({
 				ids: selection.map(e => e.id)
 			});

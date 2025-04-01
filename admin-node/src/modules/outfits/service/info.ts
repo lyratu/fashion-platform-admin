@@ -25,20 +25,6 @@ export class OutfitsInfoService extends BaseService {
     data.categoryText = obj?.name;
   }
 
-  async page(
-    query: any,
-    option: any,
-    connectionName?: any
-  ): Promise<{
-    list: any;
-    pagination: { page: number; size: number; total: number };
-  }> {
-    const result = await super.page(query, option, connectionName);
-    // 你自己的业务逻辑
-
-    return result;
-  }
-
   async info(params: any) {
     const data = await this.outfitsInfoEntity
       .createQueryBuilder('a') // 主表别名为 a

@@ -29,19 +29,8 @@ import { UserInfoEntity } from '../../../user/entity/info';
         condition: 'a.category = c.id',
         type: 'leftJoin',
       },
-      {
-        entity: OutfitsTagEntity,
-        alias: 'd',
-        condition: 'a.tags.id=d.id',
-        type: 'leftJoin',
-      },
     ],
-    select: [
-      'a.*',
-      'd.* as tags',
-      'b.nickName as authorName',
-      'c.name as categoryName',
-    ],
+    select: ['a.*', 'b.nickName as authorName', 'c.name as categoryName'],
   },
 })
 export class AdminOutfitsArticleController extends BaseController {
