@@ -104,7 +104,7 @@
 									filterable
 									remote
 									reserve-keyword
-									placeholder="请输入关键字"
+									placeholder="请输入标题关键字"
 									remote-show-suffix
 									:remote-method="remoteMethod"
 									:loading="loading"
@@ -253,8 +253,10 @@ const getInfo = async () => {
 const editItem = async item => {
 	if (item.outfitsId) {
 		const info = await service.outfits.info.info({ id: item.outfitsId });
-		atticList.value = [{ label: info.title, value: info.id }];
+		if (info) atticList.value.push({ label: info.title, value: info.id?.toString() });
+		else delete item.outfitsId;
 	}
+	console.log(atticList.value, item);
 	bannerForm.value = { ...item };
 	isEdit.value = { status: true, item };
 };

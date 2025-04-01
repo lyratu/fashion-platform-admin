@@ -16,6 +16,6 @@ export class carouselEntity extends BaseEntity {
   @Column({ comment: '描述', nullable: true })
   description: string;
 
-  @Column({ comment: '文章id', nullable: true })
+  @Column({ comment: '文章id' })
   outfitsId: string;
 }
