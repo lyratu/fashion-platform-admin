@@ -9,7 +9,7 @@
 				<span>{{ app.info.name }}</span>
 			</div>
 
-			<p class="desc">{{ $t('智能时尚穿搭后台管理系统') }}</p>
+			<p class="desc">{{ $t('时尚穿搭交流平台后台管理系统') }}</p>
 
 			<div class="form">
 				<el-form label-position="top" class="form" :disabled="saving">
