@@ -38,19 +38,8 @@ import { UserInfoEntity } from '../../../user/entity/info';
         condition: 'a.category = c.id',
         type: 'leftJoin',
       },
-      {
-        entity: DictTypeEntity,
-        alias: 'd',
-        condition: 'a.season = d.id',
-        type: 'leftJoin',
-      },
     ],
-    select: [
-      'a.*',
-      'b.nickName as authorName',
-      'c.name as categoryName',
-      'd.name as seasonName',
-    ],
+    select: ['a.*', 'b.nickName as authorName', 'c.name as categoryName'],
   },
 })
 export class AppOutfitsInfoController extends BaseController {

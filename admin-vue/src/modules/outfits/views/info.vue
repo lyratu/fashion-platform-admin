@@ -83,7 +83,7 @@ const Upsert = useUpsert({
 		done(newData);
 	},
 	async onSubmit(data, { done, close, next }) {
-		if (data.tags) {
+		if (data.tags && data.id) {
 			const delIds = data.tags.flatMap(e => {
 				if (e.type === 2 && e.id != -1) return e.id;
 				else return [];
@@ -102,6 +102,14 @@ const Upsert = useUpsert({
 		next({
 			...data,
 			status: false
+		}).then(res => {
+			if (data.tags) {
+				const addIds = data.tags.flatMap(e => {
+					if (e.type === 1 && e.id == -1) return { outfitId: res.id, name: e.name };
+					else return [];
+				});
+				if (addIds.length > 0) service.outfits.tag.add(addIds);
+			}
 		});
 		// done 关闭加载状态
 		// close 关闭弹窗
@@ -223,16 +231,18 @@ const Crud = useCrud(
 	{
 		service: service.outfits.info,
 		async onDelete(selection, { next }) {
-			// [ ] 这里删除逻辑 有多选删除
-			let arr: any = [];
-			for (const i of selection) {
-				const id = i.id;
-				const { list } = await service.outfits.tag.page({ outfitId: id });
-				arr = [...arr, ...list.flatMap(e => e.id)];
-			}
-			await service.outfits.tag.delete({ ids: arr });
 			next({
 				ids: selection.map(e => e.id)
+			}).then(async e => {
+				console.log('[ e ] >', e);
+				// [ ] 这里删除逻辑 有多选删除
+				// let arr: any = [];
+				// for (const i of selection) {
+				// 	const id = i.id;
+				// 	const { list } = await service.outfits.tag.page({ outfitId: id });
+				// 	arr = [...arr, ...list.flatMap(e => e.id)];
+				// }
+				// await service.outfits.tag.delete({ ids: arr });
 			});
 		}
 	},

@@ -1,4 +1,4 @@
-import { Inject, Post, Query } from '@midwayjs/core';
+import { Get, Inject, Post, Query } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { OutfitsCollectEntity } from '../../entity/collect';
 import { OutfitsCollectService } from '../../service/collect';
@@ -48,14 +48,11 @@ export class AppOutfitsCollectController extends BaseController {
   @Inject()
   ctx;
 
-  @Post('/getCollectRecord', { summary: '根据穿搭ID和用户ID获取收藏记录' })
-  async getCollectRecord(
-    @Query('outfitsId') outfitsId: number,
-    @Query('userId') userId: number
-  ) {
+  @Get('/getCollectRecord', { summary: '根据穿搭ID和用户ID获取收藏记录' })
+  async getCollectRecord(@Query('outfitsId') outfitsId: number) {
     const result = await this.outfitsCollectService.getCollectRecord(
       outfitsId,
-      userId
+      this.ctx.user.id
     );
     return this.ok(result);
   }

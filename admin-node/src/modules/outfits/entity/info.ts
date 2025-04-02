@@ -10,8 +10,9 @@ import {
   OneToMany,
 } from 'typeorm';
 import { UserInfoEntity } from '../../user/entity/info';
-import { DictInfoEntity } from '../../dict/entity/info';
 import { OutfitsTagEntity } from './tag';
+import { OutfitsLikeEntity } from './like';
+import { OutfitsCollectEntity } from './collect';
 
 /**
  * 文章模块-文章信息
@@ -39,8 +40,8 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '是否精选', dict: ['否', '是'], default: 0 })
   isFeature: number;
 
-  @Column({ comment: '浏览量', default: 0 })
-  viewNmber: number;
+  @Column({ comment: '作者ID' })
+  authorId: number;
 
   @Column({ comment: '点赞数', default: 0 })
   likeCount: number;
@@ -48,13 +49,16 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '收藏数', default: 0 })
   collectCount: number;
 
-  @Column({ comment: '作者ID' })
-  authorId: number;
-
   @ManyToOne(() => UserInfoEntity)
   @JoinColumn({ name: 'authorId' })
   user: UserInfoEntity;
 
   @OneToMany(() => OutfitsTagEntity, tag => tag.outfits)
   tags: OutfitsTagEntity[];
+
+  @OneToMany(() => OutfitsLikeEntity, like => like.outfits)
+  likes: OutfitsLikeEntity[];
+
+  @OneToMany(() => OutfitsCollectEntity, collect => collect.outfits)
+  collects: OutfitsCollectEntity[];
 }

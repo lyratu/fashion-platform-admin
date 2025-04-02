@@ -30,6 +30,12 @@ export class OutfitsInfoService extends BaseService {
       .createQueryBuilder('a') // 主表别名为 a
       .leftJoinAndSelect('a.user', 'b') // 关联 user 表，别名为 b
       .leftJoinAndSelect('a.tags', 'c') // 关联 tags 表，别名为 c
+      .loadRelationCountAndMap('a.likeCount', 'a.likes', 'like', qb =>
+        qb.andWhere('like.likeStatus = :status', { status: 1 })
+      )
+      .loadRelationCountAndMap('a.collectCount', 'a.collects', 'collect', qb =>
+        qb.andWhere('collect.collectStatus = :status', { status: 1 })
+      )
       .select([
         'a', // 主表所有字段（相当于 a.*）
         'b.id', // user 表的 authId
@@ -57,7 +63,13 @@ export class OutfitsInfoService extends BaseService {
       list = await this.outfitsInfoEntity
         .createQueryBuilder('outfits')
         .leftJoinAndSelect('outfits.user', 'user')
-        .orderBy('outfits.likeCount', 'DESC')
+        .loadRelationCountAndMap(
+          'outfits.likeCount',
+          'outfits.likes',
+          'like',
+          qb => qb.andWhere('like.likeStatus = :status', { status: 1 })
+        )
+        .orderBy('outfits.likeCount', 'DESC') // 注意这里改为 likesCount 而不是 likeCount
         .select(['outfits', 'user.id', 'user.nickName'])
         .limit(3)
         .getMany();

@@ -1,4 +1,4 @@
-import { Inject, Post, Query } from '@midwayjs/core';
+import { Get, Inject, Post, Query } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { OutfitsLikeEntity } from '../../entity/like';
 import { OutfitsLikeService } from '../../service/like';
@@ -48,14 +48,11 @@ export class AppOutfitsLikeController extends BaseController {
   @Inject()
   ctx;
 
-  @Post('/getLikeRecord', { summary: '根据穿搭ID和用户ID获取点赞记录' })
-  async getLikeRecord(
-    @Query('outfitsId') outfitsId: number,
-    @Query('userId') userId: number
-  ) {
+  @Get('/getLikeRecord', { summary: '根据穿搭ID和用户ID获取点赞记录' })
+  async getLikeRecord(@Query('outfitsId') outfitsId: number) {
     const result = await this.outfitsLikeService.getLikeRecord(
       outfitsId,
-      userId
+      this.ctx.user.id
     );
     return this.ok(result);
   }

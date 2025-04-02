@@ -1,5 +1,6 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index } from 'typeorm';
+import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
+import { OutfitsInfoEntity } from './info';
 
 /**
  * 穿搭点赞
@@ -9,6 +10,10 @@ export class OutfitsLikeEntity extends BaseEntity {
   @Index()
   @Column({ comment: '穿搭ID' })
   outfitsId: number;
+
+  @ManyToOne(() => OutfitsInfoEntity)
+  @JoinColumn({ name: 'outfitsId' })
+  outfits: OutfitsInfoEntity;
 
   @Index()
   @Column({ comment: '用户ID' })
