@@ -51,11 +51,11 @@ export class AppOutfitsLikeController extends BaseController {
   @Post('/getLikeRecord', { summary: '根据穿搭ID和用户ID获取点赞记录' })
   async getLikeRecord(
     @Query('outfitsId') outfitsId: number,
-    @Query('userId') userId: number,
+    @Query('userId') userId: number
   ) {
     const result = await this.outfitsLikeService.getLikeRecord(
       outfitsId,
-      userId,
+      userId
     );
     return this.ok(result);
   }
@@ -68,7 +68,7 @@ export class AppOutfitsLikeController extends BaseController {
   @Post('/getLikeCountByOutfitsId', { summary: '根据穿搭ID统计点赞总数' })
   async getLikeCountByOutfitsId(@Query('outfitsId') outfitsId: number) {
     const result = await this.outfitsLikeService.getLikeCountByOutfitsId(
-      outfitsId,
+      outfitsId
     );
     return this.ok(result);
   }
@@ -78,7 +78,7 @@ export class AppOutfitsLikeController extends BaseController {
     const userId = this.ctx.user.id;
     const likeRecord = await this.outfitsLikeService.getLikeRecord(
       outfitsId,
-      userId,
+      userId
     );
     if (likeRecord) {
       likeRecord.likeStatus = likeRecord.likeStatus === 1 ? 0 : 1;
@@ -92,6 +92,7 @@ export class AppOutfitsLikeController extends BaseController {
         likeStatus: 1,
         operateTime: new Date(),
       };
+      console.log('[ newLikeRecord ] >', newLikeRecord);
       await this.outfitsLikeService.outfitsLikeEntity.insert(newLikeRecord);
       return this.ok(newLikeRecord);
     }
