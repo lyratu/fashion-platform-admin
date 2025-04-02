@@ -9,7 +9,6 @@ import { OutfitsInfoEntity } from '../../entity/info';
 import { OutfitsInfoService } from '../../service/info';
 import { Context } from '@midwayjs/koa';
 import { Get, Inject, Query } from '@midwayjs/core';
-import { BaseSysUserEntity } from '../../../base/entity/sys/user';
 import { DictTypeEntity } from '../../../dict/entity/type';
 import { UserInfoEntity } from '../../../user/entity/info';
 /**
@@ -28,7 +27,7 @@ import { UserInfoEntity } from '../../../user/entity/info';
     fieldEq: ['a.category', 'a.season'],
     join: [
       {
-        entity: BaseSysUserEntity,
+        entity: UserInfoEntity,
         alias: 'b',
         condition: 'a.authorId = b.id',
         type: 'leftJoin',
