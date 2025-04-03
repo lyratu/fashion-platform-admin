@@ -11,7 +11,9 @@ export class OutfitsCollectEntity extends BaseEntity {
   @Column({ comment: '穿搭ID' })
   outfitsId: number;
 
-  @ManyToOne(() => OutfitsInfoEntity)
+  @ManyToOne(() => OutfitsInfoEntity, {
+      onDelete: "CASCADE", orphanedRowAction: 'delete'
+  })
   @JoinColumn({ name: 'outfitsId' })
   outfits: OutfitsInfoEntity;
 
@@ -19,7 +21,7 @@ export class OutfitsCollectEntity extends BaseEntity {
   @Column({ comment: '用户ID' })
   userId: number;
 
-  @Column({ comment: '收藏状态', dict: ['取消', '收藏'], default: 1 })
+  @Column({ comment: '收藏状态', dict: ['取消', '收藏'], default: 0 })
   collectStatus: number;
 
   @Column({ comment: '操作时间', type: 'datetime' })

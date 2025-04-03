@@ -53,12 +53,18 @@ export class OutfitsInfoEntity extends BaseEntity {
   @JoinColumn({ name: 'authorId' })
   user: UserInfoEntity;
 
-  @OneToMany(() => OutfitsTagEntity, tag => tag.outfits)
+  @OneToMany(() => OutfitsTagEntity, tag => tag.outfits, {
+    cascade: true,
+  })
   tags: OutfitsTagEntity[];
 
-  @OneToMany(() => OutfitsLikeEntity, like => like.outfits)
+  @OneToMany(() => OutfitsLikeEntity, like => like.outfits, {
+    cascade: true,
+  })
   likes: OutfitsLikeEntity[];
 
-  @OneToMany(() => OutfitsCollectEntity, collect => collect.outfits)
+  @OneToMany(() => OutfitsCollectEntity, collect => collect.outfits, {
+    cascade: true,
+  })
   collects: OutfitsCollectEntity[];
 }

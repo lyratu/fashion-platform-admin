@@ -15,7 +15,9 @@ export class OutfitsTagEntity extends BaseEntity {
   @Column({ comment: '关联outfitId', nullable: true })
   outfitId: number;
 
-  @ManyToOne(() => OutfitsInfoEntity)
+  @ManyToOne(() => OutfitsInfoEntity,{
+      onDelete: "CASCADE", orphanedRowAction: 'delete'
+  })
   @JoinColumn({ name: 'outfitId' })
   outfits: OutfitsInfoEntity;
 }

@@ -11,7 +11,9 @@ export class OutfitsLikeEntity extends BaseEntity {
   @Column({ comment: '穿搭ID' })
   outfitsId: number;
 
-  @ManyToOne(() => OutfitsInfoEntity)
+  @ManyToOne(() => OutfitsInfoEntity,{
+      onDelete: "CASCADE", orphanedRowAction: 'delete'
+  })
   @JoinColumn({ name: 'outfitsId' })
   outfits: OutfitsInfoEntity;
 
@@ -19,7 +21,7 @@ export class OutfitsLikeEntity extends BaseEntity {
   @Column({ comment: '用户ID' })
   userId: number;
 
-  @Column({ comment: '点赞状态', dict: ['取消', '点赞'], default: 1 })
+  @Column({ comment: '点赞状态', dict: ['取消', '点赞'], default: 0 })
   likeStatus: number;
 
   @Column({ comment: '操作时间', type: 'datetime' })

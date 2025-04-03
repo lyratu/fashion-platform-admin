@@ -64,7 +64,7 @@ const showInput = () => {
 
 const handleInputConfirm = () => {
 	if (inputValue.value) {
-		value.value.push({ id: -1, name: inputValue.value, type: 1 });
+		value.value.push({ name: inputValue.value, type: 1 });
 	}
 	inputVisible.value = false;
 	inputValue.value = '';

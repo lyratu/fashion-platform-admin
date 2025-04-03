@@ -1,12 +1,14 @@
 import { Inject, Provide } from '@midwayjs/core';
 import { BaseService } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
-import { Repository, QueryRunner } from 'typeorm';
+import { Repository, QueryRunner, In } from 'typeorm';
 import { OutfitsInfoEntity } from '../entity/info';
 import { UserInfoEntity } from '../../user/entity/info';
 import { join } from 'path';
 import { DictInfoService } from '../../dict/service/info';
 import { OutfitsTagService } from './tag';
+import { OutfitsTagEntity } from '../entity/tag';
+import { OutfitsLikeEntity } from '../entity/like';
 
 /**
  * 穿搭信息
@@ -18,6 +20,9 @@ export class OutfitsInfoService extends BaseService {
 
   @Inject()
   dictInfoService: DictInfoService;
+
+  @InjectEntityModel(OutfitsTagEntity)
+  outfitsTagEntity: Repository<OutfitsTagEntity>;
 
   async modifyBefore(data: any, type: 'update' | 'add'): Promise<void> {
     const types = await this.dictInfoService.data([]);
@@ -40,6 +45,8 @@ export class OutfitsInfoService extends BaseService {
         'a', // 主表所有字段（相当于 a.*）
         'b.id', // user 表的 authId
         'b.nickName', // user 表的 nickname
+        "b.avatarUrl",
+        "b.position",
         'c.name', // tags 表的 name
         'c.id', // tags 表的 id
       ])

@@ -14,12 +14,12 @@ import {
 
 @CoolUrlTag({
   key: TagTypes.IGNORE_TOKEN,
-  value: ['page'],
+  value: ['page', 'info'],
 })
 @CoolController({
   entity: GoodsEntity,
   service: GoodsService,
-  api: ['page'],
+  api: ['page', 'info'],
 })
 export class goodsController extends BaseController {
   @Inject()

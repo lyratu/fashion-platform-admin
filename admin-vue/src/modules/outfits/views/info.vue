@@ -83,33 +83,32 @@ const Upsert = useUpsert({
 		done(newData);
 	},
 	async onSubmit(data, { done, close, next }) {
-		if (data.tags && data.id) {
-			const delIds = data.tags.flatMap(e => {
-				if (e.type === 2 && e.id != -1) return e.id;
-				else return [];
-			});
-			const addIds = data.tags.flatMap(e => {
-				if (e.type === 1 && e.id == -1) return { outfitId: data.id, name: e.name };
-				else return [];
-			});
-
-			if (delIds.length > 0) service.outfits.tag.delete({ ids: delIds });
-
-			if (addIds.length > 0) service.outfits.tag.add(addIds);
-			data.tags = data.tags.flatMap(e => ({ ...e, outfitId: data.id }));
-			delete data.tags;
+		// 存在标签
+		if (data.tags) {
+			// 判断是否是修改时
+			if (data.id) {
+				const delIds = data.tags.flatMap(e => {
+					if (e.type === 2) return e.id;
+					else return [];
+				});
+				const addIds = data.tags.flatMap(e => {
+					if (e.type === 1) return { outfitId: data.id, name: e.name };
+					else return [];
+				});
+				if (addIds.length > 0) data.tags = [...data.tags, ...addIds];
+				if (delIds.length > 0) service.outfits.tag.delete({ ids: delIds });
+				data.tags = data.tags.filter(e => !e.type);
+			} else {
+				// 新增时
+				data.tags = data.tags.flatMap(e => {
+					if (e.type === 1) return { name: e.name, outfitId: data.id };
+					else return [];
+				});
+			}
 		}
 		next({
 			...data,
 			status: false
-		}).then(res => {
-			if (data.tags) {
-				const addIds = data.tags.flatMap(e => {
-					if (e.type === 1 && e.id == -1) return { outfitId: res.id, name: e.name };
-					else return [];
-				});
-				if (addIds.length > 0) service.outfits.tag.add(addIds);
-			}
 		});
 		// done 关闭加载状态
 		// close 关闭弹窗
@@ -229,22 +228,7 @@ const Search = useSearch();
 // cl-crud
 const Crud = useCrud(
 	{
-		service: service.outfits.info,
-		async onDelete(selection, { next }) {
-			next({
-				ids: selection.map(e => e.id)
-			}).then(async e => {
-				console.log('[ e ] >', e);
-				// [ ] 这里删除逻辑 有多选删除
-				// let arr: any = [];
-				// for (const i of selection) {
-				// 	const id = i.id;
-				// 	const { list } = await service.outfits.tag.page({ outfitId: id });
-				// 	arr = [...arr, ...list.flatMap(e => e.id)];
-				// }
-				// await service.outfits.tag.delete({ ids: arr });
-			});
-		}
+		service: service.outfits.info
 	},
 	app => {
 		app.refresh();

@@ -110,6 +110,20 @@ const Upsert = useUpsert({
 			required: true,
 		},
 		{
+			label: t("颜色"),
+			prop: "color",
+			component: { name: "el-input", props: { clearable: true } },
+			span: 12,
+			required: true,
+		},
+		{
+			label: t("尺码"),
+			prop: "size",
+			component: { name: "el-input", props: { clearable: true } },
+			span: 12,
+			required: true,
+		},
+		{
 			label: t("库存"),
 			prop: "stock",
 			component: { name: "el-input", props: { clearable: true } },
