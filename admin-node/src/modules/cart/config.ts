@@ -5,8 +5,13 @@ import { ModuleConfig } from '@cool-midway/core';
  */
 export default () => {
   return {
-    name: '订单管理',
-    description: '订单管理模块',
+    // 模块名称
+    name: '购物车',
+    // 模块描述
+    description: '购物车模块',
+    // 中间件
+    middlewares: [],
+    // 全局中间件
     globalMiddlewares: [],
   } as ModuleConfig;
 };

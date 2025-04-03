@@ -1,39 +1,42 @@
-import { Inject } from '@midwayjs/core';
+import { Inject, Query } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { OrderOrderEntity } from '../../entity/order';
 import { OrderOrderService } from '../../service/order';
-import { UserInfoEntity } from '../../../user/entity/info';
+import { BaseSysUserEntity } from '../../../base/entity/sys/user';
 
 /**
  * 订单信息
  */
 @CoolController({
-  api: ['add', 'delete', 'update', 'info', 'list', 'page'],
+  api: ['page', 'info'],
   entity: OrderOrderEntity,
   service: OrderOrderService,
   pageQueryOp: {
-    keyWordLikeFields: ['a.goodsName'],
-    fieldEq: ['a.status'],
-    where: async ctx => {
-      const { orderDateStart, orderDateEnd } = ctx.request.body;
-      const where = [];
-      if (orderDateStart) {
-        where.push(['a.orderDate >= :orderDateStart', { orderDateStart }]);
-      }
-      if (orderDateEnd) {
-        where.push(['a.orderDate <= :orderDateEnd', { orderDateEnd }]);
-      }
-      return where;
-    },
+    keyWordLikeFields: ['a.orderNumber'],
+    fieldEq: ['a.paymentStatus', 'a.userId'],
+    select: ['a.*', 'b.nickName'],
     join: [
       {
-        entity: UserInfoEntity,
+        entity: BaseSysUserEntity,
         alias: 'b',
         condition: 'a.userId = b.id',
         type: 'leftJoin',
       },
     ],
-    select: ['a.*', 'b.nickName as userName'],
+    where: async ctx => {
+      const { startTime, endTime } = ctx.request.body;
+      const where = [];
+      if (startTime && endTime) {
+        where.push([
+          'a.createTime BETWEEN :startTime AND :endTime',
+          { startTime, endTime },
+        ]);
+      }
+      return where;
+    },
+    addOrderBy: {
+      createTime: 'DESC',
+    },
   },
 })
 export class AdminOrderOrderController extends BaseController {
