@@ -46,6 +46,9 @@ export class CommentInfoEntity extends BaseEntity {
   })
   likes: commentLikeEntity[];
 
+  @Column({ comment: '是否点赞' })
+  isLike: boolean;
+
   @Column({ comment: '点赞数', default: 0 })
   likeCount: number;
 
