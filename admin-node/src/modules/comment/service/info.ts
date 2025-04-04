@@ -30,6 +30,7 @@ export class CommentInfoService extends BaseService {
   // 获取页面评论列表
   async getPageComment(id: string, page: number, limit: number) {
     const currentUserId = this.ctx.user.id;
+    // [ ] 点赞逻辑待确认
     const [list, total] = await this.commentInfoEntity
       .createQueryBuilder('c')
       // 关联用户信息
