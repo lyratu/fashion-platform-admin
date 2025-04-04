@@ -39,7 +39,11 @@ import { UserInfoEntity } from '../../../user/entity/info';
         type: 'leftJoin',
       },
     ],
-    select: ['a.*', 'b.nickName as authorName', 'c.name as categoryName'],
+    select: [
+      'a.*',
+      " JSON_OBJECT('nickName', b.nickName, 'avatarUrl', b.avatarUrl,'id', b.id,'position', b.position) as user",
+      'c.name as categoryName',
+    ],
   },
 })
 export class AppOutfitsInfoController extends BaseController {
@@ -48,9 +52,16 @@ export class AppOutfitsInfoController extends BaseController {
 
   @Inject()
   ctx: Context;
+
   @CoolTag(TagTypes.IGNORE_TOKEN)
   @Get('/getOutfitsRec', { summary: '获取穿搭分享高赞' })
   async getOutfitsRec(@Query('type') type: number) {
     return this.ok(await this.OutfitsInfoService.getOutfitsRec(type));
+  }
+
+  @CoolTag(TagTypes.IGNORE_TOKEN)
+  @Get('/getRelatedArticles', { summary: '获取相关文章' })
+  async getRelatedArticles(@Query('id') id: number) {
+    return this.ok(await this.OutfitsInfoService.getRelatedArticles(id));
   }
 }

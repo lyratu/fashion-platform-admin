@@ -30,6 +30,28 @@ export class OutfitsInfoService extends BaseService {
     data.categoryText = obj?.name;
   }
 
+  // 相关文章推荐
+  async getRelatedArticles(id: number) {
+    const currentArticle = await this.outfitsInfoEntity.findOne({
+      relations: {
+        tags: true,
+      },
+      where: { id },
+    });
+    const currentArticleTags = currentArticle.tags.map(tag => tag.name);
+    const recommendations = await this.outfitsInfoEntity
+      .createQueryBuilder('article')
+      // 关联 tags
+      .leftJoinAndSelect('article.tags', 'tag')
+      // 排除当前文章
+      .where('article.id != :id', { id })
+      .andWhere('tag.name IN (:...names)', { names: currentArticleTags })
+      .limit(3)
+      .getMany();
+    return recommendations;
+  }
+
+  // 获取文章信息
   async info(params: any) {
     const data = await this.outfitsInfoEntity
       .createQueryBuilder('a') // 主表别名为 a
@@ -45,8 +67,8 @@ export class OutfitsInfoService extends BaseService {
         'a', // 主表所有字段（相当于 a.*）
         'b.id', // user 表的 authId
         'b.nickName', // user 表的 nickname
-        "b.avatarUrl",
-        "b.position",
+        'b.avatarUrl',
+        'b.position',
         'c.name', // tags 表的 name
         'c.id', // tags 表的 id
       ])
@@ -56,6 +78,7 @@ export class OutfitsInfoService extends BaseService {
     return data;
   }
 
+  // 获取穿搭精选文章列表
   async getOutfitsRec(type: number) {
     let list = null;
     if (type) {
@@ -63,7 +86,13 @@ export class OutfitsInfoService extends BaseService {
         .createQueryBuilder('outfits')
         .leftJoinAndSelect('outfits.user', 'user')
         .orderBy('outfits.isFeature', 'DESC')
-        .select(['outfits', 'user.id', 'user.nickName'])
+        .select([
+          'outfits',
+          'user.id',
+          'user.nickName',
+          'user.avatarUrl',
+          'user.position',
+        ])
         .limit(2)
         .getMany();
     } else {
@@ -77,7 +106,13 @@ export class OutfitsInfoService extends BaseService {
           qb => qb.andWhere('like.likeStatus = :status', { status: 1 })
         )
         .orderBy('outfits.likeCount', 'DESC') // 注意这里改为 likesCount 而不是 likeCount
-        .select(['outfits', 'user.id', 'user.nickName'])
+        .select([
+          'outfits',
+          'user.id',
+          'user.nickName',
+          'user.avatarUrl',
+          'user.position',
+        ])
         .limit(3)
         .getMany();
     }

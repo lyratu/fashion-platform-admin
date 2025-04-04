@@ -13,6 +13,7 @@ import { UserInfoEntity } from '../../user/entity/info';
 import { OutfitsTagEntity } from './tag';
 import { OutfitsLikeEntity } from './like';
 import { OutfitsCollectEntity } from './collect';
+import { CommentInfoEntity } from '../../comment/entity/info';
 
 /**
  * 文章模块-文章信息
@@ -49,9 +50,17 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '收藏数', default: 0 })
   collectCount: number;
 
+  @Column({ comment: '评论数', default: 0 })
+  commentCount: number;
+
   @ManyToOne(() => UserInfoEntity)
   @JoinColumn({ name: 'authorId' })
   user: UserInfoEntity;
+
+  @OneToMany(() => CommentInfoEntity, comment => comment.outfits, {
+    cascade: true,
+  })
+  comments: CommentInfoEntity[];
 
   @OneToMany(() => OutfitsTagEntity, tag => tag.outfits, {
     cascade: true,

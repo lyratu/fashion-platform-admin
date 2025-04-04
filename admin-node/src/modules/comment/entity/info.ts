@@ -1,6 +1,17 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
+import {
+  Column,
+  Entity,
+  Index,
+  JoinColumn,
+  ManyToOne,
+  OneToMany,
+  TreeChildren,
+  TreeParent,
+} from 'typeorm';
 import { UserInfoEntity } from '../../user/entity/info';
+import { commentLikeEntity } from './like';
+import { OutfitsInfoEntity } from '../../outfits/entity/info';
 /**
  * 评论信息
  */
@@ -8,9 +19,6 @@ import { UserInfoEntity } from '../../user/entity/info';
 export class CommentInfoEntity extends BaseEntity {
   @Column({ comment: '内容', type: 'text' })
   content: string;
-
-  @Column({ comment: '图片', type: 'json', nullable: true })
-  images: string[];
 
   @Index()
   @Column({ comment: '用户ID' })
@@ -25,6 +33,7 @@ export class CommentInfoEntity extends BaseEntity {
   objectId: number;
 
   @Index()
+  @TreeParent()
   @Column({ comment: '父评ID', nullable: true })
   parentId: number;
 
@@ -32,11 +41,26 @@ export class CommentInfoEntity extends BaseEntity {
   @Column({ comment: '根评ID', nullable: true })
   rootId: number;
 
+  @OneToMany(() => commentLikeEntity, like => like.comments, {
+    cascade: true,
+  })
+  likes: commentLikeEntity[];
+
   @Column({ comment: '点赞数', default: 0 })
   likeCount: number;
 
   @Column({ comment: '回复数', default: 0 })
   replyCount: number;
+
+  @ManyToOne(() => OutfitsInfoEntity, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
+  @JoinColumn({ name: 'outfitsId' })
+  outfits: OutfitsInfoEntity;
+
+  @TreeChildren()
+  children: CommentInfoEntity[];
 
   @Column({
     comment: '类型',
