@@ -10,7 +10,7 @@ import {
   TreeParent,
 } from 'typeorm';
 import { UserInfoEntity } from '../../user/entity/info';
-import { commentLikeEntity } from './like';
+import { CommentLikeEntity } from './like';
 import { OutfitsInfoEntity } from '../../outfits/entity/info';
 /**
  * 评论信息
@@ -52,10 +52,10 @@ export class CommentInfoEntity extends BaseEntity {
   children: CommentInfoEntity[];
 
   // 关联点赞
-  @OneToMany(() => commentLikeEntity, like => like.comments, {
+  @OneToMany(() => CommentLikeEntity, like => like.comments, {
     cascade: true,
   })
-  likes: commentLikeEntity[];
+  likes: CommentLikeEntity[];
 
   @Column({ comment: '点赞数', default: 0 })
   likeCount: number;

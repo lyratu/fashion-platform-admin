@@ -29,15 +29,21 @@ export class CommentInfoService extends BaseService {
 
   // 获取页面评论列表
   async getPageComment(id: string, page: number, limit: number) {
-    const currentUserId = this.ctx.user.id;
-    // [ ] 点赞逻辑待确认
+    const uid = this.ctx.user.id;
     const [list, total] = await this.commentInfoEntity
       .createQueryBuilder('c')
       .leftJoinAndSelect('c.user', 'user')
       .leftJoinAndSelect('c.children', 'children')
       .leftJoinAndSelect('children.user', 'childUser')
-      // .leftJoinAndSelect('children.replyTo', 'replyTo')
-      // .leftJoinAndSelect('replyTo.user', 'replyUser') // 添加这一行加载 replyTo 的用户信息
+      .loadRelationCountAndMap('c.likeCount', 'c.likes', 'like', qb =>
+        qb.andWhere('like.likeStatus = :status', { status: 1 })
+      )
+      .loadRelationCountAndMap('c.likeStatus', 'c.likes', 'like', qb =>
+        qb.andWhere('like.likeStatus = :status And like.userId = :uid', {
+          status: 1,
+          uid,
+        })
+      )
       // 查询条件：objectId 为传入的 id 且 parent 为空（一级评论）
       .where('c.objectId = :id AND c.parent IS NULL', { id })
       // 根据创建时间倒序排序

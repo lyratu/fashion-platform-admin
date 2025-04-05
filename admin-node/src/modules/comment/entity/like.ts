@@ -6,7 +6,7 @@ import { CommentInfoEntity } from './info';
  * 穿搭点赞
  */
 @Entity('comment_like')
-export class commentLikeEntity extends BaseEntity {
+export class CommentLikeEntity extends BaseEntity {
   @Index()
   @Column({ comment: '评论ID' })
   commentId: number;
@@ -15,7 +15,7 @@ export class commentLikeEntity extends BaseEntity {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete',
   })
-  @JoinColumn({ name: 'outfitsId' })
+  @JoinColumn({ name: 'commentId' })
   comments: CommentInfoEntity;
 
   @Index()
