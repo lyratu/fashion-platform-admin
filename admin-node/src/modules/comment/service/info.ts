@@ -33,28 +33,13 @@ export class CommentInfoService extends BaseService {
     // [ ] 点赞逻辑待确认
     const [list, total] = await this.commentInfoEntity
       .createQueryBuilder('c')
-      // 关联用户信息
       .leftJoinAndSelect('c.user', 'user')
-      // 关联子评论
       .leftJoinAndSelect('c.children', 'children')
-      // 统计点赞数（只统计状态为1的点赞记录）
-      .loadRelationCountAndMap('c.likeCount', 'c.likes', 'like', qb =>
-        qb.andWhere('like.likeStatus = :status', { status: 1 })
-      )
-      // 根据传入的 userId 判断该用户是否点赞（如果有对应的记录，则 isLike 为 true）
-      .leftJoin(
-        'c.likes',
-        'userLike',
-        'userLike.userId = :currentUserId AND userLike.likeStatus = :status',
-        { currentUserId, status: 1 }
-      )
-      // 利用 addSelect 添加计算字段 isLike
-      .addSelect(
-        'CASE WHEN userLike.id IS NOT NULL THEN true ELSE false END',
-        'isLike'
-      )
-      // 查询条件：objectId 为传入的 id 且 rootId 为 NULL 的父评论
-      .where('c.objectId = :id AND c.rootId IS NULL', { id })
+      .leftJoinAndSelect('children.user', 'childUser')
+      // .leftJoinAndSelect('children.replyTo', 'replyTo')
+      // .leftJoinAndSelect('replyTo.user', 'replyUser') // 添加这一行加载 replyTo 的用户信息
+      // 查询条件：objectId 为传入的 id 且 parent 为空（一级评论）
+      .where('c.objectId = :id AND c.parent IS NULL', { id })
       // 根据创建时间倒序排序
       .orderBy('c.createTime', 'DESC')
       // 分页：跳过前面 (page - 1) * limit 条记录，取 limit 条记录
@@ -66,63 +51,35 @@ export class CommentInfoService extends BaseService {
   }
 
   /**
-   * 添加评论
-   * @param param
+   * 创建评论
+   * @param content 评论内容
+   * @param parentId （可选）如果传入，表示该评论属于哪个上级评论
+   * @param replyTo （可选）如果传入，表示回复的目标评论（显示时可以标识“回复给谁”）
    */
-  async addComment(objectId: number, content: string, type: number) {
-    const comment = {
-      objectId,
-      content,
-      userId: this.ctx.user.id,
-      type,
-    };
-    console.log(
-      '%c [ comment ]-47',
-      'font-size:13px; background:pink; color:#bf2c9f;',
-      comment
-    );
-
-    await this.commentInfoEntity.insert(comment);
-  }
-
-  /**
-   * 回复根评论
-   * @param param
-   */
-  async replyRComment(
-    id: number,
+  async createComment(
+    type: number,
+    objectId: number,
     content: string,
-    rootId: number,
-    type: number
-  ) {
-    const comment = {
-      objectId: id,
-      content,
-      userId: this.ctx.user.id,
-      rootId,
-    };
-    await this.commentInfoEntity.insert(comment);
-  }
-
-  /**
-   * 回复子评论
-   * @param param
-   */
-  async replyEComment(
-    id: number,
-    content: string,
-    rootId: number,
-    parentId: number,
-    type: number
-  ) {
-    const comment = {
-      objectId: id,
-      content,
-      userId: this.ctx.user.id,
-      rootId,
-      parentId,
-    };
-    await this.commentInfoEntity.insert(comment);
+    parentId?: number,
+    replyTo?: string
+  ): Promise<CommentInfoEntity> {
+    const comment = new CommentInfoEntity();
+    comment.type = type;
+    comment.objectId = objectId;
+    comment.content = content;
+    comment.userId = this.ctx.user.id;
+    if (parentId) {
+      const parentComment = await this.commentInfoEntity.findOne({
+        where: { id: parentId },
+      });
+      console.log('parentComment', parentComment);
+      if (!parentComment) {
+        throw new CoolCommException('回复失败，评论已被删除');
+      }
+      comment.parent = parentComment;
+      replyTo ? (comment.replyTo = replyTo) : '';
+    }
+    return await this.commentInfoEntity.save(comment);
   }
 
   /**
@@ -130,7 +87,12 @@ export class CommentInfoService extends BaseService {
    * @param id
    */
   async deleteComment(id: number, type: number) {
-    await this.commentInfoEntity.delete(id);
+    const comment = await this.commentInfoEntity.findOne({
+      where: { id, type },
+    });
+    if (comment.userId == this.ctx.user.id)
+      await this.commentInfoEntity.delete(id);
+    else throw new CoolCommException('无权删除该评论');
   }
 
   /**

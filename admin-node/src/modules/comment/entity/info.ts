@@ -20,34 +20,42 @@ export class CommentInfoEntity extends BaseEntity {
   @Column({ comment: '内容', type: 'text' })
   content: string;
 
+  // 关联评论用户
   @Index()
   @Column({ comment: '用户ID' })
   userId: number;
 
+  // 关联评论用户
   @ManyToOne(() => UserInfoEntity)
   @JoinColumn({ name: 'userId' })
   user: UserInfoEntity;
 
+  // 回复用户
+  @Column({ comment: '回复到用户名称', nullable: true })
+  replyTo: string;
+
+  // 文章/商品/社区ID
   @Index()
   @Column({ comment: '对象ID' })
   objectId: number;
 
+  // 父亲评论
   @Index()
-  @TreeParent()
-  @Column({ comment: '父评ID', nullable: true })
-  parentId: number;
+  @ManyToOne(() => CommentInfoEntity, comment => comment.children, {
+    nullable: true,
+    onDelete: 'CASCADE',
+  })
+  parent: CommentInfoEntity;
 
-  @Index()
-  @Column({ comment: '根评ID', nullable: true })
-  rootId: number;
+  // 子评论
+  @OneToMany(() => CommentInfoEntity, comment => comment.parent)
+  children: CommentInfoEntity[];
 
+  // 关联点赞
   @OneToMany(() => commentLikeEntity, like => like.comments, {
     cascade: true,
   })
   likes: commentLikeEntity[];
-
-  @Column({ comment: '是否点赞' })
-  isLike: boolean;
 
   @Column({ comment: '点赞数', default: 0 })
   likeCount: number;
@@ -55,15 +63,12 @@ export class CommentInfoEntity extends BaseEntity {
   @Column({ comment: '回复数', default: 0 })
   replyCount: number;
 
+  // 关联文章
   @ManyToOne(() => OutfitsInfoEntity, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete',
   })
-  @JoinColumn({ name: 'outfitsId' })
   outfits: OutfitsInfoEntity;
-
-  @TreeChildren()
-  children: CommentInfoEntity[];
 
   @Column({
     comment: '类型',

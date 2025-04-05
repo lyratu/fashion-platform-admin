@@ -42,10 +42,9 @@ export class commentController extends BaseController {
   @CoolTag(TagTypes.IGNORE_TOKEN)
   @Get('/getPageComment', { summary: '获取文章页面评论' })
   async getPageComment(
-    @Query('id') id: string,
-    @Query('page') page: number,
-    @Query('limit') limit: number
+    @Query() params: { id: string; page: number; limit: number }
   ) {
+    const { id, page, limit } = params;
     return this.ok(
       await this.commentInfoService.getPageComment(id, page, limit)
     );
@@ -53,11 +52,31 @@ export class commentController extends BaseController {
 
   @Post('/sendComment', { summary: '发送文章评论' })
   async addComment(
-    @Body('objectId') objectId: number,
-    @Body('content') content: string
+    @Body()
+    body: {
+      objectId: number;
+      content: string;
+      parentId?: number;
+      replyTo?: string;
+    }
   ) {
+    const { objectId, content, parentId, replyTo } = body;
     return this.ok(
-      await this.commentInfoService.addComment(objectId, content, 1)
+      await this.commentInfoService.createComment(
+        1,
+        objectId,
+        content,
+        parentId,
+        replyTo
+      )
     );
   }
+
+  @Post('/delComment', { summary: '删除评论' })
+  async deleteComment(@Query('id') id: number) {
+    return this.ok(await this.commentInfoService.deleteComment(id, 1));
+  }
+
+  @Post('/likeOrUnlike', { summary: '点赞或取消点赞' })
+  async likeOrUnlike() {}
 }

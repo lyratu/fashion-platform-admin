@@ -93,7 +93,6 @@ export class OutfitsInfoService extends BaseService {
           'user.avatarUrl',
           'user.position',
         ])
-        .limit(2)
         .getMany();
     } else {
       list = await this.outfitsInfoEntity
