@@ -9,6 +9,7 @@ import { DictInfoService } from '../../dict/service/info';
 import { OutfitsTagService } from './tag';
 import { OutfitsTagEntity } from '../entity/tag';
 import { OutfitsLikeEntity } from '../entity/like';
+import { DictInfoEntity } from '../../dict/entity/info';
 
 /**
  * 穿搭信息
@@ -24,14 +25,9 @@ export class OutfitsInfoService extends BaseService {
   @InjectEntityModel(OutfitsTagEntity)
   outfitsTagEntity: Repository<OutfitsTagEntity>;
 
-  async modifyBefore(data: any, type: 'update' | 'add'): Promise<void> {
-    const types = await this.dictInfoService.data([]);
-    const obj = types['category'].find(e => e.value == data.category);
-    data.categoryText = obj?.name;
-  }
-
   // 相关文章推荐
   async getRelatedArticles(id: number) {
+    let recommendations = [];
     const currentArticle = await this.outfitsInfoEntity.findOne({
       relations: {
         tags: true,
@@ -39,15 +35,24 @@ export class OutfitsInfoService extends BaseService {
       where: { id },
     });
     const currentArticleTags = currentArticle.tags.map(tag => tag.name);
-    const recommendations = await this.outfitsInfoEntity
-      .createQueryBuilder('article')
-      // 关联 tags
-      .leftJoinAndSelect('article.tags', 'tag')
-      // 排除当前文章
-      .where('article.id != :id', { id })
-      .andWhere('tag.name IN (:...names)', { names: currentArticleTags })
-      .limit(3)
-      .getMany();
+    if (currentArticleTags.length > 0)
+      recommendations = await this.outfitsInfoEntity
+        .createQueryBuilder('article')
+        // 关联 tags
+        .leftJoinAndSelect('article.tags', 'tag')
+        .leftJoinAndMapOne(
+          'article.categoryText', // 将整个 DictInfoEntity 映射到该属性上
+          DictInfoEntity,
+          'd',
+          'd.value = article.category AND d.typeId = :typeId',
+          { typeId: 21 }
+        )
+        // 排除当前文章
+        .where('article.id != :id', { id })
+        .andWhere('tag.name IN (:...names)', { names: currentArticleTags })
+        .limit(3)
+        .getMany();
+    else recommendations = [];
     return recommendations;
   }
 
@@ -63,6 +68,13 @@ export class OutfitsInfoService extends BaseService {
       .loadRelationCountAndMap('a.collectCount', 'a.collects', 'collect', qb =>
         qb.andWhere('collect.collectStatus = :status', { status: 1 })
       )
+      .leftJoinAndMapOne(
+        'a.categoryText', // 将整个 DictInfoEntity 映射到该属性上
+        DictInfoEntity,
+        'd',
+        'd.value = a.category AND d.typeId = :typeId',
+        { typeId: 21 }
+      )
       .select([
         'a', // 主表所有字段（相当于 a.*）
         'b.id', // user 表的 authId
@@ -71,10 +83,10 @@ export class OutfitsInfoService extends BaseService {
         'b.position',
         'c.name', // tags 表的 name
         'c.id', // tags 表的 id
+        'd.name',
       ])
       .where('a.id = :id', { id: params }) // 条件过滤
       .getOne(); // 获取单个结果
-
     return data;
   }
 
@@ -85,6 +97,13 @@ export class OutfitsInfoService extends BaseService {
       list = await this.outfitsInfoEntity
         .createQueryBuilder('outfits')
         .leftJoinAndSelect('outfits.user', 'user')
+        .leftJoinAndMapOne(
+          'outfits.categoryText', // 将整个 DictInfoEntity 映射到该属性上
+          DictInfoEntity,
+          'c',
+          'c.value = outfits.category AND c.typeId = :typeId',
+          { typeId: 21 }
+        )
         .orderBy('outfits.isFeature', 'DESC')
         .select([
           'outfits',
@@ -92,12 +111,22 @@ export class OutfitsInfoService extends BaseService {
           'user.nickName',
           'user.avatarUrl',
           'user.position',
+          'c.name',
+          'c.typeId',
+          'c.value',
         ])
         .getMany();
     } else {
       list = await this.outfitsInfoEntity
         .createQueryBuilder('outfits')
         .leftJoinAndSelect('outfits.user', 'user')
+        .leftJoinAndMapOne(
+          'outfits.categoryText', // 将整个 DictInfoEntity 映射到该属性上
+          DictInfoEntity,
+          'c',
+          'c.value = outfits.category AND c.typeId = :typeId',
+          { typeId: 21 }
+        )
         .loadRelationCountAndMap(
           'outfits.likeCount',
           'outfits.likes',
@@ -111,11 +140,13 @@ export class OutfitsInfoService extends BaseService {
           'user.nickName',
           'user.avatarUrl',
           'user.position',
+          'c.name',
+          'c.typeId',
+          'c.value',
         ])
         .limit(3)
         .getMany();
     }
-
     return list;
   }
 }

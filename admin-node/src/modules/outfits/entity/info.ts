@@ -14,6 +14,7 @@ import { OutfitsTagEntity } from './tag';
 import { OutfitsLikeEntity } from './like';
 import { OutfitsCollectEntity } from './collect';
 import { CommentInfoEntity } from '../../comment/entity/info';
+import { DictInfoEntity } from '../../dict/entity/info';
 
 /**
  * 文章模块-文章信息
@@ -34,9 +35,6 @@ export class OutfitsInfoEntity extends BaseEntity {
   content: string;
   @Column({ comment: '分类', dict: 'category', default: 0 })
   category: number;
-
-  @Column({ comment: '分类文本' })
-  categoryText: string;
 
   @Column({ comment: '是否精选', dict: ['否', '是'], default: 0 })
   isFeature: number;

@@ -9,8 +9,8 @@ import { OutfitsInfoEntity } from '../../entity/info';
 import { OutfitsInfoService } from '../../service/info';
 import { Context } from '@midwayjs/koa';
 import { Get, Inject, Query } from '@midwayjs/core';
-import { DictTypeEntity } from '../../../dict/entity/type';
 import { UserInfoEntity } from '../../../user/entity/info';
+import { DictInfoEntity } from '../../../dict/entity/info';
 /**
  * 穿搭分享-前台接口
  */
@@ -33,16 +33,16 @@ import { UserInfoEntity } from '../../../user/entity/info';
         type: 'leftJoin',
       },
       {
-        entity: DictTypeEntity,
+        entity: DictInfoEntity,
         alias: 'c',
-        condition: 'a.category = c.id',
+        condition: 'a.category = c.value AND c.typeId = 21',
         type: 'leftJoin',
       },
     ],
     select: [
       'a.*',
       " JSON_OBJECT('nickName', b.nickName, 'avatarUrl', b.avatarUrl,'id', b.id,'position', b.position) as user",
-      'c.name as categoryName',
+      "JSON_OBJECT('name',c.name,'typeId',c.typeId,'value',c.value) as categoryText",
     ],
   },
 })
