@@ -1,8 +1,14 @@
 import { Inject, Post, Body, Query } from '@midwayjs/core';
-import { CoolController, BaseController } from '@cool-midway/core';
+import {
+  CoolController,
+  BaseController,
+  CoolTag,
+  TagTypes,
+} from '@cool-midway/core';
 import { CartInfoEntity } from '../../entity/info';
 import { CartService } from '../../service/cart';
 import { UserInfoEntity } from '../../../user/entity/info';
+import { GoodsEntity } from '../../../goods/entity/goods';
 
 /**
  * 购物车
@@ -16,10 +22,24 @@ import { UserInfoEntity } from '../../../user/entity/info';
     join: [
       {
         entity: UserInfoEntity,
-        alias: 'c',
-        condition: 'a.userId = c.id',
+        alias: 'b',
+        condition: 'a.userId = b.id',
         type: 'leftJoin',
       },
+      {
+        entity: GoodsEntity,
+        alias: 'c',
+        condition: 'a.goodsId = c.id',
+        type: 'leftJoin',
+      },
+    ],
+    select: [
+      'a.*',
+      'c.title',
+      'c.price',
+      'c.color as colors',
+      'c.size as sizes',
+      'c.mainImage',
     ],
     where: async ctx => {
       return [['a.userId = :userId', { userId: ctx.user.id }]];
@@ -29,21 +49,33 @@ import { UserInfoEntity } from '../../../user/entity/info';
 export class AppCartController extends BaseController {
   @Inject()
   cartService: CartService;
-
-  @Inject()
-  ctx;
-
   /**
    * 添加商品到购物车
    * @param goodsId
    * @param goodsNumber
    */
+
+  @Inject()
+  ctx;
+
   @Post('/add', { summary: '添加商品到购物车' })
   async addGoods(
-    @Body('goodsId') goodsId: number,
-    @Body('goodsNumber') goodsNumber: number
+    @Body()
+    body: {
+      goodsId: number;
+      count: number;
+      color: string;
+      size: string;
+    }
   ) {
-    await this.cartService.addGoods(this.ctx.user.id, goodsId, goodsNumber);
+    const { goodsId, count, color, size } = body;
+    await this.cartService.addGoods(
+      this.ctx.user.id,
+      goodsId,
+      count,
+      color,
+      size
+    );
     return this.ok();
   }
 

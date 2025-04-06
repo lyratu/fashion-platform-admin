@@ -50,6 +50,28 @@ const options = reactive({
 	status: [
 		{ label: t('禁用'), value: 0, type: 'danger' },
 		{ label: t('启用'), value: 1, type: 'success' }
+	],
+	color: [
+		{ label: t('默认'), value: -1 },
+		{ label: t('红色'), value: 0 },
+		{ label: t('蓝色'), value: 1 },
+		{ label: t('绿色'), value: 2 },
+		{ label: t('黄色'), value: 3 },
+		{ label: t('紫色'), value: 4 },
+		{ label: t('橙色'), value: 5 },
+		{ label: t('粉色'), value: 6 },
+		{ label: t('黑色'), value: 7 },
+		{ label: t('白色'), value: 8 },
+		{ label: t('灰色'), value: 9 }
+	],
+	size: [
+		{ label: t('均码'), value: -1 },
+		{ label: t('S'), value: 0 },
+		{ label: t('M'), value: 1 },
+		{ label: t('L'), value: 2 },
+		{ label: t('XL'), value: 3 },
+		{ label: t('XXL'), value: 4 },
+		{ label: t('XXXL'), value: 5 }
 	]
 });
 
@@ -118,14 +140,14 @@ const Upsert = useUpsert({
 		{
 			label: t('颜色'),
 			prop: 'color',
-			component: { name: 'el-input', props: { clearable: true } },
+			component: { name: 'checkbox-group', props: { options: options.color } },
 			span: 12,
 			required: true
 		},
 		{
 			label: t('尺码'),
 			prop: 'size',
-			component: { name: 'el-input', props: { clearable: true } },
+			component: { name: 'checkbox-group', props: { options: options.size } },
 			span: 12,
 			required: true
 		},

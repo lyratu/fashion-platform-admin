@@ -1,5 +1,5 @@
 import { Inject, Provide } from '@midwayjs/core';
-import { BaseService } from '@cool-midway/core';
+import { BaseService, CoolCommException } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository, QueryRunner, In } from 'typeorm';
 import { OutfitsInfoEntity } from '../entity/info';
@@ -24,6 +24,15 @@ export class OutfitsInfoService extends BaseService {
 
   @InjectEntityModel(OutfitsTagEntity)
   outfitsTagEntity: Repository<OutfitsTagEntity>;
+
+  async modifyBefore(data: any, type: 'delete' | 'update' | 'add') {
+    if (type === 'update') {
+      const num = await this.outfitsInfoEntity.countBy({ isFeature: 1 });
+      if (num > 1 && data.isFeature) {
+        throw new CoolCommException('最多只能精选两篇文章~');
+      }
+    }
+  }
 
   // 相关文章推荐
   async getRelatedArticles(id: number) {
@@ -104,6 +113,7 @@ export class OutfitsInfoService extends BaseService {
           'c.value = outfits.category AND c.typeId = :typeId',
           { typeId: 21 }
         )
+        .where('outfits.isFeature = :isFeature', { isFeature: 1 })
         .orderBy('outfits.isFeature', 'DESC')
         .select([
           'outfits',
@@ -115,6 +125,7 @@ export class OutfitsInfoService extends BaseService {
           'c.typeId',
           'c.value',
         ])
+        .limit(2)
         .getMany();
     } else {
       list = await this.outfitsInfoEntity

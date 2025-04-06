@@ -39,12 +39,19 @@ export class GoodsEntity extends BaseEntity {
   @Column({ comment: '库存', default: 0 })
   stock: number;
 
-  @Column({ comment: '颜色' })
-  color: string;
+  @Column({
+    comment: '颜色',
+    type: 'json',
+    dict: ['红', '蓝', '绿', '黄', '紫', '橙', '粉', '黑', '白', '灰'],
+  })
+  color: any[];
 
-  @Column({ comment: '尺码' })
-  size: string;
-
+  @Column({
+    comment: '尺码',
+    type: 'json',
+    dict: ['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
+  })
+  size: any[];
   @Column({ comment: '收藏数', default: 0 })
   collectCount: number;
 

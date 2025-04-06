@@ -19,19 +19,19 @@ export class CartService extends BaseService {
    * @param goodsId
    * @param goodsNumber
    */
-  async addGoods(userId: number, goodsId: number, count: number) {
-    //  校验库存余量
-    //  const goods = await this.nativeQuery('select * from goods where id = ?', [goodsId]);
-    //  if (goods[0].stock < goodsNumber) {
-    //    throw new CoolCommException('商品库存不足');
-    //  }
-
+  async addGoods(
+    userId: number,
+    goodsId: number,
+    count: number,
+    color: string,
+    size: string
+  ) {
     const cart = await this.cartEntity.findOne({ where: { userId, goodsId } });
     if (cart) {
       cart.count += count;
       await this.cartEntity.save(cart);
     } else {
-      await this.cartEntity.insert({ userId, goodsId, count });
+      await this.cartEntity.insert({ userId, goodsId, count, color, size });
     }
   }
 

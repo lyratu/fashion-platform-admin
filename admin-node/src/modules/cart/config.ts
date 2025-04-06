@@ -9,9 +9,5 @@ export default () => {
     name: '购物车',
     // 模块描述
     description: '购物车模块',
-    // 中间件
-    middlewares: [],
-    // 全局中间件
-    globalMiddlewares: [],
   } as ModuleConfig;
 };
