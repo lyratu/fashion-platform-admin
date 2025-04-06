@@ -27,6 +27,9 @@ export class GoodsEntity extends BaseEntity {
   @Column({ comment: '主图', nullable: true })
   mainImage: string;
 
+  @Column({ comment: '副图', type: 'json', nullable: true })
+  subPics: string[];
+
   @Column({ comment: '分类', dict: 'goodsType' })
   type: number;
 

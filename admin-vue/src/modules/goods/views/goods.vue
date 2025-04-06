@@ -30,15 +30,15 @@
 
 <script lang="ts" setup>
 defineOptions({
-	name: "demo-goods",
+	name: 'demo-goods'
 });
 
-import { useCrud, useTable, useUpsert, useSearch } from "@cool-vue/crud";
-import { useCool } from "/@/cool";
-import { useI18n } from "vue-i18n";
-import { reactive } from "vue";
+import { useCrud, useTable, useUpsert, useSearch } from '@cool-vue/crud';
+import { useCool } from '/@/cool';
+import { useI18n } from 'vue-i18n';
+import { reactive } from 'vue';
 
-import { useDict } from "/$/dict";
+import { useDict } from '/$/dict';
 
 const { dict } = useDict();
 
@@ -48,39 +48,39 @@ const { t } = useI18n();
 // 选项
 const options = reactive({
 	status: [
-		{ label: t("禁用"), value: 0, type: "danger" },
-		{ label: t("启用"), value: 1, type: "success" },
-	],
+		{ label: t('禁用'), value: 0, type: 'danger' },
+		{ label: t('启用'), value: 1, type: 'success' }
+	]
 });
 
 // cl-upsert
 const Upsert = useUpsert({
 	items: [
 		{
-			label: t("标题"),
-			prop: "title",
-			component: { name: "el-input", props: { clearable: true } },
+			label: t('标题'),
+			prop: 'title',
+			component: { name: 'el-input', props: { clearable: true } },
 			span: 12,
-			required: true,
+			required: true
 		},
 		{
-			label: t("价格"),
-			prop: "price",
-			component: { name: "el-input", props: { clearable: true } },
+			label: t('价格'),
+			prop: 'price',
+			component: { name: 'el-input', props: { clearable: true } },
 			span: 12,
-			required: true,
+			required: true
 		},
 		{
-			label: t("描述"),
-			prop: "description",
-			component: { name: "el-input", props: { clearable: true } },
-			span: 12,
+			label: t('描述'),
+			prop: 'description',
+			component: { name: 'el-input', props: { clearable: true } },
+			span: 12
 		},
 		{
-			label: t("详情"),
-			prop: "detail",
-			component: { name: "el-input", props: { clearable: true } },
-			span: 12,
+			label: t('详情'),
+			prop: 'detail',
+			component: { name: 'el-input', props: { clearable: true } },
+			span: 12
 		},
 		{
 			prop: 'mainImage',
@@ -90,64 +90,70 @@ const Upsert = useUpsert({
 				props: {
 					text: t('选择图片')
 				}
-			}
+			},
+			required: true
 		},
 		{
-			label: t("分类"),
-			prop: "type",
+			label: t('副图'),
+			prop: 'subPics',
+			component: { name: 'cl-upload', props: { multiple: true } }
+		},
+		{
+			label: t('分类'),
+			prop: 'type',
 			component: {
-				name: "cl-select",
-				props: { options: dict.get("goodsType") },
+				name: 'cl-select',
+				props: { options: dict.get('goodsType') }
 			},
 			span: 12,
-			required: true,
+			required: true
 		},
 		{
-			label: t("状态"),
-			prop: "status",
-			component: { name: "el-radio-group", options: options.status },
+			label: t('状态'),
+			prop: 'status',
+			component: { name: 'el-radio-group', options: options.status },
 			value: 1,
-			required: true,
+			required: true
 		},
 		{
-			label: t("颜色"),
-			prop: "color",
-			component: { name: "el-input", props: { clearable: true } },
+			label: t('颜色'),
+			prop: 'color',
+			component: { name: 'el-input', props: { clearable: true } },
 			span: 12,
-			required: true,
+			required: true
 		},
 		{
-			label: t("尺码"),
-			prop: "size",
-			component: { name: "el-input", props: { clearable: true } },
+			label: t('尺码'),
+			prop: 'size',
+			component: { name: 'el-input', props: { clearable: true } },
 			span: 12,
-			required: true,
+			required: true
 		},
 		{
-			label: t("库存"),
-			prop: "stock",
-			component: { name: "el-input", props: { clearable: true } },
+			label: t('库存'),
+			prop: 'stock',
+			component: { name: 'el-input', props: { clearable: true } },
 			span: 12,
-			required: true,
+			required: true
 		},
 		{
-			label: t("销量"),
-			prop: "sales",
-			component: { name: "el-input", props: { clearable: true } },
+			label: t('销量'),
+			prop: 'sales',
+			component: { name: 'el-input', props: { clearable: true } },
 			span: 12,
-			required: true,
-		},
-	],
+			required: true
+		}
+	]
 });
 
 // cl-table
 const Table = useTable({
 	columns: [
-		{ type: "selection" },
-		{ label: t("标题"), prop: "title", minWidth: 120 },
-		{ label: t("价格"), prop: "price", minWidth: 120 },
-		{ label: t("描述"), prop: "description", minWidth: 120 },
-		{ label: t("详情"), prop: "detail", minWidth: 120 },
+		{ type: 'selection' },
+		{ label: t('标题'), prop: 'title', minWidth: 120 },
+		{ label: t('价格'), prop: 'price', minWidth: 120 },
+		{ label: t('描述'), prop: 'description', minWidth: 120 },
+		{ label: t('详情'), prop: 'detail', minWidth: 120 },
 		{
 			prop: 'mainImage',
 			label: t('主图'),
@@ -159,35 +165,35 @@ const Table = useTable({
 			}
 		},
 		{
-			label: t("分类"),
-			prop: "type",
+			label: t('分类'),
+			prop: 'type',
 			minWidth: 120,
-			dict: dict.get("goodsType"),
+			dict: dict.get('goodsType')
 		},
 		{
-			label: t("状态"),
-			prop: "status",
+			label: t('状态'),
+			prop: 'status',
 			minWidth: 120,
-			dict: options.status,
+			dict: options.status
 		},
-		{ label: t("库存"), prop: "stock", minWidth: 120 },
-		{ label: t("销量"), prop: "sales", minWidth: 120 },
+		{ label: t('库存'), prop: 'stock', minWidth: 120 },
+		{ label: t('销量'), prop: 'sales', minWidth: 120 },
 		{
-			label: t("创建时间"),
-			prop: "createTime",
+			label: t('创建时间'),
+			prop: 'createTime',
 			minWidth: 170,
-			sortable: "desc",
-			component: { name: "cl-date-text" },
+			sortable: 'desc',
+			component: { name: 'cl-date-text' }
 		},
 		{
-			label: t("更新时间"),
-			prop: "updateTime",
+			label: t('更新时间'),
+			prop: 'updateTime',
 			minWidth: 170,
-			sortable: "custom",
-			component: { name: "cl-date-text" },
+			sortable: 'custom',
+			component: { name: 'cl-date-text' }
 		},
-		{ type: "op", buttons: ["edit", "delete"] },
-	],
+		{ type: 'op', buttons: ['edit', 'delete'] }
+	]
 });
 
 // cl-search
@@ -196,11 +202,11 @@ const Search = useSearch();
 // cl-crud
 const Crud = useCrud(
 	{
-		service: service.goods.goods,
+		service: service.goods.goods
 	},
-	(app) => {
+	app => {
 		app.refresh();
-	},
+	}
 );
 
 // 刷新
