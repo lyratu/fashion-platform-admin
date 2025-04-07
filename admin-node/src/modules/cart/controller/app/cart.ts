@@ -1,4 +1,4 @@
-import { Inject, Post, Body, Query } from '@midwayjs/core';
+import { Inject, Post, Body, Query, Get } from '@midwayjs/core';
 import {
   CoolController,
   BaseController,
@@ -55,9 +55,6 @@ export class AppCartController extends BaseController {
    * @param goodsNumber
    */
 
-  @Inject()
-  ctx;
-
   @Post('/add', { summary: '添加商品到购物车' })
   async addGoods(
     @Body()
@@ -69,14 +66,17 @@ export class AppCartController extends BaseController {
     }
   ) {
     const { goodsId, count, color, size } = body;
-    await this.cartService.addGoods(
-      this.ctx.user.id,
-      goodsId,
-      count,
-      color,
-      size
-    );
+    await this.cartService.addGoods(goodsId, count, color, size);
     return this.ok();
+  }
+
+  /**
+   * 获取购物车总数
+   */
+
+  @Get('/getCartCount', { summary: '获取购物车总数' })
+  async getCartCount() {
+    return this.ok(await this.cartService.getCartCount());
   }
 
   /**
@@ -84,12 +84,18 @@ export class AppCartController extends BaseController {
    * @param id
    * @param goodsNumber
    */
-  @Post('/updateNumber', { summary: '修改商品数量' })
-  async updateGoodsNumber(
-    @Body('id') id: number,
-    @Body('goodsNumber') goodsNumber: number
+  @Post('/updateGoodsInfo', { summary: '修改商品信息' })
+  async updateGoodsInfo(
+    @Body()
+    body: {
+      id: number;
+      count?: number;
+      size?: string;
+      color?: string;
+    }
   ) {
-    await this.cartService.updateGoodsNumber(id, goodsNumber);
+    const { id, count, size, color } = body;
+    await this.cartService.updateGoodsInfo(id, count, size, color);
     return this.ok();
   }
 
@@ -105,5 +111,10 @@ export class AppCartController extends BaseController {
   ) {
     await this.cartService.updateChecked(ids, checked);
     return this.ok();
+  }
+
+  @Post('/deleteGoods', { summary: '删除购物车商品' })
+  async deleteGoods(@Query('id') id: number) {
+    return this.ok(await this.cartService.deleteGoods(id));
   }
 }
