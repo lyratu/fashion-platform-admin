@@ -1,8 +1,8 @@
 import { Inject } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { CommunityPostEntity } from '../../entity/post';
-import { CommunityPostService } from '../../service/post';
 import { UserInfoEntity } from '../../../user/entity/info';
+import { AppCommunityPostService } from '../../service/app_post';
 
 /**
  * 社区内容
@@ -10,7 +10,7 @@ import { UserInfoEntity } from '../../../user/entity/info';
 @CoolController({
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
   entity: CommunityPostEntity,
-  service: CommunityPostService,
+  service: AppCommunityPostService,
   pageQueryOp: {
     keyWordLikeFields: ['a.content'],
     fieldEq: ['a.status', 'a.userId'],
@@ -27,5 +27,5 @@ import { UserInfoEntity } from '../../../user/entity/info';
 })
 export class CommunityPostController extends BaseController {
   @Inject()
-  communityPostService: CommunityPostService;
+  appCommunityPostService: AppCommunityPostService;
 }

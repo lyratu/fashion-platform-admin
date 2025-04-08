@@ -70,6 +70,13 @@ export class CommentInfoEntity extends BaseEntity {
   })
   outfits: OutfitsInfoEntity;
 
+  // 关联社区
+  @ManyToOne(() => CommentInfoEntity, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
+  posts: CommentInfoEntity;
+
   @Column({
     comment: '类型',
     dict: ['社区评论', '文章评论', '商品评论'],

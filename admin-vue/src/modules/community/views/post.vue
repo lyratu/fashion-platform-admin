@@ -68,13 +68,6 @@ const Upsert = useUpsert({
 			component: { name: 'cl-upload', props: { multiple: true } }
 		},
 		{
-			label: t('状态'),
-			prop: 'status',
-			component: { name: 'el-radio-group', options: options.status },
-			value: 0,
-			required: true
-		},
-		{
 			label: t('选择用户'),
 			prop: 'userId',
 			component: { vm: UserSelect },
@@ -99,12 +92,6 @@ const Table = useTable({
 			prop: 'images',
 			minWidth: 100,
 			component: { name: 'cl-image', props: { size: 60 } }
-		},
-		{
-			label: t('状态'),
-			prop: 'status',
-			minWidth: 120,
-			dict: options.status
 		},
 		{
 			label: t('创建时间'),

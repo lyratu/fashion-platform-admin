@@ -1,5 +1,6 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index } from 'typeorm';
+import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
+import { CommunityPostEntity } from './post';
 
 /**
  * 点赞记录
@@ -14,6 +15,16 @@ export class CommunityLikeEntity extends BaseEntity {
   @Column({ comment: '内容ID' })
   postId: number;
 
+  @ManyToOne(() => CommunityPostEntity, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
+  @JoinColumn({ name: 'postId' })
+  posts: CommunityPostEntity;
+
   @Column({ comment: '状态', dict: ['已赞', '取消'], default: 0 })
   status: number;
+
+  @Column({ comment: '操作时间', type: 'datetime' })
+  operateTime: Date;
 }

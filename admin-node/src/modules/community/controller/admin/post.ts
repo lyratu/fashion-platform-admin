@@ -13,7 +13,7 @@ import { UserInfoEntity } from '../../../user/entity/info';
   service: CommunityPostService,
   pageQueryOp: {
     keyWordLikeFields: ['a.content'],
-    fieldEq: ['a.status', 'a.userId'],
+    fieldEq: ['a.userId'],
     join: [
       {
         entity: UserInfoEntity,
