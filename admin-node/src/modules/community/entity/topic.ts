@@ -1,6 +1,7 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index, ManyToOne } from 'typeorm';
+import { Column, Entity, Index, ManyToMany, ManyToOne } from 'typeorm';
 import { CommentInfoEntity } from '../../comment/entity/info';
+import { CommunityPostEntity } from './post';
 
 /**
  * 社区话题
@@ -11,11 +12,8 @@ export class CommunityTopicEntity extends BaseEntity {
   name: string;
 
   // 关联社区
-  @ManyToOne(() => CommentInfoEntity, {
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete',
-  })
-  posts: CommentInfoEntity;
+  @ManyToMany(() => CommunityPostEntity, post => post.topics)
+  posts: CommunityPostEntity[];
 
   @Column({ comment: '状态', dict: ['显示', '隐藏'], default: 0 })
   status: number;

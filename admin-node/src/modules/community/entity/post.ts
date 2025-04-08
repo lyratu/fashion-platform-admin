@@ -4,6 +4,8 @@ import {
   Entity,
   Index,
   JoinColumn,
+  JoinTable,
+  ManyToMany,
   ManyToOne,
   OneToMany,
 } from 'typeorm';
@@ -43,9 +45,10 @@ export class CommunityPostEntity extends BaseEntity {
   })
   comments: CommentInfoEntity[];
 
-  // 关联文章
-  @OneToMany(() => CommunityTopicEntity, topic => topic.posts, {
+  // 关联话题
+  @ManyToMany(() => CommunityTopicEntity, topic => topic.posts, {
     cascade: true,
   })
+  @JoinTable()
   topics: CommunityTopicEntity[];
 }

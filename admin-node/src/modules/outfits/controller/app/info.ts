@@ -41,7 +41,7 @@ import { DictInfoEntity } from '../../../dict/entity/info';
     ],
     select: [
       'a.*',
-      " JSON_OBJECT('nickName', b.nickName, 'avatarUrl', b.avatarUrl,'id', b.id,'position', b.position) as user",
+      "JSON_OBJECT('nickName', b.nickName, 'avatarUrl', b.avatarUrl,'id', b.id,'position', b.position) as user",
       "JSON_OBJECT('name',c.name,'typeId',c.typeId,'value',c.value) as categoryText",
     ],
   },
