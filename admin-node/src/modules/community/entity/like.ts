@@ -23,7 +23,7 @@ export class CommunityLikeEntity extends BaseEntity {
   posts: CommunityPostEntity;
 
   @Column({ comment: '状态', dict: ['已赞', '取消'], default: 0 })
-  status: number;
+  likeStatus: number;
 
   @Column({ comment: '操作时间', type: 'datetime' })
   operateTime: Date;

@@ -26,7 +26,7 @@ export class UserInfoEntity extends BaseEntity {
   @Column({ comment: '身份', dict: ['普通', '达人'], default: 0 })
   type: number;
 
-  @Column({ comment: '职业' })
+  @Column({ comment: '职业', nullable: true  })
   position: string;
 
   @Column({ comment: '状态', dict: ['禁用', '正常', '已注销'], default: 1 })
