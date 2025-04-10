@@ -4,6 +4,7 @@ import { OutfitsLikeEntity } from '../../entity/like';
 import { OutfitsLikeService } from '../../service/like';
 import { UserInfoEntity } from '../../../user/entity/info';
 import { OutfitsInfoEntity } from '../../../outfits/entity/info';
+import { OutfitsInfoService } from '../../service/info';
 
 /**
  * 穿搭点赞
@@ -46,52 +47,20 @@ export class AppOutfitsLikeController extends BaseController {
   outfitsLikeService: OutfitsLikeService;
 
   @Inject()
-  ctx;
-
-  @Get('/getLikeRecord', { summary: '根据穿搭ID和用户ID获取点赞记录' })
-  async getLikeRecord(@Query('outfitsId') outfitsId: number) {
-    const result = await this.outfitsLikeService.getLikeRecord(
-      outfitsId,
-      this.ctx.user.id
-    );
-    return this.ok(result);
-  }
+  outfitsInfoService: OutfitsInfoService;
 
   @Post('/getLikeListByUserId', { summary: '根据用户ID获取点赞列表' })
   async getLikeListByUserId(@Query('userId') userId: number) {
     const result = await this.outfitsLikeService.getLikeListByUserId(userId);
     return this.ok(result);
   }
-  @Post('/getLikeCountByOutfitsId', { summary: '根据穿搭ID统计点赞总数' })
-  async getLikeCountByOutfitsId(@Query('outfitsId') outfitsId: number) {
-    const result = await this.outfitsLikeService.getLikeCountByOutfitsId(
-      outfitsId
-    );
-    return this.ok(result);
-  }
 
   @Post('/likeOrUnlike', { summary: '点赞或取消点赞' })
   async likeOrUnlike(@Query('outfitsId') outfitsId: number) {
-    const userId = this.ctx.user.id;
-    const likeRecord = await this.outfitsLikeService.getLikeRecord(
-      outfitsId,
-      userId
-    );
-    if (likeRecord) {
-      likeRecord.likeStatus = likeRecord.likeStatus === 1 ? 0 : 1;
-      likeRecord.operateTime = new Date();
-      await this.outfitsLikeService.outfitsLikeEntity.save(likeRecord);
-      return this.ok(likeRecord);
-    } else {
-      const newLikeRecord = {
-        outfitsId,
-        userId,
-        likeStatus: 1,
-        operateTime: new Date(),
-      };
-      console.log('[ newLikeRecord ] >', newLikeRecord);
-      await this.outfitsLikeService.outfitsLikeEntity.insert(newLikeRecord);
-      return this.ok(newLikeRecord);
-    }
+    const result = await this.outfitsLikeService.likeOrUnlike(outfitsId);
+    const likeCount = result.likeStatus
+      ? await this.outfitsInfoService.incrementLikeCount(outfitsId)
+      : await this.outfitsInfoService.decrementLikeCount(outfitsId);
+    return this.ok({ likeStatus: result.likeStatus, likeCount });
   }
 }

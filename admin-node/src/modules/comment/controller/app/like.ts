@@ -4,6 +4,7 @@ import { CommentLikeService } from '../../service/like';
 import { CommentLikeEntity } from '../../entity/like';
 import { UserInfoEntity } from '../../../user/entity/info';
 import { CommentInfoEntity } from '../../entity/info';
+import { CommentInfoService } from './../../service/info';
 
 /**
  * 评论点赞
@@ -36,7 +37,7 @@ export class AppCommentLikeController extends BaseController {
   commentLikeService: CommentLikeService;
 
   @Inject()
-  ctx;
+  commentInfoService: CommentInfoService;
 
   /**
    * 点赞或取消点赞
@@ -44,9 +45,10 @@ export class AppCommentLikeController extends BaseController {
    */
   @Post('/likeOrUnlike', { summary: '点赞或取消点赞' })
   async like(@Query('commentId') commentId: number) {
-    const userId = this.ctx.user.id;
-    return this.ok(
-      await this.commentLikeService.likeOrUnlike(userId, commentId)
-    );
+    const result = await this.commentLikeService.likeOrUnlike(commentId);
+    const likeCount = result.likeStatus
+      ? await this.commentInfoService.incrementLikeCount(commentId)
+      : await this.commentInfoService.decrementLikeCount(commentId);
+    return this.ok({ likeStatus: result.likeStatus, likeCount });
   }
 }

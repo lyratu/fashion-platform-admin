@@ -12,6 +12,7 @@ import {
 import { UserInfoEntity } from '../../user/entity/info';
 import { CommentInfoEntity } from '../../comment/entity/info';
 import { CommunityTopicEntity } from './topic';
+import { CommunityLikeEntity } from './like';
 
 /**
  * 社区内容
@@ -45,10 +46,18 @@ export class CommunityPostEntity extends BaseEntity {
   })
   comments: CommentInfoEntity[];
 
+  // 关联点赞
+  @OneToMany(() => CommunityLikeEntity, comment => comment.posts, {
+    cascade: true,
+  })
+  likes: CommunityLikeEntity[];
+
   // 关联话题
   @ManyToMany(() => CommunityTopicEntity, topic => topic.posts, {
     cascade: true,
   })
   @JoinTable()
   topics: CommunityTopicEntity[];
+
+  likeStatus?: number;
 }

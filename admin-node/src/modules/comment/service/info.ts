@@ -28,6 +28,7 @@ export class CommentInfoService extends BaseService {
   }
 
   // 获取页面评论列表
+  //[ ] 这里逻辑需要修复，然后检查文章评论的其他功能实现，另外需要写社区模块的评论发布
   async getPageComment(id: string, page: number, limit: number) {
     const uid = this.ctx.user.id;
     const [list, total] = await this.commentInfoEntity
@@ -48,9 +49,6 @@ export class CommentInfoService extends BaseService {
       .where('c.objectId = :id AND c.parent IS NULL', { id })
       // 根据创建时间倒序排序
       .orderBy('c.createTime', 'DESC')
-      // 分页：跳过前面 (page - 1) * limit 条记录，取 limit 条记录
-      .skip((page - 1) * limit)
-      .take(limit)
       // 同时返回数据列表和符合条件的总数
       .getManyAndCount();
     return { list, total };
@@ -78,7 +76,6 @@ export class CommentInfoService extends BaseService {
       const parentComment = await this.commentInfoEntity.findOne({
         where: { id: parentId },
       });
-      console.log('parentComment', parentComment);
       if (!parentComment) {
         throw new CoolCommException('回复失败，评论已被删除');
       }
@@ -107,5 +104,37 @@ export class CommentInfoService extends BaseService {
    */
   async getCommentInfo(id: number) {
     return this.commentInfoEntity.findOneBy({ id });
+  }
+  /* 增加点赞数 */
+  async incrementLikeCount(commentId: number) {
+    await this.commentInfoEntity.increment({ id: commentId }, 'likeCount', 1);
+    const updatedComment = await this.commentInfoEntity.findOne({
+      where: { id: commentId },
+    });
+    return updatedComment.likeCount;
+  }
+  /* 增加点赞数减少 */
+  async decrementLikeCount(commentId: number) {
+    await this.commentInfoEntity.decrement({ id: commentId }, 'likeCount', 1);
+    const updatedComment = await this.commentInfoEntity.findOne({
+      where: { id: commentId },
+    });
+    return updatedComment.likeCount;
+  }
+
+  /* 更新回复数 */
+  async incrementReplyCountCount(commentId: number) {
+    await this.commentInfoEntity.decrement({ id: commentId }, 'replyCount', 1);
+    const updatedComment = await this.commentInfoEntity.findOne({
+      where: { id: commentId },
+    });
+    return updatedComment.replyCount;
+  }
+  async decrementReplyCountCount(commentId: number) {
+    await this.commentInfoEntity.decrement({ id: commentId }, 'replyCount', 1);
+    const updatedComment = await this.commentInfoEntity.findOne({
+      where: { id: commentId },
+    });
+    return updatedComment.replyCount;
   }
 }

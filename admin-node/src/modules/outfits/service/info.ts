@@ -34,6 +34,57 @@ export class OutfitsInfoService extends BaseService {
     }
   }
 
+  /* 更新点赞量 */
+  async incrementLikeCount(id: number) {
+    await this.outfitsInfoEntity.increment({ id }, 'likeCount', 1);
+    const updatedComment = await this.outfitsInfoEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.likeCount;
+  }
+
+  async decrementLikeCount(id: number) {
+    await this.outfitsInfoEntity.decrement({ id }, 'likeCount', 1);
+    const updatedComment = await this.outfitsInfoEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.likeCount;
+  }
+
+  /* 更新收藏量 */
+  async incrementCollectCount(id: number) {
+    await this.outfitsInfoEntity.increment({ id }, 'collectCount', 1);
+    const updatedComment = await this.outfitsInfoEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.collectCount;
+  }
+
+  async decrementCollectCount(id: number) {
+    await this.outfitsInfoEntity.decrement({ id }, 'collectCount', 1);
+    const updatedComment = await this.outfitsInfoEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.collectCount;
+  }
+  /* 更新评论量 */
+  async incrementCommentCount(id: number) {
+    await this.outfitsInfoEntity.increment({ id }, 'commentCount', 1);
+    const updatedComment = await this.outfitsInfoEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.commentCount;
+  }
+
+
+  async decrementCommentCount(id: number) {
+    await this.outfitsInfoEntity.decrement({ id }, 'commentCount', 1);
+    const updatedComment = await this.outfitsInfoEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.commentCount;
+  }
+
   // 相关文章推荐
   async getRelatedArticles(id: number) {
     let recommendations = [];
@@ -71,12 +122,6 @@ export class OutfitsInfoService extends BaseService {
       .createQueryBuilder('a') // 主表别名为 a
       .leftJoinAndSelect('a.user', 'b') // 关联 user 表，别名为 b
       .leftJoinAndSelect('a.tags', 'c') // 关联 tags 表，别名为 c
-      .loadRelationCountAndMap('a.likeCount', 'a.likes', 'like', qb =>
-        qb.andWhere('like.likeStatus = :status', { status: 1 })
-      )
-      .loadRelationCountAndMap('a.collectCount', 'a.collects', 'collect', qb =>
-        qb.andWhere('collect.collectStatus = :status', { status: 1 })
-      )
       .leftJoinAndMapOne(
         'a.categoryText', // 将整个 DictInfoEntity 映射到该属性上
         DictInfoEntity,
@@ -99,7 +144,7 @@ export class OutfitsInfoService extends BaseService {
     return data;
   }
 
-  // 获取穿搭精选文章列表
+  // 获取穿搭精选文章列表 type=1 根据是否精选  type=0 根据点赞数
   async getOutfitsRec(type: number) {
     let list = null;
     if (type) {

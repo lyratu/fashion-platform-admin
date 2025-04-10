@@ -22,8 +22,12 @@ export class AppCommunityPostService extends BaseService {
       .createQueryBuilder('p')
       .leftJoinAndSelect('p.user', 'user')
       .leftJoinAndSelect('p.topics', 'topic')
+      .leftJoinAndSelect('p.likes', 'like', 'like.userId = :currentUserId', {
+        currentUserId: this.ctx.user.id,
+      })
       .select([
-        "p",
+        'p',
+        'like.likeStatus',
         'user.nickName',
         'user.id',
         'user.avatarUrl',
@@ -32,6 +36,8 @@ export class AppCommunityPostService extends BaseService {
       ])
       .where('p.id = :id', { id })
       .getOne();
+    result.likeStatus = result.likes[0].likeStatus;
+    delete result.likes;
     return result;
   }
 
@@ -41,12 +47,38 @@ export class AppCommunityPostService extends BaseService {
     return result;
   }
 
-  incrementLikeCount(postId: number) {
-    return this.communityPostEntity.increment({ id: postId }, 'likeCount', 1);
+  /* 更新喜欢数 */
+  async incrementLikeCount(postId: number) {
+    await this.communityPostEntity.increment({ id: postId }, 'likeCount', 1);
+    const updatedComment = await this.communityPostEntity.findOne({
+      where: { id: postId },
+    });
+    return updatedComment.likeCount;
   }
 
-  decrementLikeCount(postId: number) {
-    return this.communityPostEntity.decrement({ id: postId }, 'likeCount', 1);
+  async decrementLikeCount(postId: number) {
+    await this.communityPostEntity.decrement({ id: postId }, 'likeCount', 1);
+    const updatedComment = await this.communityPostEntity.findOne({
+      where: { id: postId },
+    });
+    return updatedComment.likeCount;
+  }
+
+  /* 更新评论数 */
+  async incrementCommentCount(postId: number) {
+    await this.communityPostEntity.increment({ id: postId }, 'commentCount', 1);
+    const updatedComment = await this.communityPostEntity.findOne({
+      where: { id: postId },
+    });
+    return updatedComment.commentCount;
+  }
+
+  async decrementCommentCount(postId: number) {
+    await this.communityPostEntity.decrement({ id: postId }, 'commentCount', 1);
+    const updatedComment = await this.communityPostEntity.findOne({
+      where: { id: postId },
+    });
+    return updatedComment.commentCount;
   }
 
   async queryActiveUsersFromPosts(): Promise<any[]> {

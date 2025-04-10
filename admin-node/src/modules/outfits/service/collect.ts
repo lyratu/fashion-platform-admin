@@ -12,6 +12,8 @@ export class OutfitsCollectService extends BaseService {
   @InjectEntityModel(OutfitsCollectEntity)
   outfitsCollectEntity: Repository<OutfitsCollectEntity>;
 
+  @Inject()
+  ctx;
   /**
    * 根据穿搭ID和用户ID精准匹配操作记录
    * @param outfitsId
@@ -29,16 +31,25 @@ export class OutfitsCollectService extends BaseService {
     return this.outfitsCollectEntity.find({ where: { userId } });
   }
 
-  /**
-   * 根据穿搭ID统计收藏总数
-   * @param outfitsId
-   */
-  async getCollectCountByOutfitsId(outfitsId: number) {
-    return this.nativeQuery(
-      `
-      SELECT COUNT(*) AS total FROM outfits_collect WHERE outfitsId = ? AND collectStatus = 1
-    `,
-      [outfitsId],
-    );
+  async collectOrUnCollect(outfitsId: number) {
+    let collectStatus = 0;
+    const userId = this.ctx.user.id;
+    const collectRecord = await this.getCollectRecord(outfitsId, userId);
+    if (collectRecord) {
+      collectRecord.collectStatus = collectRecord.collectStatus === 1 ? 0 : 1;
+      collectRecord.operateTime = new Date();
+      await this.outfitsCollectEntity.save(collectRecord);
+      collectStatus = collectRecord.collectStatus;
+    } else {
+      const newCollectRecord = {
+        outfitsId,
+        userId,
+        collectStatus: 1,
+        operateTime: new Date(),
+      };
+      await this.outfitsCollectEntity.insert(newCollectRecord);
+      collectStatus = 1;
+    }
+    return { collectStatus };
   }
 }

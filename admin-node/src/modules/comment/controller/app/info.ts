@@ -8,8 +8,9 @@ import {
   TagTypes,
 } from '@cool-midway/core';
 import { UserInfoEntity } from '../../../user/entity/info';
+import { BaseCommentController } from './baseCommentController';
 /**
- * 轮播图
+ * 评论
  */
 @CoolController({
   api: ['page'],
@@ -39,44 +40,45 @@ export class commentController extends BaseController {
     return this.ok(await this.commentInfoService.getCommentRec());
   }
 
-  @CoolTag(TagTypes.IGNORE_TOKEN)
-  @Get('/getPageComment', { summary: '获取文章页面评论' })
-  async getPageComment(
-    @Query() params: { id: string; page: number; limit: number }
-  ) {
-    const { id, page, limit } = params;
-    return this.ok(
-      await this.commentInfoService.getPageComment(id, page, limit)
-    );
-  }
+  // /* 穿搭方面评论 */
+  // @CoolTag(TagTypes.IGNORE_TOKEN)
+  // @Get('/getPageComment', { summary: '获取文章页面评论' })
+  // async getPageComment(
+  //   @Query() params: { id: string; page: number; limit: number }
+  // ) {
+  //   const { id, page, limit } = params;
+  //   return this.ok(
+  //     await this.commentInfoService.getPageComment(id, page, limit)
+  //   );
+  // }
 
-  @Post('/sendComment', { summary: '发送文章评论' })
-  async addComment(
-    @Body()
-    body: {
-      objectId: number;
-      content: string;
-      parentId?: number;
-      replyTo?: string;
-    }
-  ) {
-    const { objectId, content, parentId, replyTo } = body;
-    return this.ok(
-      await this.commentInfoService.createComment(
-        1,
-        objectId,
-        content,
-        parentId,
-        replyTo
-      )
-    );
-  }
+  // @Post('/sendComment', { summary: '发送文章评论' })
+  // async addComment(
+  //   @Body()
+  //   body: {
+  //     objectId: number;
+  //     content: string;
+  //     parentId?: number;
+  //     replyTo?: string;
+  //   }
+  // ) {
+  //   const { objectId, content, parentId, replyTo } = body;
+  //   return this.ok(
+  //     await this.commentInfoService.createComment(
+  //       1,
+  //       objectId,
+  //       content,
+  //       parentId,
+  //       replyTo
+  //     )
+  //   );
+  // }
 
-  @Post('/delComment', { summary: '删除评论' })
-  async deleteComment(@Query('id') id: number) {
-    return this.ok(await this.commentInfoService.deleteComment(id, 1));
-  }
+  // @Post('/delComment', { summary: '删除文章评论' })
+  // async deleteComment(@Query('id') id: number) {
+  //   return this.ok(await this.commentInfoService.deleteComment(id, 1));
+  // }
 
-  @Post('/likeOrUnlike', { summary: '点赞或取消点赞' })
-  async likeOrUnlike() {}
+  // @Post('/likeOrUnlike', { summary: '点赞或取消点赞文章评论' })
+  // async likeOrUnlike() {}
 }

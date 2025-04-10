@@ -11,6 +11,7 @@ import { Context } from '@midwayjs/koa';
 import { Get, Inject, Query } from '@midwayjs/core';
 import { UserInfoEntity } from '../../../user/entity/info';
 import { DictInfoEntity } from '../../../dict/entity/info';
+import { BaseCommentController } from '../../../comment/controller/app/baseCommentController';
 /**
  * 穿搭分享-前台接口
  */
@@ -46,7 +47,9 @@ import { DictInfoEntity } from '../../../dict/entity/info';
     ],
   },
 })
-export class AppOutfitsInfoController extends BaseController {
+export class AppOutfitsInfoController extends BaseCommentController {
+  commentType = 1;
+
   @Inject()
   OutfitsInfoService: OutfitsInfoService;
 
@@ -63,5 +66,50 @@ export class AppOutfitsInfoController extends BaseController {
   @Get('/getRelatedArticles', { summary: '获取相关文章' })
   async getRelatedArticles(@Query('id') id: number) {
     return this.ok(await this.OutfitsInfoService.getRelatedArticles(id));
+  }
+
+  /* 文章评论列表获取 */
+  @Get('/getPageComment', { summary: '文章评论列表获取' })
+  async getPageComment(params: {
+    id: string;
+    page: number;
+    limit: number;
+  }): Promise<{ code: number; message: string }> {
+    return super.getPageComment(params);
+  }
+
+  /* 文章评论发布 */
+  async addComment(body: {
+    objectId: number;
+    content: string;
+    parentId?: number;
+    replyTo?: string;
+  }): Promise<{ code: number; message: string }> {
+    return super.addComment(body);
+  }
+
+  protected async afterAddComment(comment: any): Promise<void> {
+    console.log('[ 文章评论列表已获取 ] >', 1);
+  }
+
+  /* 文章评论点赞 */
+  async likeOrUnlike(body: {
+    commentId: number;
+    objectId: number;
+  }): Promise<{ code: number; message: string }> {
+    return super.likeOrUnlike(body);
+  }
+
+  protected async afterLikeOrUnlike(result: any): Promise<void> {
+    console.log('[ 文章评论已点赞 ] >', 1);
+  }
+
+  /* 文章评论删除 */
+  async deleteComment(id: number): Promise<{ code: number; message: string }> {
+    return super.deleteComment(id);
+  }
+
+  protected async afterDelComment(result: any): Promise<void> {
+    console.log('[ 文章评论已删除 ] >', 1);
   }
 }

@@ -15,6 +15,7 @@ export class CommunityLikeEntity extends BaseEntity {
   @Column({ comment: '内容ID' })
   postId: number;
 
+  // 关联社区
   @ManyToOne(() => CommunityPostEntity, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete',
