@@ -36,7 +36,7 @@ export class AppCommunityPostService extends BaseService {
       ])
       .where('p.id = :id', { id })
       .getOne();
-    result.likeStatus = result.likes[0].likeStatus;
+    result.likeStatus = result.likes[0]?.likeStatus || 0;
     delete result.likes;
     return result;
   }

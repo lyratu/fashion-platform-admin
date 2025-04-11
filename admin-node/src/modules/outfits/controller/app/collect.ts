@@ -63,8 +63,8 @@ export class AppOutfitsCollectController extends BaseController {
       outfitsId
     );
     const collectCount = result.collectStatus
-      ? await this.outfitsInfoService.incrementLikeCount(outfitsId)
-      : await this.outfitsInfoService.decrementLikeCount(outfitsId);
+      ? await this.outfitsInfoService.incrementCollectCount(outfitsId)
+      : await this.outfitsInfoService.decrementCollectCount(outfitsId);
     return this.ok({ collectStatus: result.collectStatus, collectCount });
   }
 }

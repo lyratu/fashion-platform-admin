@@ -74,4 +74,7 @@ export class OutfitsInfoEntity extends BaseEntity {
     cascade: true,
   })
   collects: OutfitsCollectEntity[];
+
+  likeStatus?: number;
+  collectStatus?: number;
 }

@@ -8,7 +8,7 @@ import {
 import { OutfitsInfoEntity } from '../../entity/info';
 import { OutfitsInfoService } from '../../service/info';
 import { Context } from '@midwayjs/koa';
-import { Get, Inject, Post, Query } from '@midwayjs/core';
+import { Body, Get, Inject, Post, Query } from '@midwayjs/core';
 import { UserInfoEntity } from '../../../user/entity/info';
 import { DictInfoEntity } from '../../../dict/entity/info';
 import { BaseCommentController } from '../../../comment/controller/app/baseCommentController';
@@ -70,22 +70,23 @@ export class AppOutfitsInfoController extends BaseCommentController {
 
   /* 文章评论列表获取 */
   @Get('/getPageComment', { summary: '文章评论列表获取' })
-  async getPageComment(params: {
-    id: string;
-    page: number;
-    limit: number;
-  }): Promise<{ code: number; message: string }> {
+  async getPageComment(
+    @Query() params: { id: string; page: number; limit: number }
+  ): Promise<{ code: number; message: string }> {
     return super.getPageComment(params);
   }
 
   /* 文章评论发布 */
   @Post('/sendComment', { summary: '发送评论' })
-  async addComment(body: {
-    objectId: number;
-    content: string;
-    parentId?: number;
-    replyTo?: string;
-  }): Promise<{ code: number; message: string }> {
+  async addComment(
+    @Body()
+    body: {
+      objectId: number;
+      content: string;
+      parentId?: number;
+      replyTo?: string;
+    }
+  ): Promise<{ code: number; message: string }> {
     return super.addComment(body);
   }
 

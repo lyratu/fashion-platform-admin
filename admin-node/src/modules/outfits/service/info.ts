@@ -10,7 +10,7 @@ import { OutfitsTagService } from './tag';
 import { OutfitsTagEntity } from '../entity/tag';
 import { OutfitsLikeEntity } from '../entity/like';
 import { DictInfoEntity } from '../../dict/entity/info';
-
+// [ ] -4/11 完成文章 评论点赞收藏更新数量，文章评论发表 及获取 注意评论获取的点赞状态
 /**
  * 穿搭信息
  */
@@ -24,6 +24,9 @@ export class OutfitsInfoService extends BaseService {
 
   @InjectEntityModel(OutfitsTagEntity)
   outfitsTagEntity: Repository<OutfitsTagEntity>;
+
+  @Inject()
+  ctx;
 
   async modifyBefore(data: any, type: 'delete' | 'update' | 'add') {
     if (type === 'update') {
@@ -75,7 +78,6 @@ export class OutfitsInfoService extends BaseService {
     });
     return updatedComment.commentCount;
   }
-
 
   async decrementCommentCount(id: number) {
     await this.outfitsInfoEntity.decrement({ id }, 'commentCount', 1);
@@ -129,8 +131,21 @@ export class OutfitsInfoService extends BaseService {
         'd.value = a.category AND d.typeId = :typeId',
         { typeId: 21 }
       )
+      .leftJoinAndSelect('a.likes', 'like', 'like.userId = :currentUserId', {
+        currentUserId: this.ctx.user.id,
+      })
+      .leftJoinAndSelect(
+        'a.collects',
+        'collect',
+        'collect.userId = :currentUserId',
+        {
+          currentUserId: this.ctx.user.id,
+        }
+      )
       .select([
         'a', // 主表所有字段（相当于 a.*）
+        'like.likeStatus',
+        'collect.collectStatus',
         'b.id', // user 表的 authId
         'b.nickName', // user 表的 nickname
         'b.avatarUrl',
@@ -141,6 +156,12 @@ export class OutfitsInfoService extends BaseService {
       ])
       .where('a.id = :id', { id: params }) // 条件过滤
       .getOne(); // 获取单个结果
+    /* 获取当前用户点赞状态 */
+    data.likeStatus = data.likes[0]?.likeStatus || 0;
+    delete data.likes;
+    /* 获取当前用户收藏状态 */
+    data.collectStatus = data.collects[0]?.collectStatus || 0;
+    delete data.collects;
     return data;
   }
 
