@@ -82,9 +82,9 @@ export class CommunityPostController extends BaseCommentController {
     );
   }
 
-  /* 文章评论列表获取 */
+  /* 社区评论列表获取 */
   @CoolTag(TagTypes.IGNORE_TOKEN)
-  @Get('/getPageComment', { summary: '文章评论列表获取' })
+  @Get('/getPageComment', { summary: '社区评论列表获取' })
   async getPageComment(
     @Query() params: { id: string; page: number; limit: number }
   ): Promise<{ code: number; message: string }> {
@@ -99,7 +99,7 @@ export class CommunityPostController extends BaseCommentController {
       );
   }
 
-  /* 文章评论发布 */
+  /* 社区评论发布 */
   @Post('/sendComment', { summary: '发送评论' })
   async addComment(
     @Body()
@@ -116,4 +116,6 @@ export class CommunityPostController extends BaseCommentController {
   protected async afterAddComment(comment: any): Promise<void> {
     console.log('[ 社区评论列表已获取 ] >', 1);
   }
+
+  async getTrend() {}
 }

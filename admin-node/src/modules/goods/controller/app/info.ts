@@ -9,7 +9,7 @@ import {
   CoolUrlTag,
 } from '@cool-midway/core';
 /**
- * 轮播图
+ * 商城
  */
 
 @CoolUrlTag({
@@ -20,6 +20,11 @@ import {
   entity: GoodsEntity,
   service: GoodsService,
   api: ['page', 'info'],
+  pageQueryOp: {
+    keyWordLikeFields: ['a.description'],
+    fieldEq: ['a.status'],
+    fieldLike: ['a.title'],
+  },
 })
 export class goodsController extends BaseController {
   @Inject()
