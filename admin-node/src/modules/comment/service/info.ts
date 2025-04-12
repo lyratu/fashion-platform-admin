@@ -29,15 +29,18 @@ export class CommentInfoService extends BaseService {
 
   // 获取页面评论列表
   //[ ] 这里逻辑需要修复，然后检查文章评论的其他功能实现，另外需要写社区模块的评论发布
-  async getPageComment(id: string, page: number, limit: number) {
+  async getPageComment(type: number, id: string, page: number, limit: number) {
     const uid = this.ctx.user.id;
     const [list, total] = await this.commentInfoEntity
       .createQueryBuilder('c')
       .leftJoinAndSelect('c.user', 'user')
       .leftJoinAndSelect('c.children', 'children')
       .leftJoinAndSelect('children.user', 'childUser')
-      .loadRelationCountAndMap('c.likeCount', 'c.likes', 'like', qb =>
-        qb.andWhere('like.likeStatus = :status', { status: 1 })
+      .loadRelationCountAndMap('children.likeStatus', 'children.likes', 'like', qb =>
+        qb.andWhere('like.likeStatus = :status And like.userId = :uid', {
+          status: 1,
+          uid,
+        })
       )
       .loadRelationCountAndMap('c.likeStatus', 'c.likes', 'like', qb =>
         qb.andWhere('like.likeStatus = :status And like.userId = :uid', {
@@ -46,7 +49,10 @@ export class CommentInfoService extends BaseService {
         })
       )
       // 查询条件：objectId 为传入的 id 且 parent 为空（一级评论）
-      .where('c.objectId = :id AND c.parent IS NULL', { id })
+      .where('c.objectId = :id AND c.parent IS NULL AND c.type = :type', {
+        id,
+        type,
+      })
       // 根据创建时间倒序排序
       .orderBy('c.createTime', 'DESC')
       // 同时返回数据列表和符合条件的总数

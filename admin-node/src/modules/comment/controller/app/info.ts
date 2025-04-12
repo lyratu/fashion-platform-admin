@@ -40,7 +40,12 @@ export class commentController extends BaseController {
     return this.ok(await this.commentInfoService.getCommentRec());
   }
 
-  // /* 穿搭方面评论 */
+  // [ ] 评论通用删除
+  @Post('/delComment', { summary: '删除文章评论' })
+  async deleteComment(@Query('id') id: number) {
+    return this.ok(await this.commentInfoService.deleteComment(id, 1));
+  }
+
   // @CoolTag(TagTypes.IGNORE_TOKEN)
   // @Get('/getPageComment', { summary: '获取文章页面评论' })
   // async getPageComment(
@@ -73,12 +78,4 @@ export class commentController extends BaseController {
   //     )
   //   );
   // }
-
-  // @Post('/delComment', { summary: '删除文章评论' })
-  // async deleteComment(@Query('id') id: number) {
-  //   return this.ok(await this.commentInfoService.deleteComment(id, 1));
-  // }
-
-  // @Post('/likeOrUnlike', { summary: '点赞或取消点赞文章评论' })
-  // async likeOrUnlike() {}
 }

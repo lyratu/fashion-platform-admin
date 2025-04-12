@@ -43,6 +43,7 @@ export class AppCommentLikeController extends BaseController {
    * 点赞或取消点赞
    * @param commentId
    */
+  // [ ] 评论通用点赞
   @Post('/likeOrUnlike', { summary: '点赞或取消点赞' })
   async like(@Query('commentId') commentId: number) {
     const result = await this.commentLikeService.likeOrUnlike(commentId);

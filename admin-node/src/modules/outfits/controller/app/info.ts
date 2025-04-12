@@ -93,25 +93,4 @@ export class AppOutfitsInfoController extends BaseCommentController {
   protected async afterAddComment(comment: any): Promise<void> {
     console.log('[ 文章评论列表已获取 ] >', 1);
   }
-
-  /* 文章评论点赞 */
-  async likeOrUnlike(body: {
-    commentId: number;
-    objectId: number;
-  }): Promise<{ code: number; message: string }> {
-    return super.likeOrUnlike(body);
-  }
-
-  protected async afterLikeOrUnlike(result: any): Promise<void> {
-    console.log('[ 文章评论已点赞 ] >', 1);
-  }
-
-  /* 文章评论删除 */
-  async deleteComment(id: number): Promise<{ code: number; message: string }> {
-    return super.deleteComment(id);
-  }
-
-  protected async afterDelComment(result: any): Promise<void> {
-    console.log('[ 文章评论已删除 ] >', 1);
-  }
 }
