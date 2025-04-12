@@ -1,11 +1,19 @@
-import { Get, Inject, Post, Query } from '@midwayjs/core';
-import { CoolController, BaseController, QueryOp } from '@cool-midway/core';
+import { Body, Get, Inject, Post, Query } from '@midwayjs/core';
+import {
+  CoolController,
+  BaseController,
+  QueryOp,
+  CoolTag,
+  TagTypes,
+} from '@cool-midway/core';
 import { CommunityPostEntity } from '../../entity/post';
 import { UserInfoEntity } from '../../../user/entity/info';
 import { AppCommunityPostService } from '../../service/app_post';
 import { CommunityTopicEntity } from '../../entity/topic';
 import { SelectQueryBuilder } from 'typeorm';
 import { CommunityLikeEntity } from '../../entity/like';
+import { BaseCommentController } from '../../../comment/controller/app/baseCommentController';
+import { CommunityPostService } from './../../service/post';
 
 /**
  * 社区内容
@@ -58,7 +66,9 @@ import { CommunityLikeEntity } from '../../entity/like';
     });
   },
 })
-export class CommunityPostController extends BaseController {
+export class CommunityPostController extends BaseCommentController {
+  commentType = 0;
+
   @Inject()
   appCommunityPostService: AppCommunityPostService;
 
@@ -70,5 +80,40 @@ export class CommunityPostController extends BaseController {
     return this.ok(
       await this.appCommunityPostService.queryActiveUsersFromPosts()
     );
+  }
+
+  /* 文章评论列表获取 */
+  @CoolTag(TagTypes.IGNORE_TOKEN)
+  @Get('/getPageComment', { summary: '文章评论列表获取' })
+  async getPageComment(
+    @Query() params: { id: string; page: number; limit: number }
+  ): Promise<{ code: number; message: string }> {
+    return super.getPageComment(params);
+  }
+
+  protected async afterGetComment(params: any, comment: any): Promise<void> {
+    if (comment)
+      await this.appCommunityPostService.updateCommentCount(
+        params.id,
+        comment.total
+      );
+  }
+
+  /* 文章评论发布 */
+  @Post('/sendComment', { summary: '发送评论' })
+  async addComment(
+    @Body()
+    body: {
+      objectId: number;
+      content: string;
+      parentId?: number;
+      replyTo?: string;
+    }
+  ): Promise<{ code: number; message: string }> {
+    return super.addComment(body);
+  }
+
+  protected async afterAddComment(comment: any): Promise<void> {
+    console.log('[ 社区评论列表已获取 ] >', 1);
   }
 }

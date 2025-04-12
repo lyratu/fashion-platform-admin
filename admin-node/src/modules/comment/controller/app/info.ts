@@ -42,40 +42,7 @@ export class commentController extends BaseController {
 
   // [ ] 评论通用删除
   @Post('/delComment', { summary: '删除文章评论' })
-  async deleteComment(@Query('id') id: number) {
-    return this.ok(await this.commentInfoService.deleteComment(id, 1));
+  async deleteComment(@Query() params: { id: number; type: number }) {
+    return this.ok(await this.commentInfoService.deleteComment(params));
   }
-
-  // @CoolTag(TagTypes.IGNORE_TOKEN)
-  // @Get('/getPageComment', { summary: '获取文章页面评论' })
-  // async getPageComment(
-  //   @Query() params: { id: string; page: number; limit: number }
-  // ) {
-  //   const { id, page, limit } = params;
-  //   return this.ok(
-  //     await this.commentInfoService.getPageComment(id, page, limit)
-  //   );
-  // }
-
-  // @Post('/sendComment', { summary: '发送文章评论' })
-  // async addComment(
-  //   @Body()
-  //   body: {
-  //     objectId: number;
-  //     content: string;
-  //     parentId?: number;
-  //     replyTo?: string;
-  //   }
-  // ) {
-  //   const { objectId, content, parentId, replyTo } = body;
-  //   return this.ok(
-  //     await this.commentInfoService.createComment(
-  //       1,
-  //       objectId,
-  //       content,
-  //       parentId,
-  //       replyTo
-  //     )
-  //   );
-  // }
 }

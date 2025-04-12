@@ -69,11 +69,20 @@ export class AppOutfitsInfoController extends BaseCommentController {
   }
 
   /* 文章评论列表获取 */
+  @CoolTag(TagTypes.IGNORE_TOKEN)
   @Get('/getPageComment', { summary: '文章评论列表获取' })
   async getPageComment(
     @Query() params: { id: string; page: number; limit: number }
   ): Promise<{ code: number; message: string }> {
     return super.getPageComment(params);
+  }
+
+  protected async afterGetComment(params: any, comment: any): Promise<void> {
+    if (comment)
+      await this.OutfitsInfoService.updateCommentCount(
+        params.id,
+        comment.total
+      );
   }
 
   /* 文章评论发布 */
@@ -88,9 +97,5 @@ export class AppOutfitsInfoController extends BaseCommentController {
     }
   ): Promise<{ code: number; message: string }> {
     return super.addComment(body);
-  }
-
-  protected async afterAddComment(comment: any): Promise<void> {
-    console.log('[ 文章评论列表已获取 ] >', 1);
   }
 }

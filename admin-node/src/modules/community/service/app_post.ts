@@ -64,21 +64,9 @@ export class AppCommunityPostService extends BaseService {
     return updatedComment.likeCount;
   }
 
-  /* 更新评论数 */
-  async incrementCommentCount(postId: number) {
-    await this.communityPostEntity.increment({ id: postId }, 'commentCount', 1);
-    const updatedComment = await this.communityPostEntity.findOne({
-      where: { id: postId },
-    });
-    return updatedComment.commentCount;
-  }
-
-  async decrementCommentCount(postId: number) {
-    await this.communityPostEntity.decrement({ id: postId }, 'commentCount', 1);
-    const updatedComment = await this.communityPostEntity.findOne({
-      where: { id: postId },
-    });
-    return updatedComment.commentCount;
+  /* 更新评论量 */
+  async updateCommentCount(id: number, count: number) {
+    return await this.communityPostEntity.update(id, { commentCount: count });
   }
 
   async queryActiveUsersFromPosts(): Promise<any[]> {

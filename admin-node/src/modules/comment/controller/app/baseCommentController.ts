@@ -18,7 +18,7 @@ export abstract class BaseCommentController extends BaseController {
   @Inject()
   commentLikeService: CommentLikeService;
 
-  // [ ] 只有发送评论和获取评论是对于其他entity有特殊处理
+  // [ ] 只有发送评论和获取评论是对于其他entity有特殊处理 评论数量应该用聚合查询
 
   // 发送评论：在添加评论成功后，调用扩展钩子更新关联实体的 count
   @Post('/sendComment', { summary: '发送评论' })
@@ -40,7 +40,7 @@ export abstract class BaseCommentController extends BaseController {
       replyTo
     );
     // 调用钩子方法，对发送评论后的其他业务逻辑进行处理
-    await this.afterAddComment(comment);
+    await this.afterAddComment(body, comment);
     return this.ok(comment);
   }
 
@@ -56,13 +56,18 @@ export abstract class BaseCommentController extends BaseController {
       page,
       limit
     );
+    await this.afterGetComment(params, comments);
     return this.ok(comments);
   }
   /**
    * 钩子方法：发送评论之后的业务处理，比如修改对应实体的评论数量
    * 默认实现为空，子类可根据需要覆写
    */
-  protected async afterAddComment(comment: any): Promise<void> {
+  protected async afterAddComment(body: any, comment: any): Promise<void> {
+    // 默认不做处理，供子类实现具体逻辑
+  }
+
+  protected async afterGetComment(params: any, comment: any): Promise<void> {
     // 默认不做处理，供子类实现具体逻辑
   }
 }

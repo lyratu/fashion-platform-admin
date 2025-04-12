@@ -36,11 +36,15 @@ export class CommentInfoService extends BaseService {
       .leftJoinAndSelect('c.user', 'user')
       .leftJoinAndSelect('c.children', 'children')
       .leftJoinAndSelect('children.user', 'childUser')
-      .loadRelationCountAndMap('children.likeStatus', 'children.likes', 'like', qb =>
-        qb.andWhere('like.likeStatus = :status And like.userId = :uid', {
-          status: 1,
-          uid,
-        })
+      .loadRelationCountAndMap(
+        'children.likeStatus',
+        'children.likes',
+        'like',
+        qb =>
+          qb.andWhere('like.likeStatus = :status And like.userId = :uid', {
+            status: 1,
+            uid,
+          })
       )
       .loadRelationCountAndMap('c.likeStatus', 'c.likes', 'like', qb =>
         qb.andWhere('like.likeStatus = :status And like.userId = :uid', {
@@ -48,14 +52,13 @@ export class CommentInfoService extends BaseService {
           uid,
         })
       )
-      // 查询条件：objectId 为传入的 id 且 parent 为空（一级评论）
       .where('c.objectId = :id AND c.parent IS NULL AND c.type = :type', {
         id,
         type,
       })
-      // 根据创建时间倒序排序
       .orderBy('c.createTime', 'DESC')
-      // 同时返回数据列表和符合条件的总数
+      .skip((page - 1) * limit)
+      .take(limit)
       .getManyAndCount();
     return { list, total };
   }
@@ -95,7 +98,8 @@ export class CommentInfoService extends BaseService {
    * 删除评论
    * @param id
    */
-  async deleteComment(id: number, type: number) {
+  async deleteComment(params: { id: number; type: number }) {
+    const { id, type } = params;
     const comment = await this.commentInfoEntity.findOne({
       where: { id, type },
     });
@@ -126,21 +130,5 @@ export class CommentInfoService extends BaseService {
       where: { id: commentId },
     });
     return updatedComment.likeCount;
-  }
-
-  /* 更新回复数 */
-  async incrementReplyCountCount(commentId: number) {
-    await this.commentInfoEntity.decrement({ id: commentId }, 'replyCount', 1);
-    const updatedComment = await this.commentInfoEntity.findOne({
-      where: { id: commentId },
-    });
-    return updatedComment.replyCount;
-  }
-  async decrementReplyCountCount(commentId: number) {
-    await this.commentInfoEntity.decrement({ id: commentId }, 'replyCount', 1);
-    const updatedComment = await this.commentInfoEntity.findOne({
-      where: { id: commentId },
-    });
-    return updatedComment.replyCount;
   }
 }
