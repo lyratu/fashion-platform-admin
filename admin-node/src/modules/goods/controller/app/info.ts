@@ -23,7 +23,7 @@ import {
   pageQueryOp: {
     keyWordLikeFields: ['a.description'],
     fieldEq: ['a.status'],
-    fieldLike: ['a.title'],
+    fieldLike: ['a.title', 'a.type'],
   },
 })
 export class goodsController extends BaseController {
