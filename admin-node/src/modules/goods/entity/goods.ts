@@ -52,6 +52,7 @@ export class GoodsEntity extends BaseEntity {
     dict: ['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
   })
   size: any[];
+
   @Column({ comment: '收藏数', default: 0 })
   collectCount: number;
 

@@ -6,7 +6,7 @@ import { Column, Entity, Index } from 'typeorm';
  */
 @Entity('order_order')
 export class OrderOrderEntity extends BaseEntity {
-  @Index({ unique: true })
+  @Index()
   @Column({ comment: '订单号', length: 50 })
   orderNumber: string;
 
@@ -20,22 +20,19 @@ export class OrderOrderEntity extends BaseEntity {
   @Column({
     comment: '支付状态',
     dict: ['待支付', '已支付', '已发货', '已完成', '已取消'],
-    default: 0,
+    default: 1,
   })
-  paymentStatus: number;
+  payStatus: number;
 
   @Column({ comment: '支付时间', type: 'varchar', nullable: true })
-  paymentTime: Date;
+  payTime: Date;
 
-  @Column({ comment: '收货地址' })
-  shippingAddress: string;
+  @Column({ comment: '收货地址', length: 255, nullable: true })
+  address: string;
 
-  @Column({ comment: '联系方式', length: 20 })
+  @Column({ comment: '联系方式', length: 20, nullable: true })
   contactNumber: string;
 
   @Column({ comment: '物流单号', length: 50, nullable: true })
   trackingNumber: string;
-
-  @Column({ comment: '备注', nullable: true })
-  remark: string;
 }
