@@ -1,5 +1,6 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index } from 'typeorm';
+import { Column, Entity, Index, OneToMany } from 'typeorm';
+import { OrderItemEntity } from './item';
 
 /**
  * 订单信息
@@ -20,12 +21,14 @@ export class OrderOrderEntity extends BaseEntity {
   @Column({
     comment: '支付状态',
     dict: ['待支付', '已支付', '已发货', '已完成', '已取消'],
-    default: 1,
+    default: 0,
   })
   payStatus: number;
 
-  @Column({ comment: '支付时间', type: 'varchar', nullable: true })
-  payTime: Date;
+  @Column({
+    comment: '支付方式 1支付宝，2微信',
+  })
+  paymentType: number;
 
   @Column({ comment: '收货地址', length: 255, nullable: true })
   address: string;
@@ -35,4 +38,9 @@ export class OrderOrderEntity extends BaseEntity {
 
   @Column({ comment: '物流单号', length: 50, nullable: true })
   trackingNumber: string;
+
+  @OneToMany(() => OrderItemEntity, item => item.order, {
+    cascade: true,
+  })
+  orderItems: OrderItemEntity[];
 }
