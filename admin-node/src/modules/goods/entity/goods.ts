@@ -1,5 +1,6 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index } from 'typeorm';
+import { Column, Entity, Index, OneToMany } from 'typeorm';
+import { GoodsCollectEntity } from './collect';
 
 /**
  * 商品模块-商品信息
@@ -58,4 +59,11 @@ export class GoodsEntity extends BaseEntity {
 
   @Column({ comment: '销量', default: 0 })
   sales: number;
+
+  @OneToMany(() => GoodsCollectEntity, goods => goods.goods, {
+    cascade: true,
+  })
+  collects: GoodsCollectEntity[];
+
+  collectStatus?: number;
 }

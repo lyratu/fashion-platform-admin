@@ -50,4 +50,31 @@ export class GoodsService extends BaseService {
     });
     return list;
   }
+
+  /* 更新收藏量 */
+  async incrementCollectCount(id: number) {
+    await this.goodsEntity.increment({ id }, 'collectCount', 1);
+    const updatedComment = await this.goodsEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.collectCount;
+  }
+
+  // [ ] 完善
+  async getInfo(id: number, userId: number) {
+    this.goodsEntity.findOne({
+      relations: ['collects'],
+      where: {
+        id
+      },
+    });
+  }
+
+  async decrementCollectCount(id: number) {
+    await this.goodsEntity.decrement({ id }, 'collectCount', 1);
+    const updatedComment = await this.goodsEntity.findOne({
+      where: { id },
+    });
+    return updatedComment.collectCount;
+  }
 }

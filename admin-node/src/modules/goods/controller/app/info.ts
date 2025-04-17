@@ -8,6 +8,7 @@ import {
   TagTypes,
   CoolUrlTag,
 } from '@cool-midway/core';
+import { UserInfoEntity } from '../../../user/entity/info';
 /**
  * 商城
  */
@@ -31,7 +32,7 @@ export class goodsController extends BaseController {
   goodsService: GoodsService;
 
   @CoolTag(TagTypes.IGNORE_TOKEN)
-  @Get('/getGoodsRec', { summary: '获取穿搭分享精选' })
+  @Get('/getGoodsRec', { summary: '获取精选商品' })
   async getGoodsRec() {
     return this.ok(await this.goodsService.getGoodsRec());
   }

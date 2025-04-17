@@ -63,17 +63,17 @@ export class OutfitsInfoService extends BaseService {
     return updatedComment.collectCount;
   }
 
-  /* 更新评论量 */
-  async updateCommentCount(id: number, count: number) {
-    return await this.outfitsInfoEntity.update(id, { commentCount: count });
-  }
-
   async decrementCollectCount(id: number) {
     await this.outfitsInfoEntity.decrement({ id }, 'collectCount', 1);
     const updatedComment = await this.outfitsInfoEntity.findOne({
       where: { id },
     });
     return updatedComment.collectCount;
+  }
+
+  /* 更新评论量 */
+  async updateCommentCount(id: number, count: number) {
+    return await this.outfitsInfoEntity.update(id, { commentCount: count });
   }
 
   // 相关文章推荐
