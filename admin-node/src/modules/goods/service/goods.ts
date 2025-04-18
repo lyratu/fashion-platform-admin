@@ -60,14 +60,18 @@ export class GoodsService extends BaseService {
     return updatedComment.collectCount;
   }
 
-  // [ ] 完善
   async getInfo(id: number, userId: number) {
-    this.goodsEntity.findOne({
+    const goods = await this.goodsEntity.findOne({
       relations: ['collects'],
       where: {
-        id
+        id,
       },
     });
+    if (goods && userId) {
+      let item = goods.collects.find(collect => collect.userId == userId);
+      goods.collectStatus = item?.collectStatus||0;
+    }
+    return goods;
   }
 
   async decrementCollectCount(id: number) {

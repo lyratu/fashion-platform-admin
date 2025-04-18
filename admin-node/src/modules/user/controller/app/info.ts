@@ -31,10 +31,11 @@ export class AppUserInfoController extends BaseController {
 
   @Post('/updatePassword', { summary: '更新用户密码' })
   async updatePassword(
-    @Body('password') password: string,
+    @Body('currentPwd') currentPwd: string,
+    @Body('newPwd') newPwd: string,
     @Body('code') code: string
   ) {
-    await this.userInfoService.updatePassword(this.ctx.user.id, password, code);
+    await this.userInfoService.updatePassword(this.ctx.user.id, currentPwd,newPwd, code);
     return this.ok();
   }
 

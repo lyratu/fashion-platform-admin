@@ -1,4 +1,4 @@
-import { Inject, Post, Query } from '@midwayjs/core';
+import { Get, Inject, Post, Query } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { GoodsCollectEntity } from '../../entity/collect';
 import { GoodsCollectService } from '../../service/collect';
@@ -59,5 +59,10 @@ export class AppGoodsCollectController extends BaseController {
       ? await this.goodsService.incrementCollectCount(goodsId)
       : await this.goodsService.decrementCollectCount(goodsId);
     return this.ok({ collectStatus: result.collectStatus, collectCount });
+  }
+
+  @Get('/myCollect')
+  async getMyCollect() {
+    return this.ok(await this.goodsCollectService.getMyCollect());
   }
 }

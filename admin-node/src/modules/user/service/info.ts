@@ -99,13 +99,16 @@ export class UserInfoService extends BaseService {
    * @param password
    * @param 验证码
    */
-  async updatePassword(userId, password, code) {
+  async updatePassword(userId, currentPwd, newPwd, code) {
     const user = await this.userInfoEntity.findOneBy({ id: userId });
-    const check = await this.userSmsService.checkCode(user.phone, code);
-    if (!check) {
-      throw new CoolCommException('验证码错误');
+    // const check = await this.userSmsService.checkCode(user.phone, code);
+    // if (!check) {
+    //   throw new CoolCommException('验证码错误');
+    // }
+    if (user.password != md5(currentPwd)) {
+      throw new CoolCommException('当前密码不正确');
     }
-    await this.userInfoEntity.update(user.id, { password: md5(password) });
+    await this.userInfoEntity.update(user.id, { password: md5(newPwd) });
   }
 
   /**

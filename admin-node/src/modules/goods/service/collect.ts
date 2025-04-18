@@ -40,4 +40,18 @@ export class GoodsCollectService extends BaseService {
     }
     return { collectStatus };
   }
+
+  // 获取当前用户商品收藏
+  async getMyCollect() {
+    const { id: userId } = this.ctx.user;
+    return await this.goodsCollectEntity.find({
+      relations: ['goods'],
+      where: {
+        userId,
+        collectStatus: 1,
+      },
+      select: ['goods'],
+      take: 4,
+    });
+  }
 }
