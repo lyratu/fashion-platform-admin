@@ -34,6 +34,10 @@ export class CommentInfoEntity extends BaseEntity {
   @Column({ comment: '回复到用户名称', nullable: true })
   replyTo: string;
 
+  // 回复给用户id
+  @Column({ comment: '回复到用户id', nullable: true })
+  replyToId: number;
+
   // 文章/商品/社区ID
   @Index()
   @Column({ comment: '对象ID' })

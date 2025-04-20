@@ -10,11 +10,16 @@ import { OutfitsInfoService } from '../../service/info';
  * 穿搭收藏
  */
 @CoolController({
-  api: [],
+  api: ['page'],
   entity: OutfitsCollectEntity,
   service: OutfitsCollectService,
   pageQueryOp: {
-    select: ['a.*', 'b.nickName', 'c.title'],
+    select: ['a.*', 'b.nickName', 'c.title', 'c.coverImage'],
+    where: async ctx => {
+      return [
+        ['a.userId = :userId And a.collectStatus=1', { userId: ctx.user.id }],
+      ];
+    },
     join: [
       {
         entity: UserInfoEntity,
@@ -29,17 +34,6 @@ import { OutfitsInfoService } from '../../service/info';
         type: 'leftJoin',
       },
     ],
-    where: async ctx => {
-      const { outfitsId, userId } = ctx.request.body;
-      const where = [];
-      if (outfitsId) {
-        where.push(['a.outfitsId = :outfitsId', { outfitsId }]);
-      }
-      if (userId) {
-        where.push(['a.userId = :userId', { userId }]);
-      }
-      return where;
-    },
   },
 })
 export class AppOutfitsCollectController extends BaseController {

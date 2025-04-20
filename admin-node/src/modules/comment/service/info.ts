@@ -74,7 +74,8 @@ export class CommentInfoService extends BaseService {
     objectId: number,
     content: string,
     parentId?: number,
-    replyTo?: string
+    replyTo?: string,
+    replyToId?: number
   ): Promise<CommentInfoEntity> {
     const comment = new CommentInfoEntity();
     comment.type = type;
@@ -91,6 +92,7 @@ export class CommentInfoService extends BaseService {
       comment.parent = parentComment;
       replyTo ? (comment.replyTo = replyTo) : '';
     }
+    replyToId ? (comment.replyToId = replyToId) : '';
     return await this.commentInfoEntity.save(comment);
   }
 
@@ -130,5 +132,15 @@ export class CommentInfoService extends BaseService {
       where: { id: commentId },
     });
     return updatedComment.likeCount;
+  }
+
+  /* 获取评论回复通知 */
+  async getReply() {
+    const { id: userId } = this.ctx.user;
+    await this.commentInfoEntity.find({
+      where: {
+        userId,
+      },
+    });
   }
 }

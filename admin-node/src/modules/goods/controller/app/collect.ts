@@ -15,7 +15,9 @@ import { GoodsService } from '../../service/goods';
   service: GoodsCollectService,
   pageQueryOp: {
     where: async ctx => {
-      return [['a.userId = :userId', { userId: ctx.user.id }]];
+      return [
+        ['a.userId = :userId And a.collectStatus=1', { userId: ctx.user.id }],
+      ];
     },
     join: [
       {

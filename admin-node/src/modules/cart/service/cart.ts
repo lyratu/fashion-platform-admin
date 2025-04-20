@@ -103,7 +103,14 @@ export class CartService extends BaseService {
    * @returns 获取购物车总数
    */
   async getCartCount() {
-    const count = await this.cartEntity.countBy({ userId: this.ctx.user.id });
-    return count;
+    const count = await this.cartEntity.find({
+      where: {
+        userId: this.ctx.user.id,
+      },
+      select: ['goodsId'],
+    });
+    // 直接将返回的结果映射为 goodsId 数组
+    const goodsIdArray = count.map(item => item.goodsId);
+    return goodsIdArray;
   }
 }

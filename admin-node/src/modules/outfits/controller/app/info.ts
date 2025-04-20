@@ -94,6 +94,7 @@ export class AppOutfitsInfoController extends BaseCommentController {
       content: string;
       parentId?: number;
       replyTo?: string;
+      replyToId?: number;
     }
   ): Promise<{ code: number; message: string }> {
     return super.addComment(body);

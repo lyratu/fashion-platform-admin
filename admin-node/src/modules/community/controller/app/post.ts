@@ -26,7 +26,7 @@ import { CommunityPostService } from './../../service/post';
     return new Promise<QueryOp>(res => {
       res({
         keyWordLikeFields: ['a.content'],
-        fieldEq: ['a.status', 'a.userId'],
+        fieldEq: ['a.status', 'a.userId', 'd.name'],
         join: [
           {
             entity: UserInfoEntity,
@@ -108,14 +108,13 @@ export class CommunityPostController extends BaseCommentController {
       content: string;
       parentId?: number;
       replyTo?: string;
+      replyToId?: number;
     }
   ): Promise<{ code: number; message: string }> {
     return super.addComment(body);
   }
 
-  protected async afterAddComment(comment: any): Promise<void> {
-    console.log('[ 社区评论列表已获取 ] >', 1);
-  }
+  protected async afterAddComment(comment: any): Promise<void> {}
 
   async getTrend() {}
 }

@@ -29,15 +29,17 @@ export abstract class BaseCommentController extends BaseController {
       content: string;
       parentId?: number;
       replyTo?: string;
+      replyToId?: number;
     }
   ) {
-    const { objectId, content, parentId, replyTo } = body;
+    const { objectId, content, parentId, replyTo, replyToId } = body;
     const comment = await this.commentInfoService.createComment(
       this.commentType,
       objectId,
       content,
       parentId,
-      replyTo
+      replyTo,
+      replyToId
     );
     // 调用钩子方法，对发送评论后的其他业务逻辑进行处理
     await this.afterAddComment(body, comment);
