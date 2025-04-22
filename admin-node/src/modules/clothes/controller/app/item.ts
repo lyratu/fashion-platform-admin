@@ -11,6 +11,12 @@ import { UserInfoEntity } from '../../../user/entity/info';
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
   entity: ClothesItemEntity,
   service: ClothesItemService,
+  insertParam: ctx => {
+    return {
+      // 获得当前登录的后台用户ID，需要请求头传Authorization参数
+      createUserId: ctx.user.id,
+    };
+  },
   pageQueryOp: {
     keyWordLikeFields: ['a.name'],
     fieldEq: ['a.category', 'a.status'],

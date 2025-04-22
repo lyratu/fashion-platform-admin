@@ -31,8 +31,6 @@ export class ClothesSuitEntity extends BaseEntity {
   @Column({ comment: '配置', type: 'json' })
   config: string;
 
-  @OneToMany(() => ClothesItemEntity, item => item.suit, {
-    cascade: true,
-  })
+  @OneToMany(() => ClothesItemEntity, item => item.suit, {})
   clothes: ClothesItemEntity[];
 }

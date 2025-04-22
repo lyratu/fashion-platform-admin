@@ -15,11 +15,11 @@ export class ClothesItemEntity extends BaseEntity {
   category: number;
 
   @Column({ comment: '图片' })
-  pictureList: string;
+  picture: string;
 
   @Index()
-  @Column({ comment: '名称', length: 255 })
-  name: string;
+  @Column({ comment: '备注', length: 255,nullable: true,})
+  remark: string;
 
   @Column({
     comment: '颜色',
@@ -29,7 +29,7 @@ export class ClothesItemEntity extends BaseEntity {
   })
   color: number[];
 
-  @Column({ comment: '状态', dict: ['启用', '禁用'], default: 0 })
+  @Column({ comment: '状态', dict: ['正常', '闲置', '种草'], default: 0 })
   status: number;
 
   @Column({
@@ -45,13 +45,10 @@ export class ClothesItemEntity extends BaseEntity {
   createUserId: number;
 
   @Index()
-  @Column({ comment: '穿搭ID' })
+  @Column({ comment: '穿搭ID', nullable: true })
   suitId: number;
 
-  @ManyToOne(() => ClothesSuitEntity, {
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete',
-  })
+  @ManyToOne(() => ClothesSuitEntity, {})
   @JoinColumn({ name: 'suitId' })
   suit: ClothesSuitEntity;
 }
