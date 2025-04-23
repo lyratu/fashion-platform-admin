@@ -33,6 +33,9 @@ import { UserInfoEntity } from '../../../user/entity/info';
       },
     ],
     select: ['a.*', 'b.nickName as createUserName'],
+    where: async ctx => {
+      return [['a.createUserId = :userId', { userId: ctx.user.id }]];
+    },
   },
 })
 export class ClothesItemController extends BaseController {
