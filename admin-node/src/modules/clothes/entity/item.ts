@@ -18,7 +18,7 @@ export class ClothesItemEntity extends BaseEntity {
   picture: string;
 
   @Index()
-  @Column({ comment: '备注', length: 255,nullable: true,})
+  @Column({ comment: '备注', length: 255, nullable: true })
   remark: string;
 
   @Column({
@@ -44,11 +44,4 @@ export class ClothesItemEntity extends BaseEntity {
   @Column({ comment: '创建用户' })
   createUserId: number;
 
-  @Index()
-  @Column({ comment: '穿搭ID', nullable: true })
-  suitId: number;
-
-  @ManyToOne(() => ClothesSuitEntity, {})
-  @JoinColumn({ name: 'suitId' })
-  suit: ClothesSuitEntity;
 }

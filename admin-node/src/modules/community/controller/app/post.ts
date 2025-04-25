@@ -116,5 +116,26 @@ export class CommunityPostController extends BaseCommentController {
 
   protected async afterAddComment(comment: any): Promise<void> {}
 
-  async getTrend() {}
+  @Post('/getUserPost', { summary: '获取用户发布的文章' })
+  async getUserPost(
+    @Body()
+    body: {
+      id: number;
+      page: number;
+      size: number;
+      order: string;
+      sort: string;
+    }
+  ) {
+    const { id, page, size, order, sort } = body;
+    return this.ok(
+      await this.appCommunityPostService.getUserPost(
+        id,
+        page,
+        size,
+        order,
+        sort
+      )
+    );
+  }
 }

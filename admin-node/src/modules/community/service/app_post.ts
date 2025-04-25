@@ -93,4 +93,32 @@ export class AppCommunityPostService extends BaseService {
       .getRawMany();
     return activeUsers;
   }
+
+  getUserPost = async (
+    id: number,
+    page: number,
+    size: number,
+    order: string,
+    sort: string
+  ) => {
+    const skip = (page - 1) * size;
+    const list = await this.communityPostEntity.findAndCount({
+      where: {
+        userId: id,
+      },
+      order: {
+        [`${order}`]: sort,
+      },
+      skip,
+      take: size,
+    });
+    return {
+      list: list[0],
+      pagination: {
+        page,
+        size,
+        total: list[1],
+      },
+    };
+  };
 }

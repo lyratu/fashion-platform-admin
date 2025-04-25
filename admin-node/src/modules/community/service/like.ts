@@ -3,6 +3,7 @@ import { BaseService } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository } from 'typeorm';
 import { CommunityLikeEntity } from '../entity/like';
+import { CommunityPostEntity } from '../entity/post';
 
 /**
  * 点赞记录
@@ -11,6 +12,9 @@ import { CommunityLikeEntity } from '../entity/like';
 export class CommunityLikeService extends BaseService {
   @InjectEntityModel(CommunityLikeEntity)
   communityLikeEntity: Repository<CommunityLikeEntity>;
+
+  @InjectEntityModel(CommunityPostEntity)
+  communityPostEntity: Repository<CommunityPostEntity>;
 
   @Inject()
   ctx;
@@ -22,6 +26,21 @@ export class CommunityLikeService extends BaseService {
    */
   async getLikeRecord(postId: number, userId: number) {
     return this.communityLikeEntity.findOne({ where: { postId, userId } });
+  }
+
+  async getUserLikeCount(id: number) {
+    const list = await this.communityPostEntity.find({
+      relations: ['likes'],
+      where: {
+        userId: id,
+      },
+    });
+    const total = list.reduce(
+      (count, current) =>
+        count + current.likes.filter(e => e.likeStatus).length,
+      0
+    );
+    return { count: total };
   }
 
   async likeOrUnlike(postId: number) {

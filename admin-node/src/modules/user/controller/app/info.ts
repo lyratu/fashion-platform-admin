@@ -1,5 +1,5 @@
 import { CoolController, BaseController } from '@cool-midway/core';
-import { Body, Get, Inject, Post } from '@midwayjs/core';
+import { Body, Get, Inject, Post, Query } from '@midwayjs/core';
 import { UserInfoService } from '../../service/info';
 import { UserInfoEntity } from '../../entity/info';
 
@@ -22,6 +22,11 @@ export class AppUserInfoController extends BaseController {
     return this.ok(await this.userInfoService.person(this.ctx.user.id));
   }
 
+  @Get('/otherPerson', { summary: '获取其他用户信息' })
+  async otherPerson(@Query('id') id: number) {
+    return this.ok(await this.userInfoService.person(id));
+  }
+
   @Post('/updatePerson', { summary: '更新用户信息' })
   async updatePerson(@Body() body) {
     return this.ok(
@@ -35,7 +40,12 @@ export class AppUserInfoController extends BaseController {
     @Body('newPwd') newPwd: string,
     @Body('code') code: string
   ) {
-    await this.userInfoService.updatePassword(this.ctx.user.id, currentPwd,newPwd, code);
+    await this.userInfoService.updatePassword(
+      this.ctx.user.id,
+      currentPwd,
+      newPwd,
+      code
+    );
     return this.ok();
   }
 

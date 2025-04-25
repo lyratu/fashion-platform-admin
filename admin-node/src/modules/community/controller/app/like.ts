@@ -1,4 +1,4 @@
-import { Inject, Post, Query } from '@midwayjs/core';
+import { Get, Inject, Post, Query } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { CommunityLikeEntity } from './../../entity/like';
 import { CommunityLikeService } from './../../service/like';
@@ -30,5 +30,9 @@ export class AppCommunityLikeController extends BaseController {
       ? await this.appCommunityPostService.incrementLikeCount(postId)
       : await this.appCommunityPostService.decrementLikeCount(postId);
     return this.ok({ likeStatus: result.likeStatus, likeCount });
+  }
+  @Get('/likeCount', { summary: '获取用户点赞总数' })
+  async getLikeCount(@Query('id') id: number) {
+    return this.ok(await this.communityLikeService.getUserLikeCount(id));
   }
 }
