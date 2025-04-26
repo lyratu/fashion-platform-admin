@@ -11,7 +11,17 @@
 
 		<cl-row>
 			<!-- 数据表格 -->
-			<cl-table ref="Table" />
+			<cl-table ref="Table">
+				<template #column-trackingNumber="{ scope }">
+					<el-button
+						:disabled="scope.row.payStatus < 1"
+						@click="handleOrder(scope.row)"
+						v-if="!scope.row.trackingNumber"
+						>发货</el-button
+					>
+					<span v-else>{{ scope.row.trackingNumber }}</span>
+				</template>
+			</cl-table>
 		</cl-row>
 
 		<cl-row>
@@ -22,6 +32,9 @@
 
 		<!-- 新增、编辑 -->
 		<cl-upsert ref="Upsert" />
+
+		<!-- 发货表单 -->
+		<cl-form ref="logisticsForm"></cl-form>
 	</cl-crud>
 </template>
 
@@ -30,7 +43,7 @@ defineOptions({
 	name: 'order-order'
 });
 
-import { useCrud, useTable, useUpsert, useSearch } from '@cool-vue/crud';
+import { useCrud, useTable, useUpsert, useSearch, useForm } from '@cool-vue/crud';
 import { useCool } from '/@/cool';
 import { useI18n } from 'vue-i18n';
 import { reactive } from 'vue';
@@ -40,6 +53,7 @@ const { service } = useCool();
 const { t } = useI18n();
 
 // 选项
+const logisticsForm = useForm();
 const options = reactive({
 	payStatus: [
 		{ label: t('待支付'), value: 0 },
@@ -49,6 +63,55 @@ const options = reactive({
 		{ label: t('已取消'), value: 4 }
 	]
 });
+
+const handleOrder = row => {
+	const { id, contactNumber, address: receivingAddress, orderNumber } = row;
+	const contactPerson = contactNumber.split(':')[0];
+	const contactPhone = contactNumber.split(':')[1];
+
+	logisticsForm.value?.open({
+		title: '订单发货',
+		items: [
+			{
+				label: '物流公司',
+				prop: 'logisticsCompany',
+				required: true,
+				component: {
+					name: 'el-input'
+				}
+			},
+			{
+				label: '物流单号',
+				prop: 'logisticsNumber',
+				required: true,
+				component: {
+					name: 'el-input'
+				}
+			}
+		],
+		on: {
+			async submit(data, { close, done }) {
+				console.log('[ data ] >', data);
+				await service.order.logistics.add({
+					orderId: id,
+					orderNumber,
+					logisticsStatus: 0,
+					...data,
+					contactPerson,
+					contactPhone,
+					receivingAddress
+				});
+				await service.order.order.update({
+					id,
+					payStatus: 2,
+					trackingNumber: data.logisticsNumber
+				});
+				refresh({ trackingNumber: data.logisticsNumber, payStatus: 2 });
+				close();
+			}
+		}
+	});
+};
 
 // cl-upsert
 const Upsert = useUpsert({

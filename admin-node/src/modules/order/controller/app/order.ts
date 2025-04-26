@@ -4,6 +4,7 @@ import { OrderOrderEntity } from '../../entity/order';
 import { OrderOrderService } from '../../service/order';
 import { UserInfoEntity } from '../../../user/entity/info';
 import { OrderItemEntity } from '../../entity/item';
+import { OrderLogisticsEntity } from '../../entity/logistics';
 
 /**
  * 订单
@@ -19,12 +20,18 @@ import { OrderItemEntity } from '../../entity/item';
       const { id: userId } = ctx.user;
       return [['a.userId = :userId', { userId }]];
     },
-    select: ['a.*', 'b.nickName', 'b.avatarUrl'],
+    select: ['a.*', 'b.nickName', 'b.avatarUrl','c.logisticsStatus'],
     join: [
       {
         entity: UserInfoEntity,
         alias: 'b',
         condition: 'a.userId = b.id',
+        type: 'leftJoin',
+      },
+      {
+        entity: OrderLogisticsEntity,
+        alias: 'c',
+        condition: 'a.trackingNumber = c.logisticsNumber',
         type: 'leftJoin',
       },
     ],
@@ -52,5 +59,10 @@ export class AppOrderOrderController extends BaseController {
   @Post('/confirmPayment', { summary: '确认支付' })
   async confirmPayment(@Query('id') id: number) {
     return this.ok(await this.orderOrderService.confirmPayment(id));
+  }
+
+  @Post('/confirmGoods', { summary: '确认收货' })
+  async confirmGoods(@Query('id') id: number) {
+    return this.ok(await this.orderOrderService.confirmGoods(id));
   }
 }

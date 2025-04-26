@@ -125,4 +125,11 @@ export class OrderOrderService extends BaseService {
     await CartInfoEntity.remove(goods);
     return { orderNumber };
   }
+
+  async confirmGoods(id: number) {
+    const status = await this.orderOrderEntity.update(id, {
+      payStatus: 3,
+    });
+    return status;
+  }
 }

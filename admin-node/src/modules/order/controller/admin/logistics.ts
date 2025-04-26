@@ -13,7 +13,7 @@ import { OrderOrderEntity } from '../../../order/entity/order';
   service: OrderLogisticsService,
   pageQueryOp: {
     keyWordLikeFields: ['a.logisticsCompany', 'a.logisticsNumber'],
-    fieldEq: ['a.orderId', 'a.logisticsStatus'],
+    fieldEq: ['b.orderNumber', 'a.logisticsStatus'],
     select: ['a.*', 'b.orderNumber'],
     join: [
       {

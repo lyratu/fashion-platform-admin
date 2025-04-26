@@ -10,11 +10,14 @@ export class OrderLogisticsLocationEntity extends BaseEntity {
   @Column({ comment: '物流ID' })
   logisticsId: number;
 
-  @Column({ comment: '位置坐标', type: 'json' })
-  locationCoordinate: {
-    longitude: number;
-    latitude: number;
-  };
+  // @Column({ comment: '位置坐标', type: 'json' })
+  // locationCoordinate: {
+  //   longitude: number;
+  //   latitude: number;
+  // };
+
+  @Column({ comment: '状态', dict: ["正常","已签收","异常"] })
+  status: number;
 
   @Column({ comment: '详细地址' })
   detailedAddress: string;

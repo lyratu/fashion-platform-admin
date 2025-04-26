@@ -2,22 +2,22 @@ import { Inject, Query } from '@midwayjs/core';
 import { CoolController, BaseController } from '@cool-midway/core';
 import { OrderOrderEntity } from '../../entity/order';
 import { OrderOrderService } from '../../service/order';
-import { BaseSysUserEntity } from '../../../base/entity/sys/user';
+import { UserInfoEntity } from '../../../user/entity/info';
 
 /**
  * 订单信息
  */
 @CoolController({
-  api: ['page', 'info'],
+  api: ['page', 'info', 'update'],
   entity: OrderOrderEntity,
   service: OrderOrderService,
   pageQueryOp: {
-    keyWordLikeFields: ['a.orderNumber'],
-    fieldEq: ['a.paymentStatus', 'a.userId'],
+    keyWordLikeFields: ['a.orderNumber', 'b.nickName'],
+    fieldEq: ['a.payStatus'],
     select: ['a.*', 'b.nickName'],
     join: [
       {
-        entity: BaseSysUserEntity,
+        entity: UserInfoEntity,
         alias: 'b',
         condition: 'a.userId = b.id',
         type: 'leftJoin',

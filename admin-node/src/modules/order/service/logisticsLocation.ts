@@ -2,7 +2,7 @@ import { Inject, Provide } from '@midwayjs/core';
 import { BaseService } from '@cool-midway/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository } from 'typeorm';
-import { OrderLogisticsLocationEntity } from '../entity/logistics_location';
+import { OrderLogisticsLocationEntity } from '../entity/logisticsLocation';
 
 /**
  * 物流位置记录
