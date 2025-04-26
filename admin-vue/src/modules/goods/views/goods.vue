@@ -130,13 +130,13 @@ const Upsert = useUpsert({
 			span: 12,
 			required: true
 		},
-		{
-			label: t('状态'),
-			prop: 'status',
-			component: { name: 'el-radio-group', options: options.status },
-			value: 1,
-			required: true
-		},
+		// {
+		// 	label: t('状态'),
+		// 	prop: 'status',
+		// 	component: { name: 'el-radio-group', options: options.status },
+		// 	value: 1,
+		// 	required: true
+		// },
 		{
 			label: t('颜色'),
 			prop: 'color',
@@ -151,20 +151,20 @@ const Upsert = useUpsert({
 			span: 12,
 			required: true
 		},
-		{
-			label: t('库存'),
-			prop: 'stock',
-			component: { name: 'el-input', props: { clearable: true } },
-			span: 12,
-			required: true
-		},
-		{
-			label: t('销量'),
-			prop: 'sales',
-			component: { name: 'el-input', props: { clearable: true } },
-			span: 12,
-			required: true
-		}
+		// {
+		// 	label: t('库存'),
+		// 	prop: 'stock',
+		// 	component: { name: 'el-input', props: { clearable: true } },
+		// 	span: 12,
+		// 	required: true
+		// },
+		// {
+		// 	label: t('销量'),
+		// 	prop: 'sales',
+		// 	component: { name: 'el-input', props: { clearable: true } },
+		// 	span: 12,
+		// 	required: true
+		// }
 	]
 });
 
@@ -192,14 +192,14 @@ const Table = useTable({
 			minWidth: 120,
 			dict: dict.get('goodsType')
 		},
-		{
-			label: t('状态'),
-			prop: 'status',
-			minWidth: 120,
-			dict: options.status
-		},
-		{ label: t('库存'), prop: 'stock', minWidth: 120 },
-		{ label: t('销量'), prop: 'sales', minWidth: 120 },
+		// {
+		// 	label: t('状态'),
+		// 	prop: 'status',
+		// 	minWidth: 120,
+		// 	dict: options.status
+		// },
+		// { label: t('库存'), prop: 'stock', minWidth: 120 },
+		// { label: t('销量'), prop: 'sales', minWidth: 120 },
 		{
 			label: t('创建时间'),
 			prop: 'createTime',

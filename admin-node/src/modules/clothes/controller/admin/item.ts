@@ -13,7 +13,7 @@ import { UserInfoEntity } from '../../../user/entity/info';
   service: ClothesItemService,
   pageQueryOp: {
     keyWordLikeFields: ['a.name'],
-    fieldEq: ['a.category', 'a.status'],
+    fieldEq: ['a.category'],
     fieldLike: [
       { column: 'a.season', requestParam: 'season' },
       { column: 'a.color', requestParam: 'color' },

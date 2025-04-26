@@ -57,33 +57,33 @@ const options = reactive({
 			value: 2
 		}
 	],
-	type: [
-		{
-			label: t('普通'),
-			value: 0,
-			type: 'info'
-		},
-		{
-			label: t('达人'),
-			value: 1,
-			type: 'success'
-		},
+	// type: [
+	// 	{
+	// 		label: t('普通'),
+	// 		value: 0,
+	// 		type: 'info'
+	// 	},
+	// 	{
+	// 		label: t('达人'),
+	// 		value: 1,
+	// 		type: 'success'
+	// 	},
 
-	],
+	// ],
 	gender: [
-		{
-			label: t('未知'),
-			value: 0,
-			type: 'info'
-		},
+		// {
+		// 	label: t('未知'),
+		// 	value: 0,
+		// 	type: 'info'
+		// },
 		{
 			label: t('男'),
-			value: 1,
+			value: 0,
 			type: 'success'
 		},
 		{
 			label: t('女'),
-			value: 2,
+			value: 1,
 			type: 'danger'
 		}
 	],
@@ -131,12 +131,12 @@ const Table = useTable({
 			prop: 'phone',
 			minWidth: 120
 		},
-		{
-			label: t('身份'),
-			prop: 'type',
-			dict: options.type,
-			minWidth: 120
-		},
+		// {
+		// 	label: t('身份'),
+		// 	prop: 'type',
+		// 	dict: options.type,
+		// 	minWidth: 120
+		// },
 		{
 			label: t('职业'),
 			prop: 'position',
@@ -148,12 +148,12 @@ const Table = useTable({
 			dict: options.gender,
 			minWidth: 120
 		},
-		{
-			label: t('登录方式'),
-			prop: 'loginType',
-			dict: options.loginType,
-			minWidth: 120
-		},
+		// {
+		// 	label: t('登录方式'),
+		// 	prop: 'loginType',
+		// 	dict: options.loginType,
+		// 	minWidth: 120
+		// },
 		{
 			label: t('状态'),
 			prop: 'status',
@@ -192,24 +192,34 @@ const Upsert = useUpsert({
 			component: {
 				name: 'el-input',
 				props: {
-					maxlength: 11
+					maxlength: 11,
+					disabled: true
 				}
 			}
 		},
+		// {
+		// 	prop: 'type',
+		// 	label: t('身份'),
+		// 	value: 1,
+		// 	component: {
+		// 		name: 'el-radio-group',
+		// 		options: options.type
+		// 	}
+		// },
 		{
-			prop: 'type',
-			label: t('身份'),
-			value: 1,
+			prop: 'description',
+			label: t('介绍'),
 			component: {
-				name: 'el-radio-group',
-				options: options.type
-			}
+				name: 'el-input',
+				props: { autosize: true, type: 'textarea', showWordLimit: true, maxlength: '80' }
+			},
+			required: false
 		},
 		{
-			prop: 'position',
+			prop: '',
 			label: t('职业'),
 			component: { name: 'el-input' },
-			required: true
+			required: false
 		},
 		{
 			prop: 'gender',
