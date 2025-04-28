@@ -26,6 +26,7 @@ import { BaseCommentController } from '../../../comment/controller/app/baseComme
   pageQueryOp: {
     keyWordLikeFields: ['a.title'],
     fieldEq: ['a.category', 'a.season'],
+    fieldLike: ['a.title'],
     join: [
       {
         entity: UserInfoEntity,

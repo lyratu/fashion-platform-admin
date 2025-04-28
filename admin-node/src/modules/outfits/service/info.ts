@@ -210,7 +210,7 @@ export class OutfitsInfoService extends BaseService {
           'c.typeId',
           'c.value',
         ])
-        .limit(3)
+        .limit(4)
         .getMany();
     }
     return list;

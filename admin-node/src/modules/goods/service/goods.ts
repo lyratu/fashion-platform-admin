@@ -46,7 +46,7 @@ export class GoodsService extends BaseService {
       order: {
         collectCount: 'DESC',
       },
-      take: 4,
+      take: 5,
     });
     return list;
   }
@@ -69,7 +69,7 @@ export class GoodsService extends BaseService {
     });
     if (goods && userId) {
       let item = goods.collects.find(collect => collect.userId == userId);
-      goods.collectStatus = item?.collectStatus||0;
+      goods.collectStatus = item?.collectStatus || 0;
     }
     return goods;
   }
