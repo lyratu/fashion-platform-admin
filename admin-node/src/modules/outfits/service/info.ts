@@ -85,6 +85,7 @@ export class OutfitsInfoService extends BaseService {
       },
       where: { id },
     });
+    if(!currentArticle) throw new CoolCommException('相关文章不存在');
     const currentArticleTags = currentArticle.tags.map(tag => tag.name);
     if (currentArticleTags.length > 0)
       recommendations = await this.outfitsInfoEntity
@@ -109,47 +110,49 @@ export class OutfitsInfoService extends BaseService {
 
   // 获取文章信息
   async info(params: any) {
-    const data = await this.outfitsInfoEntity
-      .createQueryBuilder('a') // 主表别名为 a
-      .leftJoinAndSelect('a.user', 'b') // 关联 user 表，别名为 b
-      .leftJoinAndSelect('a.tags', 'c') // 关联 tags 表，别名为 c
+    const currentUserId = this.ctx.user?.id ?? 0;
+    const qb = this.outfitsInfoEntity
+      .createQueryBuilder('a')
+      // .leftJoinAndSelect('a.user', 'b')
+      .leftJoinAndSelect('a.tags', 'c')
       .leftJoinAndMapOne(
-        'a.categoryText', // 将整个 DictInfoEntity 映射到该属性上
+        'a.categoryText',
         DictInfoEntity,
         'd',
         'd.value = a.category AND d.typeId = :typeId',
         { typeId: 21 }
       )
-      .leftJoinAndSelect('a.likes', 'like', 'like.userId = :currentUserId', {
-        currentUserId: this.ctx.user.id,
-      })
-      .leftJoinAndSelect(
+      .where('a.id = :id', { id: params });
+    // 只有拿到 userId 才做 joins
+    if (currentUserId) {
+      qb.leftJoinAndSelect('a.likes', 'like', 'like.userId = :currentUserId', {
+        currentUserId,
+      }).leftJoinAndSelect(
         'a.collects',
         'collect',
         'collect.userId = :currentUserId',
-        {
-          currentUserId: this.ctx.user.id,
-        }
-      )
-      .select([
-        'a', // 主表所有字段（相当于 a.*）
-        'like.likeStatus',
-        'collect.collectStatus',
-        'b.id', // user 表的 authId
-        'b.nickName', // user 表的 nickname
-        'b.avatarUrl',
-        'b.position',
-        'c.name', // tags 表的 name
-        'c.id', // tags 表的 id
-        'd.name',
-      ])
-      .where('a.id = :id', { id: params }) // 条件过滤
-      .getOne(); // 获取单个结果
-    /* 获取当前用户点赞状态 */
-    data.likeStatus = data.likes[0]?.likeStatus || 0;
+        { currentUserId }
+      );
+    }
+    let queryParams = [
+      'a',
+      // 'b.id',
+      // 'b.nickName',
+      // 'b.avatarUrl',
+      // 'b.position',
+      'c.id',
+      'c.name',
+      'd.name',
+    ];
+    const data = await qb.select(queryParams).getOne();
+    if (this.ctx?.user) {
+      queryParams.push('like.likeStatus');
+      queryParams.push('collect.collectStatus');
+      // 无关联时手动塞默认值
+      data.likeStatus = data.likes?.[0]?.likeStatus || 0;
+      data.collectStatus = data.collects?.[0]?.collectStatus || 0;
+    }
     delete data.likes;
-    /* 获取当前用户收藏状态 */
-    data.collectStatus = data.collects[0]?.collectStatus || 0;
     delete data.collects;
     return data;
   }
@@ -160,7 +163,7 @@ export class OutfitsInfoService extends BaseService {
     if (type) {
       list = await this.outfitsInfoEntity
         .createQueryBuilder('outfits')
-        .leftJoinAndSelect('outfits.user', 'user')
+        // .leftJoinAndSelect('outfits.user', 'user')
         .leftJoinAndMapOne(
           'outfits.categoryText', // 将整个 DictInfoEntity 映射到该属性上
           DictInfoEntity,
@@ -172,10 +175,10 @@ export class OutfitsInfoService extends BaseService {
         .orderBy('outfits.isFeature', 'DESC')
         .select([
           'outfits',
-          'user.id',
-          'user.nickName',
-          'user.avatarUrl',
-          'user.position',
+          // 'user.id',
+          // 'user.nickName',
+          // 'user.avatarUrl',
+          // 'user.position',
           'c.name',
           'c.typeId',
           'c.value',
@@ -185,7 +188,7 @@ export class OutfitsInfoService extends BaseService {
     } else {
       list = await this.outfitsInfoEntity
         .createQueryBuilder('outfits')
-        .leftJoinAndSelect('outfits.user', 'user')
+        // .leftJoinAndSelect('outfits.user', 'user')
         .leftJoinAndMapOne(
           'outfits.categoryText', // 将整个 DictInfoEntity 映射到该属性上
           DictInfoEntity,
@@ -202,10 +205,10 @@ export class OutfitsInfoService extends BaseService {
         .orderBy('outfits.likeCount', 'DESC') // 注意这里改为 likesCount 而不是 likeCount
         .select([
           'outfits',
-          'user.id',
-          'user.nickName',
-          'user.avatarUrl',
-          'user.position',
+          // 'user.id',
+          // 'user.nickName',
+          // 'user.avatarUrl',
+          // 'user.position',
           'c.name',
           'c.typeId',
           'c.value',

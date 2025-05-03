@@ -38,7 +38,7 @@ import { useCool } from '/@/cool';
 import { useI18n } from 'vue-i18n';
 import { useDict } from '/$/dict';
 import { reactive, ref } from 'vue';
-
+import UserSelect from '/$/user/components/user-select.vue';
 const { dict } = useDict();
 
 const { service } = useCool();
@@ -51,37 +51,11 @@ const options = reactive({
 		{ label: t('是'), value: 1, type: 'success' }
 	]
 });
-const auths = ref<Array<{ label: string | undefined; value: number | undefined }>>([]);
 
 const loading = ref(false);
 
-const remoteMethod = async (query: string) => {
-	if (query) {
-		loading.value = true;
-		const data = await service.user.info.page({ keyWord: query });
-		auths.value = data.list.map(e => {
-			return { label: e.nickName, value: e.id };
-		});
-		loading.value = false;
-		console.log('[ auths.value ] >', auths.value);
-	} else {
-		auths.value = [];
-	}
-};
-
 // cl-upsert
 const Upsert = useUpsert({
-	async onInfo(data, { done, next }) {
-		const newData = await next({
-			...data,
-			status: false
-		});
-		if (data.authorId) {
-			const info = await service.user.info.info({ id: data.authorId });
-			auths.value = [{ label: info.nickName, value: info.id }];
-		}
-		done(newData);
-	},
 	async onSubmit(data, { done, close, next }) {
 		// 存在标签
 		if (data.tags) {
@@ -142,23 +116,12 @@ const Upsert = useUpsert({
 			span: 8,
 			required: true
 		},
-		{
-			label: t('选择作者'),
-			prop: 'authorId',
-			component: {
-				name: 'el-select',
-				options: auths,
-				props: {
-					filterable: true,
-					remote: true,
-					remoteShowSuffix: true,
-					remoteMethod: remoteMethod,
-					loading
-				}
-			},
-			span: 8,
-			required: true
-		},
+		// {
+		// 	label: t('选择作者'),
+		// 	prop: 'userId',
+		// 	component: { vm: UserSelect },
+		// 	required: true
+		// },
 		{
 			label: t('是否精选'),
 			prop: 'isFeature',
@@ -198,12 +161,12 @@ const Table = useTable({
 
 		{ label: t('点赞数'), prop: 'likeCount', minWidth: 140, sortable: 'custom' },
 		{ label: t('收藏数'), prop: 'collectCount', minWidth: 140, sortable: 'custom' },
-		{
-			label: t('作者'),
-			prop: 'authorName',
-			minWidth: 140,
-			sortable: 'custom'
-		},
+		// {
+		// 	label: t('作者'),
+		// 	prop: 'authorName',
+		// 	minWidth: 140,
+		// 	sortable: 'custom'
+		// },
 		{
 			label: t('创建时间'),
 			prop: 'createTime',

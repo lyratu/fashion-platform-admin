@@ -1,5 +1,6 @@
 import { BaseEntity } from '../../base/entity/base';
-import { Column, Entity, Index } from 'typeorm';
+import { Column, Entity, Index, JoinColumn, OneToOne } from 'typeorm';
+import { OutfitsInfoEntity } from '../../outfits/entity/info';
 
 /**
  * 轮播图模块
@@ -18,4 +19,11 @@ export class carouselEntity extends BaseEntity {
 
   @Column({ comment: '文章id' })
   outfitsId: string;
+
+  @OneToOne(() => OutfitsInfoEntity, outfit => outfit.carousel, {
+    onDelete: 'CASCADE', // 在数据库层面启用级联删除
+    orphanedRowAction: 'delete', // 当 child 与 parent 解除关联时，删除 orphan 子记录
+  })
+  @JoinColumn({ name: 'outfitsId' })
+  outfits: OutfitsInfoEntity;
 }

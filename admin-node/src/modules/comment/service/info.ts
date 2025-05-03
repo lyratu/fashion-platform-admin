@@ -143,4 +143,8 @@ export class CommentInfoService extends BaseService {
       },
     });
   }
+  async list(query: any, option: any, connectionName?: any): Promise<any> {
+    const result = super.list(query, option, connectionName);
+    return result;
+  }
 }

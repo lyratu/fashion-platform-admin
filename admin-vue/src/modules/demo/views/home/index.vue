@@ -141,7 +141,7 @@
 								>
 									<img
 										:src="item.url"
-										class="w-full h-full aspect-[1/1] object-top cursor-pointer"
+										class="w-full h-full aspect-[1/1] object-cover object-top cursor-pointer"
 									/>
 									<div class="carousel-content">
 										<h3 class="text-xl font-bold cursor-pointer">
@@ -262,22 +262,19 @@ const editItem = async item => {
 };
 
 const remoteMethod = async (query: string) => {
-	if (query) {
-		loading.value = true;
-		const data = await service.outfits.info.page({ keyWord: query });
-		loading.value = false;
-		atticList.value = data.list.map(e => {
-			return { label: e.title, value: e.id };
-		});
-	} else {
-		atticList.value = [];
-	}
+	loading.value = true;
+	const data = await service.outfits.info.page({ keyWord: query });
+	loading.value = false;
+	atticList.value = data.list.map(e => {
+		return { label: e.title, value: e.id };
+	});
 };
 
 onMounted(() => {
 	getInfo();
 	updateDateTime();
 	getDeviceInfo();
+	remoteMethod();
 });
 
 const fileList = ref<BannerForm[]>([]);

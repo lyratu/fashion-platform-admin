@@ -17,12 +17,12 @@ import { UserInfoEntity } from '../../../user/entity/info';
     keyWordLikeFields: ['a.title'],
     fieldEq: ['a.category'],
     join: [
-      {
-        entity: UserInfoEntity,
-        alias: 'b',
-        condition: 'a.authorId = b.id',
-        type: 'leftJoin',
-      },
+      // {
+      //   entity: UserInfoEntity,
+      //   alias: 'b',
+      //   condition: 'a.authorId = b.id',
+      //   type: 'leftJoin',
+      // },
       {
         entity: DictTypeEntity,
         alias: 'c',
@@ -30,7 +30,7 @@ import { UserInfoEntity } from '../../../user/entity/info';
         type: 'leftJoin',
       },
     ],
-    select: ['a.*', 'b.nickName as authorName', 'c.name as categoryName'],
+    select: ['a.*',  'c.name as categoryName'],
   },
 })
 export class AdminOutfitsArticleController extends BaseController {

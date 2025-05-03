@@ -28,12 +28,12 @@ import { BaseCommentController } from '../../../comment/controller/app/baseComme
     fieldEq: ['a.category', 'a.season'],
     fieldLike: ['a.title'],
     join: [
-      {
-        entity: UserInfoEntity,
-        alias: 'b',
-        condition: 'a.authorId = b.id',
-        type: 'leftJoin',
-      },
+      // {
+      //   entity: UserInfoEntity,
+      //   alias: 'b',
+      //   condition: 'a.authorId = b.id',
+      //   type: 'leftJoin',
+      // },
       {
         entity: DictInfoEntity,
         alias: 'c',
@@ -43,7 +43,7 @@ import { BaseCommentController } from '../../../comment/controller/app/baseComme
     ],
     select: [
       'a.*',
-      "JSON_OBJECT('nickName', b.nickName, 'avatarUrl', b.avatarUrl,'id', b.id,'position', b.position) as user",
+      // "JSON_OBJECT('nickName', b.nickName, 'avatarUrl', b.avatarUrl,'id', b.id,'position', b.position) as user",
       "JSON_OBJECT('name',c.name,'typeId',c.typeId,'value',c.value) as categoryText",
     ],
   },

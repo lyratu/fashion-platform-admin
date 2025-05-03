@@ -57,19 +57,19 @@ const options = reactive({
 			value: 2
 		}
 	],
-	// type: [
-	// 	{
-	// 		label: t('普通'),
-	// 		value: 0,
-	// 		type: 'info'
-	// 	},
-	// 	{
-	// 		label: t('达人'),
-	// 		value: 1,
-	// 		type: 'success'
-	// 	},
+	type: [
+		{
+			label: t('普通'),
+			value: 0,
+			type: 'info'
+		},
+		{
+			label: t('达人'),
+			value: 1,
+			type: 'success'
+		}
+	],
 
-	// ],
 	gender: [
 		// {
 		// 	label: t('未知'),
@@ -131,12 +131,12 @@ const Table = useTable({
 			prop: 'phone',
 			minWidth: 120
 		},
-		// {
-		// 	label: t('身份'),
-		// 	prop: 'type',
-		// 	dict: options.type,
-		// 	minWidth: 120
-		// },
+		{
+			label: t('身份'),
+			prop: 'type',
+			dict: options.type,
+			minWidth: 120
+		},
 		{
 			label: t('职业'),
 			prop: 'position',
@@ -197,15 +197,15 @@ const Upsert = useUpsert({
 				}
 			}
 		},
-		// {
-		// 	prop: 'type',
-		// 	label: t('身份'),
-		// 	value: 1,
-		// 	component: {
-		// 		name: 'el-radio-group',
-		// 		options: options.type
-		// 	}
-		// },
+		{
+			prop: 'type',
+			label: t('身份'),
+			value: 1,
+			component: {
+				name: 'el-radio-group',
+				options: options.type
+			}
+		},
 		{
 			prop: 'description',
 			label: t('介绍'),

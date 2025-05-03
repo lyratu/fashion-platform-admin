@@ -26,6 +26,12 @@ export class HomeInfoService extends BaseService {
       throw new CoolCommException('最多三张轮播图！');
     }
   }
+  async delete(ids: any): Promise<void> {
+    const count = await this.carouselEntity.count();
+    if (count < 2) throw new CoolCommException('轮播图最少保留一张！');
+    const result = super.delete(ids);
+    return result;
+  }
   async getCarousel() {
     const list = await this.carouselEntity.find();
     return list;

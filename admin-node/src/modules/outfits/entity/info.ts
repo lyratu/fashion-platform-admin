@@ -8,6 +8,7 @@ import {
   ManyToMany,
   ManyToOne,
   OneToMany,
+  OneToOne,
 } from 'typeorm';
 import { UserInfoEntity } from '../../user/entity/info';
 import { OutfitsTagEntity } from './tag';
@@ -15,6 +16,7 @@ import { OutfitsLikeEntity } from './like';
 import { OutfitsCollectEntity } from './collect';
 import { CommentInfoEntity } from '../../comment/entity/info';
 import { DictInfoEntity } from '../../dict/entity/info';
+import { carouselEntity } from '../../home/entity/carousel';
 
 /**
  * 文章模块-文章信息
@@ -39,8 +41,8 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '是否精选', dict: ['否', '是'], default: 0 })
   isFeature: number;
 
-  @Column({ comment: '作者ID' })
-  authorId: number;
+  // @Column({ comment: '作者ID' })
+  // authorId: number;
 
   @Column({ comment: '点赞数', default: 0 })
   likeCount: number;
@@ -51,9 +53,9 @@ export class OutfitsInfoEntity extends BaseEntity {
   @Column({ comment: '评论数', default: 0 })
   commentCount: number;
 
-  @ManyToOne(() => UserInfoEntity)
-  @JoinColumn({ name: 'authorId' })
-  user: UserInfoEntity;
+  // @ManyToOne(() => UserInfoEntity)
+  // @JoinColumn({ name: 'authorId' })
+  // user: UserInfoEntity;
 
   @OneToMany(() => CommentInfoEntity, comment => comment.outfits, {
     cascade: true,
@@ -77,4 +79,9 @@ export class OutfitsInfoEntity extends BaseEntity {
 
   likeStatus?: number;
   collectStatus?: number;
+
+  @OneToOne(() => carouselEntity, child => child.outfits, {
+    cascade: true,
+  })
+  carousel: carouselEntity;
 }
