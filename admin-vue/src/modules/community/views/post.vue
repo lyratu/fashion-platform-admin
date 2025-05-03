@@ -14,7 +14,21 @@
 
 		<cl-row>
 			<!-- 数据表格 -->
-			<cl-table ref="Table" />
+			<cl-table ref="Table">
+				<template #column-content="{ scope }">
+					<div
+						class="line-clamp-1 cursor-pointer"
+						@click.stop="
+							() => {
+								detail = true;
+								content = scope.row.content;
+							}
+						"
+					>
+						{{ scope.row.content }}
+					</div>
+				</template>
+			</cl-table>
 		</cl-row>
 
 		<cl-row>
@@ -25,6 +39,10 @@
 
 		<!-- 新增、编辑 -->
 		<cl-upsert ref="Upsert" />
+
+		<cl-dialog title="内容详情" v-model="detail">
+			{{ content }}
+		</cl-dialog>
 	</cl-crud>
 </template>
 
@@ -36,12 +54,13 @@ defineOptions({
 import { useCrud, useTable, useUpsert, useSearch } from '@cool-vue/crud';
 import { useCool } from '/@/cool';
 import { useI18n } from 'vue-i18n';
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 import UserSelect from '/$/user/components/user-select.vue';
 
 const { service } = useCool();
 const { t } = useI18n();
-
+const detail = ref(false);
+const content = ref('');
 // 选项
 const options = reactive({
 	status: [
@@ -84,8 +103,8 @@ const Table = useTable({
 		{
 			label: t('内容'),
 			prop: 'content',
-			minWidth: 120,
-			component: { name: 'cl-editor-preview', props: { name: 'wang' } }
+			minWidth: 120
+			// component: { name: 'cl-editor-preview', props: { name: 'wang' } }
 		},
 		{
 			label: t('图片'),

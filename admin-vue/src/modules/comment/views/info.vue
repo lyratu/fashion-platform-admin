@@ -16,13 +16,30 @@
 			<!-- 数据表格 -->
 			<cl-table ref="Table">
 				<template #column-content="{ scope }">
-					<div class="line-clamp-1">{{ scope.row.content }}</div>
+					<div
+						class="line-clamp-1 cursor-pointer"
+						@click.stop="
+							() => {
+								detail = true;
+								content = scope.row.content;
+							}
+						"
+					>
+						{{ scope.row.content }}
+					</div>
+				</template>
+				<template #column-replyTo="{ scope }">
+					<div>{{ scope.row.replyTo }}</div>
 				</template>
 			</cl-table>
 		</cl-row>
 
 		<!-- 新增、编辑 -->
 		<cl-upsert ref="Upsert" />
+
+		<cl-dialog title="评论详情" v-model="detail">
+			{{ content }}
+		</cl-dialog>
 	</cl-crud>
 </template>
 
@@ -35,12 +52,13 @@ import { useCrud, useTable, useUpsert, useSearch } from '@cool-vue/crud';
 import { useCool } from '/@/cool';
 import { useI18n } from 'vue-i18n';
 import { Plugins } from '/#/crud';
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 import UserSelect from '/$/user/components/user-select.vue';
 
 const { service } = useCool();
 const { t } = useI18n();
-
+const detail = ref(false);
+const content = ref('');
 // 选项
 const options = reactive({
 	type: [
@@ -129,6 +147,16 @@ const Table = useTable({
 			prop: 'content',
 			minWidth: 120
 		},
+		{
+			label: t('用户'),
+			prop: 'nickname',
+			minWidth: 120
+		},
+		// {
+		// 	label: t('回复'),
+		// 	prop: 'replyTo',
+		// 	minWidth: 120
+		// },
 		{
 			label: t('图片'),
 			prop: 'images',

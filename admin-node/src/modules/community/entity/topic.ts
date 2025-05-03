@@ -8,7 +8,7 @@ import { CommunityPostEntity } from './post';
  */
 @Entity('community_topic')
 export class CommunityTopicEntity extends BaseEntity {
-  @Column({ comment: '名称' })
+  @Column({ comment: '名称', unique: true })
   name: string;
 
   // 关联社区

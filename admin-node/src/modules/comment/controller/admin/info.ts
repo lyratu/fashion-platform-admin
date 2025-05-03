@@ -11,10 +11,21 @@ import { UserInfoEntity } from '../../../user/entity/info';
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
   entity: CommentInfoEntity,
   service: CommentInfoService,
+  listQueryOp:{
+    join: [
+      {
+        entity: UserInfoEntity,
+        alias: 'b',
+        condition: 'a.userId = b.id',
+        type: 'leftJoin',
+      },
+    ],
+    select: ['a.*', 'b.nickname'],
+  },
   pageQueryOp: {
     keyWordLikeFields: ['a.content', 'b.nickname'],
     fieldEq: ['a.type', 'a.objectId'],
-    select: ['a.*', 'b.nickname', 'b.avatar'],
+    select: ['a.*', 'b.nickname', 'b.avatarUrl'],
     join: [
       {
         entity: UserInfoEntity,
