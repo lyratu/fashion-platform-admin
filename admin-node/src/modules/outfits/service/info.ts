@@ -85,7 +85,7 @@ export class OutfitsInfoService extends BaseService {
       },
       where: { id },
     });
-    if(!currentArticle) throw new CoolCommException('相关文章不存在');
+    if (!currentArticle) throw new CoolCommException('相关文章不存在');
     const currentArticleTags = currentArticle.tags.map(tag => tag.name);
     if (currentArticleTags.length > 0)
       recommendations = await this.outfitsInfoEntity
@@ -134,16 +134,7 @@ export class OutfitsInfoService extends BaseService {
         { currentUserId }
       );
     }
-    let queryParams = [
-      'a',
-      // 'b.id',
-      // 'b.nickName',
-      // 'b.avatarUrl',
-      // 'b.position',
-      'c.id',
-      'c.name',
-      'd.name',
-    ];
+    let queryParams = ['a', 'c.id', 'c.name', 'd.name'];
     const data = await qb.select(queryParams).getOne();
     if (this.ctx?.user) {
       queryParams.push('like.likeStatus');

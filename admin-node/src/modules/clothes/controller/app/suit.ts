@@ -27,7 +27,7 @@ import { UserInfoEntity } from '../../../user/entity/info';
         type: 'leftJoin',
       },
     ],
-    select: ["a.*","b.nickName","b.avatarUrl"],
+    select: ['a.*', 'b.nickName', 'b.avatarUrl'],
   },
 })
 export class ClothesSuitController extends BaseController {
