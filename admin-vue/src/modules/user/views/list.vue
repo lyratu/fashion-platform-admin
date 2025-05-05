@@ -131,12 +131,12 @@ const Table = useTable({
 			prop: 'phone',
 			minWidth: 120
 		},
-		{
-			label: t('身份'),
-			prop: 'type',
-			dict: options.type,
-			minWidth: 120
-		},
+		// {
+		// 	label: t('身份'),
+		// 	prop: 'type',
+		// 	dict: options.type,
+		// 	minWidth: 120
+		// },
 		{
 			label: t('职业'),
 			prop: 'position',
@@ -154,12 +154,12 @@ const Table = useTable({
 		// 	dict: options.loginType,
 		// 	minWidth: 120
 		// },
-		{
-			label: t('状态'),
-			prop: 'status',
-			minWidth: 120,
-			dict: options.status
-		},
+		// {
+		// 	label: t('状态'),
+		// 	prop: 'status',
+		// 	minWidth: 120,
+		// 	dict: options.status
+		// },
 		{
 			label: t('创建时间'),
 			prop: 'createTime',
@@ -197,15 +197,15 @@ const Upsert = useUpsert({
 				}
 			}
 		},
-		{
-			prop: 'type',
-			label: t('身份'),
-			value: 1,
-			component: {
-				name: 'el-radio-group',
-				options: options.type
-			}
-		},
+		// {
+		// 	prop: 'type',
+		// 	label: t('身份'),
+		// 	value: 1,
+		// 	component: {
+		// 		name: 'el-radio-group',
+		// 		options: options.type
+		// 	}
+		// },
 		{
 			prop: 'description',
 			label: t('介绍'),
@@ -230,15 +230,15 @@ const Upsert = useUpsert({
 				options: options.gender
 			}
 		},
-		{
-			prop: 'status',
-			label: t('状态'),
-			value: 1,
-			component: {
-				name: 'el-radio-group',
-				options: options.status
-			}
-		}
+		// {
+		// 	prop: 'status',
+		// 	label: t('状态'),
+		// 	value: 1,
+		// 	component: {
+		// 		name: 'el-radio-group',
+		// 		options: options.status
+		// 	}
+		// }
 	]
 });
 

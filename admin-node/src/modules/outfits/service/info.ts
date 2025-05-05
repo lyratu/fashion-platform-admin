@@ -31,8 +31,8 @@ export class OutfitsInfoService extends BaseService {
   async modifyBefore(data: any, type: 'delete' | 'update' | 'add') {
     if (type === 'update') {
       const num = await this.outfitsInfoEntity.countBy({ isFeature: 1 });
-      if (num > 1 && data.isFeature) {
-        throw new CoolCommException('最多只能精选两篇文章~');
+      if (num > 2 && data.isFeature) {
+        throw new CoolCommException('最多只能精选三篇文章~');
       }
     }
   }
@@ -174,7 +174,7 @@ export class OutfitsInfoService extends BaseService {
           'c.typeId',
           'c.value',
         ])
-        .limit(2)
+        .limit(3)
         .getMany();
     } else {
       list = await this.outfitsInfoEntity

@@ -20,7 +20,7 @@ export class UserInfoEntity extends BaseEntity {
   @Column({ comment: '手机号', nullable: true })
   phone: string;
 
-  @Column({ comment: '性别', dict: ['未知', '男', '女'], default: 0 })
+  @Column({ comment: '性别', dict: ['男', '女'], default: 0 })
   gender: number;
 
   @Column({ comment: '身份', dict: ['普通', '达人'], default: 0 })

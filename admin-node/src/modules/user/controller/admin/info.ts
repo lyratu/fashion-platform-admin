@@ -8,7 +8,7 @@ import { UserInfoEntity } from '../../entity/info';
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
   entity: UserInfoEntity,
   pageQueryOp: {
-    fieldEq: ['a.status', 'a.gender', 'a.loginType'],
+    fieldEq: [ 'a.gender'],
     keyWordLikeFields: ['a.nickName', 'a.phone'],
   },
 })

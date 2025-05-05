@@ -22,7 +22,7 @@ export class GoodsEntity extends BaseEntity {
   @Column({ comment: '描述', nullable: true })
   description: string;
 
-  @Column({ comment: '详情', nullable: true })
+  @Column({ comment: '详情', type: 'text', nullable: true })
   detail: string;
 
   @Column({ comment: '主图', nullable: true })

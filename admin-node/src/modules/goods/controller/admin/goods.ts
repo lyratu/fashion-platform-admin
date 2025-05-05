@@ -11,8 +11,8 @@ import { GoodsService } from '../../service/goods';
   entity: GoodsEntity,
   service: GoodsService,
   pageQueryOp: {
-    keyWordLikeFields: ['a.description'],
-    fieldEq: ['a.status'],
+    keyWordLikeFields: [''],
+    fieldEq: [''],
     fieldLike: ['a.title'],
     select: ['a.*', 'b.nickName as userName'],
     join: [

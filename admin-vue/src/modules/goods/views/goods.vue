@@ -96,13 +96,13 @@ const Upsert = useUpsert({
 			label: t('描述'),
 			prop: 'description',
 			component: { name: 'el-input', props: { clearable: true } },
-			span: 12
+			span: 24
 		},
 		{
 			label: t('详情'),
 			prop: 'detail',
-			component: { name: 'el-input', props: { clearable: true } },
-			span: 12
+			component: { name: 'cl-editor-wang' },
+			span: 24
 		},
 		{
 			prop: 'mainImage',
@@ -150,7 +150,7 @@ const Upsert = useUpsert({
 			component: { name: 'checkbox-group', props: { options: options.size } },
 			span: 12,
 			required: true
-		},
+		}
 		// {
 		// 	label: t('库存'),
 		// 	prop: 'stock',
@@ -175,7 +175,7 @@ const Table = useTable({
 		{ label: t('标题'), prop: 'title', minWidth: 120 },
 		{ label: t('价格'), prop: 'price', minWidth: 120 },
 		{ label: t('描述'), prop: 'description', minWidth: 120 },
-		{ label: t('详情'), prop: 'detail', minWidth: 120 },
+		// { label: t('详情'), prop: 'detail', minWidth: 120 },
 		{
 			prop: 'mainImage',
 			label: t('主图'),
