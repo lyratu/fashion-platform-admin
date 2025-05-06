@@ -25,8 +25,6 @@ export class CartService extends BaseService {
     const userId = this.ctx.user.id;
     const cart = await this.cartEntity.findOne({ where: { userId, goodsId } });
     if (cart) {
-      const isFull = await this.checkoutStock(cart.id);
-      if (!isFull) return;
       cart.count += count;
       await this.cartEntity.save(cart);
     } else {
@@ -39,21 +37,21 @@ export class CartService extends BaseService {
    * @param id 购物车id
    * @returns 查询商品库存是否充足
    */
-  checkoutStock = (id: number) => {
-    return new Promise(async (resolve, reject) => {
-      // 校验库存余量
-      const cart = await this.cartEntity.findOne({ where: { id } });
-      const goods = await this.nativeQuery('select * from goods where id = ?', [
-        cart.goodsId,
-      ]);
-      if (goods[0].stock <= cart.count) {
-        reject('商品库存不足');
-        throw new CoolCommException('商品库存不足');
-      } else {
-        resolve(true);
-      }
-    });
-  };
+  // checkoutStock = (id: number) => {
+  //   return new Promise(async (resolve, reject) => {
+  //     // 校验库存余量
+  //     const cart = await this.cartEntity.findOne({ where: { id } });
+  //     const goods = await this.nativeQuery('select * from goods where id = ?', [
+  //       cart.goodsId,
+  //     ]);
+  //     if (goods[0].stock <= cart.count) {
+  //       reject('商品库存不足');
+  //       throw new CoolCommException('商品库存不足');
+  //     } else {
+  //       resolve(true);
+  //     }
+  //   });
+  // };
 
   /**
    * 修改商品数量
@@ -66,13 +64,13 @@ export class CartService extends BaseService {
     size?: string,
     color?: string
   ) {
-    if (await this.checkoutStock(id)) {
-      const data = { count, size, color };
-      count ? null : delete data.count;
-      size ? null : delete data.size;
-      color ? null : delete data.color;
-      await this.cartEntity.update(id, data);
-    }
+    // if (await this.checkoutStock(id)) {
+    const data = { count, size, color };
+    count ? null : delete data.count;
+    size ? null : delete data.size;
+    color ? null : delete data.color;
+    await this.cartEntity.update(id, data);
+    // }
   }
 
   /**
