@@ -43,8 +43,7 @@ export class AppUserInfoController extends BaseController {
     await this.userInfoService.updatePassword(
       this.ctx.user.id,
       currentPwd,
-      newPwd,
-      code
+      newPwd
     );
     return this.ok();
   }
