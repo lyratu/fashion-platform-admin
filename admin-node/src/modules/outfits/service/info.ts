@@ -113,7 +113,6 @@ export class OutfitsInfoService extends BaseService {
     const currentUserId = this.ctx.user?.id ?? 0;
     const qb = this.outfitsInfoEntity
       .createQueryBuilder('a')
-      // .leftJoinAndSelect('a.user', 'b')
       .leftJoinAndSelect('a.tags', 'c')
       .leftJoinAndMapOne(
         'a.categoryText',
