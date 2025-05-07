@@ -60,12 +60,12 @@ const Upsert = useUpsert({
 		// 	span: 12,
 		// 	required: true
 		// },
-		{
-			label: t('状态'),
-			prop: 'status',
-			component: { name: 'el-radio-group', options: options.status },
-			required: true
-		},
+		// {
+		// 	label: t('状态'),
+		// 	prop: 'status',
+		// 	component: { name: 'el-radio-group', options: options.status },
+		// 	required: true
+		// },
 		{
 			label: t('详细地址'),
 			prop: 'detailedAddress',
@@ -73,16 +73,16 @@ const Upsert = useUpsert({
 			span: 12,
 			required: true
 		},
-		{
-			label: t('记录时间'),
-			prop: 'recordTime',
-			component: {
-				name: 'el-date-picker',
-				props: { type: 'datetime', valueFormat: 'YYYY-MM-DD HH:mm:ss' }
-			},
-			span: 12,
-			required: true
-		},
+		// {
+		// 	label: t('记录时间'),
+		// 	prop: 'recordTime',
+		// 	component: {
+		// 		name: 'el-date-picker',
+		// 		props: { type: 'datetime', valueFormat: 'YYYY-MM-DD HH:mm:ss' }
+		// 	},
+		// 	span: 12,
+		// 	required: true
+		// },
 		{
 			label: t('位置描述'),
 			prop: 'locationDescription',

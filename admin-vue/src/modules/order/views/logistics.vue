@@ -22,7 +22,7 @@
 					<el-button
 						text
 						bg
-						:disabled="scope.row.status !== 1"
+						:disabled="scope.row.logisticsStatus === 1"
 						@click="handleLocation(scope)"
 						>录入信息</el-button
 					>
