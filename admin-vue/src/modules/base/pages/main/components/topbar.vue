@@ -12,11 +12,11 @@
 		<div class="flex1"></div>
 
 		<!-- 工具栏 -->
-		<ul class="app-topbar__tools">
+		<!-- <ul class="app-topbar__tools">
 			<li v-for="(item, index) in toolbarComponents" :key="index">
 				<component :is="item.component" />
 			</li>
-		</ul>
+		</ul> -->
 
 		<!-- 用户信息 -->
 		<template v-if="user.info">
