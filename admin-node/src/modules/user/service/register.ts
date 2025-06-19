@@ -9,7 +9,7 @@ import * as md5 from 'md5';
  * 用户服务
  */
 @Provide()
-export class UserInfoService extends BaseService {
+export class UserRegisterService extends BaseService {
   @InjectEntityModel(UserInfoEntity)
   userInfoEntity: Repository<UserInfoEntity>;
 

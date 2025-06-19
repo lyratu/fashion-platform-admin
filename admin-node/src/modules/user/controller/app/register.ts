@@ -7,7 +7,7 @@ import {
   CoolTag,
   CoolCommException,
 } from '@cool-midway/core';
-import { UserInfoService } from '../../service/register';
+import { UserRegisterService } from '../../service/register';
 import { UserInfoEntity } from '../../../user/entity/info';
 import { Context } from '@midwayjs/koa';
 
@@ -18,7 +18,7 @@ import { Context } from '@midwayjs/koa';
 @CoolController()
 export class AppInfoController extends BaseController {
   @Inject()
-  userInfoService: UserInfoService;
+  userRegisterService: UserRegisterService;
 
   @Inject()
   ctx: Context;
@@ -37,7 +37,7 @@ export class AppInfoController extends BaseController {
       throw new CoolCommException('密码长度不能小于6位');
     }
 
-    await this.userInfoService.register(phone, password);
+    await this.userRegisterService.register(phone, password);
     return this.ok();
   }
 }
