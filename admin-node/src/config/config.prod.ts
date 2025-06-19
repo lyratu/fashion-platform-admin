@@ -11,9 +11,9 @@ export default {
     dataSource: {
       default: {
         type: 'mysql',
-        host: '127.0.0.1',
+        host: '39.107.60.183',
         port: 3306,
-        username: 'root',
+        username: 'lyratu',
         password: 'tuliwen520',
         database: 'cool',
         // 自动建表 注意：线上部署的时候不要使用，有可能导致数据丢失

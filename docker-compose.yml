@@ -1,0 +1,40 @@
+services:
+  admin-vue:
+    build:       # 指定构建镜像的上下文和 Dockerfile[<sup data-citation='{&quot;id&quot;:1,&quot;url&quot;:&quot;https://www.cnblogs.com/dirgo/p/18112035&quot;,&quot;title&quot;:&quot;[转]docker compose 配置文件 .yml 全面指南&quot;,&quot;content&quot;:&quot;原文地址:docker compose 配置文件 yml 全面指南 - 知乎 Compose 是一个用于定义和运行多容器 Docker 的工具。借助 Compose，您可以使用 YAML 文件来配置应用程序的服务。 使用 Compose 基本上分为三步： 1 使用 Dockerfile 定义您的应用程序的环境 2 使用 docker-composeyml 定义组成您的应用程序的服务 3 运行doc&quot;}'>1</sup>](https://www.cnblogs.com/dirgo/p/18112035)
+      context: ./admin-vue
+      dockerfile: Dockerfile
+    image: cool-admin-vue:1.0  # 构建后镜像名称和标签
+    ports:
+      - "8080:80"              # 根据项目实际端口映射，可选
+    networks:
+      - cool  
+    depends_on:
+      - admin-node   
+    
+
+  admin-node:
+    build:       # 同样为后端服务指定构建上下文[<sup data-citation='{&quot;id&quot;:1,&quot;url&quot;:&quot;https://www.cnblogs.com/dirgo/p/18112035&quot;,&quot;title&quot;:&quot;[转]docker compose 配置文件 .yml 全面指南&quot;,&quot;content&quot;:&quot;原文地址:docker compose 配置文件 yml 全面指南 - 知乎 Compose 是一个用于定义和运行多容器 Docker 的工具。借助 Compose，您可以使用 YAML 文件来配置应用程序的服务。 使用 Compose 基本上分为三步： 1 使用 Dockerfile 定义您的应用程序的环境 2 使用 docker-composeyml 定义组成您的应用程序的服务 3 运行doc&quot;}'>1</sup>](https://www.cnblogs.com/dirgo/p/18112035)
+      context: ./admin-node
+      dockerfile: Dockerfile
+    image: cool-admin-midway:1.0
+    ports:
+      - "8001:8001"
+    networks:
+      - cool  
+
+  front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    image: fashion-front:1.0
+    ports:
+      - "80:80"              # 前端服务端口映射
+    networks:
+      - cool
+    depends_on:
+      - admin-node
+
+# 如果需要自定义网络，也可以在这里定义；不定义时会使用默认 bridge 网络
+networks:
+  cool:
+    driver: bridge
