@@ -46,3 +46,5 @@ yarn-error.log*
 
 # 忽视 Vue CLI 项目的构建输出
 dist/
+
+.env

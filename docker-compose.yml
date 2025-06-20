@@ -26,6 +26,8 @@ services:
     build:
       context: ./front
       dockerfile: Dockerfile
+      args:
+        REACT_APP_API_KEY: ${FRONTEND_API_KEY} 
     image: fashion-front:1.0
     ports:
       - "80:80"              # 前端服务端口映射
